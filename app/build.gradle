@@ -1,0 +1,177 @@
+plugins {
+    id 'com.android.application'
+    // Add the Google services Gradle plugin
+    id 'com.google.gms.google-services'
+
+}
+//repositories {
+//    mavenCentral()
+//    flatDir{
+//        dirs "libs"
+//
+//    }
+//}
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "soonflyy.learning.hub" //"com.example.examhunter"
+        minSdkVersion 26//22
+        targetSdkVersion 33
+        versionCode 24
+        versionName "1.0.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'soonflyy.learning.hub'
+}
+
+dependencies {
+
+    //implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation files('libs/your jar file.jar')
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'//2.0.4
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.8.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.google.firebase:firebase-analytics:21.2.2'
+    implementation 'com.google.firebase:firebase-auth:22.0.0'
+    implementation 'com.google.firebase:firebase-database:20.2.1'
+    implementation 'com.google.firebase:firebase-firestore:24.6.0'
+    implementation 'com.google.firebase:firebase-storage:20.2.0'
+
+    //navigation
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+
+    //circleimageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //lottie
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
+    //otpview
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+
+    //glide for image
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.android.volley:volley:1.1.0'
+    //Retrofit dependency
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    //toast dependecy
+    implementation 'com.pranavpandey.android:dynamic-toasts:4.1.0'
+
+    //image compression and picker library
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    //squareup dependency
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //pdfviewr
+    implementation 'com.github.afreakyelf:Pdf-Viewer:1.0.7'
+
+    //Exo player dependency
+    implementation 'com.google.android.exoplayer:exoplayer:2.15.0'
+
+    //PR Downloader library
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+
+    //emoji library
+    implementation 'com.vanniktech:emoji-google:0.7.0'
+
+    //pia chart library
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //Rezorpay dependency
+    implementation 'com.razorpay:checkout:1.6.12'
+    implementation "com.razorpay:razorpay-java:1.3.9"
+    ///// custom celender////
+    ////////////error k liye dependency ///////////
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+    implementation platform('com.google.firebase:firebase-bom:28.4.0')
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging-directboot:20.2.0'
+    implementation 'com.google.android.gms:play-services-safetynet:18.0.1'
+    implementation "com.android.support:multidex:1.0.3"
+
+///// celenderview////
+    // implementation 'com.applandeo:material-calendar-view:1.4.0'
+
+
+    // implementation 'com.github.npanigrahy:Custom-Calendar-View:v1.0'
+    //implementation 'org.naishadhparmar.zcustomcalendar:zcustomcalendar:1.0.1'
+
+
+    //customCalendar library dependency
+    implementation 'org.naishadhparmar.zcustomcalendar:zcustomcalendar:1.0.1'
+
+    //video chooser library and okhttp
+    implementation 'com.nbsp:materialfilepicker:1.9.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+
+    implementation 'io.github.lizhangqu:coreprogress:1.0.2'
+    //photoViewer
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    //circle progressbar
+    implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
+    //date picker spinner type
+    implementation 'com.github.anggastudio:SpinnerPickerDialog:2.0.0'
+
+    //--live related dependency------------
+    implementation 'com.auth0:java-jwt:4.3.0'
+
+    api 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly('io.jsonwebtoken:jjwt-orgjson:0.11.5') {
+        exclude group: 'org.json', module: 'json' //provided by Android natively
+    }
+    //---------//
+    implementation 'live.videosdk:rtc-android-sdk:0.1.13'
+
+    // library to perform Network call to generate a meeting id
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    //--push notification ---------
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:31.3.0')
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    // Add the dependency for the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+
+    //----------------//
+    //
+}

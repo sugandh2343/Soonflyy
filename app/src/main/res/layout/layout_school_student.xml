@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+                android:weightSum="2"
+                android:id="@+id/lnr_top"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_weight="0.8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="@dimen/login_logo_size120"
+                            android:layout_height="@dimen/login_logo_size120"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="top"
+                            android:layout_marginLeft="-6dp"
+                            android:src="@drawable/logo_new"
+                            />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:text="@string/welcome_to_student_section"
+                                android:textColor="@color/black"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/space_17sp"
+                              android:fontFamily="@font/sfuitext_semibold" />
+                </LinearLayout>
+                <RelativeLayout
+                        android:padding="4dp"
+                        android:layout_weight="1.2"
+                    android:layout_gravity="bottom"
+                    android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_student_header" />
+                </RelativeLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

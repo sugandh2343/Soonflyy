@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".Teacher_Pannel.TeacherHomeFragment">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/home_bg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/main_custom_toolbar"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/botom_curve"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/main_toolbar_bg" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/botom_curve"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linr_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/sfuitext_bold"
+                        android:gravity="center"
+                        android:text="Tutor Panel "
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_page_title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:gravity="center"
+                        android:text="Create and manage your course here "
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liner_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/linr_text"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_create_course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:backgroundTint="@color/graient2"
+                            app:cardCornerRadius="@dimen/space_10dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rel_test"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="18dp"
+                                android:background="@drawable/bg_button"
+                                android:backgroundTint="@color/graient1"
+                                android:gravity="center">
+
+                                <RelativeLayout
+                                    android:id="@+id/img_book"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:background="@drawable/bg_circle_button"
+                                    android:backgroundTint="@color/graient2">
+
+                                    <ImageView
+                                        android:layout_width="180dp"
+                                        android:layout_height="180dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/create_course" />
+                                </RelativeLayout>
+
+
+                                <TextView
+                                    android:id="@+id/tv_test"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_toStartOf="@id/img_book"
+                                    android:fontFamily="@font/sfui_text_regular"
+                                    android:text="Create Course"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_large" />
+
+                                <TextView
+                                    android:id="@+id/tv_test2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tv_test"
+                                    android:layout_marginTop="-10dp"
+                                    android:layout_toStartOf="@id/img_book"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                    android:text="Here you can create new course"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_X_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginTop="@dimen/space_5dp"
+                                    android:background="@drawable/bg_circle_button"
+                                    android:backgroundTint="@color/graient2"
+                                    android:padding="@dimen/space_6"
+                                    android:src="@drawable/ic_baseline_add_24"
+                                    app:tint="@color/white" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_mycourse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:backgroundTint="@color/graient2"
+                            app:cardCornerRadius="@dimen/space_10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="18dp"
+                                android:alpha="4"
+                                android:background="@drawable/bg_button"
+                                android:backgroundTint="@color/graient1"
+                                android:gravity="center">
+
+                                <RelativeLayout
+                                    android:id="@+id/img_book_2"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:background="@drawable/bg_circle_button"
+                                    android:backgroundTint="@color/graient2">
+
+                                    <ImageView
+                                        android:layout_width="180dp"
+                                        android:layout_height="180dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/my_course" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_course"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_toStartOf="@id/img_book_2"
+                                    android:fontFamily="@font/sfui_text_regular"
+                                    android:text="My Courses"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_large" />
+
+                                <TextView
+                                    android:id="@+id/tv_my"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tv_course"
+                                    android:layout_marginTop="-10dp"
+                                    android:layout_toStartOf="@id/img_book_2"
+                                    android:fontFamily="@font/sfuitext_semibold"
+                                    android:text="Manage your course from here"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_X_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginTop="@dimen/space_5dp"
+                                    android:background="@drawable/bg_circle_button"
+                                    android:backgroundTint="@color/graient2"
+                                    android:padding="@dimen/space_6"
+                                    android:src="@drawable/test_choice"
+                                    app:tint="@color/white" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

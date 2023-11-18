@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/home_bg"
+        tools:context=".YourSchooolPannel.YourSchoolChoiceFragment">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                        android:id="@+id/line_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0dp"
+                                android:padding="@dimen/space_2"
+                                android:text="Welcome to"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_20sp"
+                              android:fontFamily="@font/sfuitext_medium">
+
+                        </TextView>
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Your School"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@color/primary_color"
+                                android:textSize="30sp"
+                               android:fontFamily="@font/sfuitext_heavy">
+
+                        </TextView>
+
+                        <View
+                                android:layout_width="129dp"
+                                android:layout_height="1dp"
+                                android:background="@color/primary_color">
+
+                        </View>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                                android:id="@+id/rel_student"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginEnd="20dp"
+                                android:visibility="gone"
+                                android:layout_marginBottom="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/school_student" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                                android:id="@+id/rel_school_coaching"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/school_coaching" />
+                                <!--                                <androidx.cardview.widget.CardView-->
+                                <!--                                        android:layout_width="wrap_content"-->
+                                <!--                                        android:layout_height="wrap_content"-->
+                                <!--                                        android:layout_marginStart="4dp"-->
+                                <!--                                        android:layout_marginTop="4dp"-->
+                                <!--                                        android:layout_marginEnd="4dp"-->
+                                <!--                                        android:layout_marginBottom="4dp"-->
+                                <!--                                        android:backgroundTint="@color/graient2"-->
+                                <!--                                        app:cardCornerRadius="@dimen/space_10dp">-->
+
+                                <!--                                        <RelativeLayout-->
+                                <!--                                                android:id="@+id/rel_school"-->
+                                <!--                                                android:layout_width="match_parent"-->
+                                <!--                                                android:layout_height="wrap_content"-->
+                                <!--                                                android:layout_marginBottom="18dp"-->
+                                <!--                                                android:background="@drawable/bg_button"-->
+                                <!--                                                android:backgroundTint="@color/graient1"-->
+                                <!--                                                android:gravity="center">-->
+
+                                <!--                                                <RelativeLayout-->
+                                <!--                                                        android:id="@+id/img_school_coaching"-->
+                                <!--                                                        android:layout_width="110dp"-->
+                                <!--                                                        android:layout_height="110dp"-->
+                                <!--                                                        android:layout_alignParentEnd="true"-->
+                                <!--                                                        android:background="@drawable/bg_circle_button"-->
+                                <!--                                                        android:backgroundTint="@color/graient2">-->
+
+                                <!--                                                        <ImageView-->
+                                <!--                                                                android:layout_width="180dp"-->
+                                <!--                                                                android:layout_height="180dp"-->
+                                <!--                                                                android:layout_alignParentEnd="true"-->
+                                <!--                                                                android:scaleType="fitXY"-->
+                                <!--                                                                android:src="@drawable/create_course" />-->
+                                <!--                                                </RelativeLayout>-->
+
+
+                                <!--                                                <TextView-->
+                                <!--                                                        android:id="@+id/tv_school_coaching"-->
+                                <!--                                                        android:layout_width="wrap_content"-->
+                                <!--                                                        android:layout_height="wrap_content"-->
+                                <!--                                                        android:layout_marginStart="5dp"-->
+                                <!--                                                        android:layout_marginTop="5dp"-->
+                                <!--                                                        android:layout_marginEnd="5dp"-->
+                                <!--                                                        android:layout_marginBottom="5dp"-->
+                                <!--                                                        android:layout_toStartOf="@id/img_school_coaching"-->
+                                <!--                                                        android:text="@string/school_coaching"-->
+                                <!--                                                        android:textColor="@color/white"-->
+                                <!--                                                        android:textSize="@dimen/space_24sp"-->
+                                <!--                                                        android:textStyle="bold" />-->
+
+                                <!--                                                <TextView-->
+                                <!--                                                        android:id="@+id/tv_school_coaching2"-->
+                                <!--                                                        android:layout_width="match_parent"-->
+                                <!--                                                        android:layout_height="wrap_content"-->
+                                <!--                                                        android:layout_below="@id/tv_school_coaching"-->
+                                <!--                                                        android:layout_toStartOf="@id/img_school_coaching"-->
+                                <!--                                                        android:text="@string/school_coaching_section"-->
+                                <!--                                                        android:textColor="@color/white"-->
+                                <!--                                                        android:textSize="14sp"-->
+                                <!--                                                        android:textStyle="normal" />-->
+
+                                <!--                                        </RelativeLayout>-->
+                                <!--                                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                                android:id="@+id/rel_maintutor"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/school_tutor" />
+                                <!--                                <androidx.cardview.widget.CardView-->
+                                <!--                                        android:layout_width="wrap_content"-->
+                                <!--                                        android:layout_height="wrap_content"-->
+                                <!--                                        android:layout_marginStart="4dp"-->
+                                <!--                                        android:layout_marginTop="4dp"-->
+                                <!--                                        android:layout_marginEnd="4dp"-->
+                                <!--                                        android:layout_marginBottom="4dp"-->
+                                <!--                                        android:backgroundTint="@color/graient2"-->
+                                <!--                                        app:cardCornerRadius="@dimen/space_10dp">-->
+
+                                <!--                                        <RelativeLayout-->
+                                <!--                                                android:id="@+id/rel_tutor"-->
+                                <!--                                                android:layout_width="match_parent"-->
+                                <!--                                                android:layout_height="wrap_content"-->
+                                <!--                                                android:layout_marginBottom="18dp"-->
+                                <!--                                                android:background="@drawable/bg_button"-->
+                                <!--                                                android:backgroundTint="@color/graient1"-->
+                                <!--                                                android:gravity="center">-->
+
+                                <!--                                                <RelativeLayout-->
+                                <!--                                                        android:id="@+id/img_tutor"-->
+                                <!--                                                        android:layout_width="110dp"-->
+                                <!--                                                        android:layout_height="110dp"-->
+                                <!--                                                        android:layout_alignParentEnd="true"-->
+                                <!--                                                        android:background="@drawable/bg_circle_button"-->
+                                <!--                                                        android:backgroundTint="@color/graient2">-->
+
+                                <!--                                                        <ImageView-->
+                                <!--                                                                android:layout_width="180dp"-->
+                                <!--                                                                android:layout_height="180dp"-->
+                                <!--                                                                android:layout_alignParentEnd="true"-->
+                                <!--                                                                android:scaleType="fitXY"-->
+                                <!--                                                                android:src="@drawable/create_course" />-->
+                                <!--                                                </RelativeLayout>-->
+
+
+                                <!--                                                <TextView-->
+                                <!--                                                        android:id="@+id/tv_tutor"-->
+                                <!--                                                        android:layout_width="match_parent"-->
+                                <!--                                                        android:layout_height="wrap_content"-->
+                                <!--                                                        android:layout_margin="5dp"-->
+                                <!--                                                        android:layout_toStartOf="@id/img_tutor"-->
+                                <!--                                                        android:text="Tutor"-->
+                                <!--                                                        android:textColor="@color/white"-->
+                                <!--                                                        android:textSize="@dimen/space_24sp"-->
+                                <!--                                                        android:textStyle="bold" />-->
+
+                                <!--                                                <TextView-->
+                                <!--                                                        android:id="@+id/tv_tutor2"-->
+                                <!--                                                        android:layout_width="match_parent"-->
+                                <!--                                                        android:layout_height="wrap_content"-->
+                                <!--                                                        android:layout_below="@id/tv_tutor"-->
+                                <!--                                                        android:layout_toStartOf="@id/img_tutor"-->
+                                <!--                                                        android:text="@string/independent_tutor"-->
+                                <!--                                                        android:textColor="@color/white"-->
+                                <!--                                                        android:textSize="14sp"-->
+                                <!--                                                        android:textStyle="normal" />-->
+
+                                <!--                                        </RelativeLayout>-->
+                                <!--                                </androidx.cardview.widget.CardView>-->
+                        </RelativeLayout>
+
+                </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

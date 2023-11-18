@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lin_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/time_table_1"
+        android:orientation="horizontal"
+        android:weightSum="4"
+      >
+        <TextView
+            android:id="@+id/tv_period"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Period"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_12sp"/>
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_subject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Subject"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_12sp"/>
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_tutor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="Tutor"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_12sp"/>
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+           android:ellipsize="end"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_12sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+                android:id="@+id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_marginEnd="@dimen/space_5"
+                android:layout_marginBottom="@dimen/space_5"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/space_10">
+
+                <LinearLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_s_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:text="@string/find_out_school_coaching"
+                                android:textAlignment="center"
+                                android:textColor="@color/graient2"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/sfuitext_bold" />
+
+                        <View
+                                android:layout_width="230dp"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center"
+                                android:background="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:padding="4dp"
+                                android:text="Enter Mobile Number"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sfuitext_semibold" />
+
+                        <EditText
+                                android:id="@+id/et_mobile_num"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:inputType="number"
+                            android:drawableStart="@drawable/ic_phone"
+                            android:drawablePadding="@dimen/space_8dp"
+                                android:maxLength="10"
+                                android:layout_marginTop="@dimen/space_10"
+                                android:background="@drawable/drawable_edit_text_shadow_bg"
+                                android:hint="@string/enter_mobile_number"
+                                android:padding="@dimen/space_12"
+                              />
+
+
+                        <LinearLayout
+
+                                android:id="@+id/lin_search"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space_8"
+                            android:visibility="gone"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/tv_slist_title"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="6dp"
+                                        android:gravity="start"
+                                        android:text="School /Coaching list"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                        android:id="@+id/rec_schol_tutor"
+                                        />
+
+<!--                                <LinearLayout-->
+<!--                                        android:background="@color/white_defoult"-->
+<!--                                        android:layout_margin="0dp"-->
+<!--                                        android:layout_marginTop="10dp"-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:orientation="horizontal">-->
+
+<!--                                <LinearLayout-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:id="@+id/lin_title"-->
+<!--                                        android:padding="6dp"-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:orientation="horizontal">-->
+
+<!--                                        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                                                android:id="@+id/profile_image"-->
+<!--                                                android:layout_width="35dp"-->
+<!--                                                android:layout_height="35dp"-->
+<!--                                                android:layout_gravity="center_vertical"-->
+<!--                                                android:scaleType="centerCrop"-->
+<!--                                                android:src="@drawable/school"-->
+<!--                                                app:civ_circle_background_color="@color/white"-->
+<!--                                                app:civ_border_color="@color/light_grey"/>-->
+
+<!--                                        <LinearLayout-->
+<!--                                                android:layout_width="match_parent"-->
+<!--                                                android:layout_height="wrap_content"-->
+<!--                                                android:layout_gravity="center_vertical"-->
+<!--                                                android:layout_marginStart="1dp"-->
+<!--                                                android:layout_weight="1"-->
+<!--                                                android:padding="4dp"-->
+<!--                                                android:orientation="vertical">-->
+
+<!--                                                <TextView-->
+<!--                                                        android:id="@+id/tv_schoolName"-->
+<!--                                                        android:layout_width="match_parent"-->
+<!--                                                        android:layout_height="wrap_content"-->
+<!--                                                        android:layout_gravity="center_vertical"-->
+<!--                                                        android:text="Vidhya Bharti Akhil Samiti School"-->
+<!--                                                        android:textColor="@color/black"-->
+<!--                                                        android:textStyle="bold"-->
+<!--                                                        android:textSize="@dimen/space_12sp"-->
+<!--                                                        />-->
+<!--                                        </LinearLayout>-->
+
+<!--                                        <TextView-->
+<!--                                                android:id="@+id/tv_add"-->
+<!--                                                android:layout_width="75dp"-->
+<!--                                                android:layout_height="wrap_content"-->
+<!--                                                android:layout_gravity="center"-->
+<!--                                                android:layout_marginEnd="@dimen/space_2dp"-->
+<!--                                                android:background="@drawable/bg_button"-->
+<!--                                                android:padding="@dimen/space_4dp"-->
+<!--                                                android:text="Add"-->
+<!--                                                android:textAlignment="center"-->
+<!--                                                android:textColor="@color/white"-->
+<!--                                                android:textSize="16sp" />-->
+<!--                                </LinearLayout>-->
+<!--                                </LinearLayout>-->
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_search"
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="12dp"
+                        android:gravity="center"
+                        android:text="Search"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        />
+
+                <TextView
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_10dp"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:text="Cancel"
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                    android:fontFamily="@font/sfuitext_semibold"
+                        android:textSize="14sp" />
+
+
+        </LinearLayout>
+</RelativeLayout>

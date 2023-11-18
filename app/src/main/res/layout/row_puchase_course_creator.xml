@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_other_img"
+            android:layout_width="50dp"
+            android:layout_marginStart="@dimen/space_18dp"
+            android:layout_height="50dp"
+            app:civ_border_color="@color/light_grey"
+            app:civ_border_width="@dimen/space_1dp"
+            android:src="@drawable/logoo" />
+
+        <TextView
+
+            android:layout_weight="1"
+            android:id="@+id/tv_other_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_4"
+            android:layout_marginEnd="@dimen/space_4dp"
+            android:layout_gravity="center"
+            android:text="Sharda Institute of Technology and Management"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/sfuitext_medium">
+        </TextView>
+        <ImageView
+            android:layout_marginEnd="@dimen/space_6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_right"
+            app:tint="@color/graient1" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

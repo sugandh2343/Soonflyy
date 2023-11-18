@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/space_4dp"
+    android:layout_marginBottom="@dimen/space_4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/cl_subsription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"
+        android:background="@color/light_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logoo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.32"
+            app:riv_corner_radius="14dp" />
+
+        <RatingBar
+            android:visibility="gone"
+            android:id="@+id/rating_bar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:numStars="5"
+            android:elevation="@dimen/space_10dp"
+            android:theme="@style/RatingBarTheme"
+            app:layout_constraintBottom_toBottomOf="@+id/img"
+            app:layout_constraintStart_toStartOf="@+id/img" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            app:layout_constraintTop_toBottomOf="@id/img">
+
+            <LinearLayout
+                android:id="@+id/linr_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="3.5"
+                android:orientation="vertical"
+                android:padding="4dp"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/header_tittle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                   android:fontFamily="@font/sfuitext_semibold"
+                    android:textSize="14sp"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/header_sub_tittle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="-4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/sfui_text_regular"
+                    app:layout_constraintEnd_toStartOf="@id/play_img"
+                    app:layout_constraintStart_toStartOf="@id/header_tittle_tv"
+                    app:layout_constraintTop_toBottomOf="@id/header_tittle_tv" />
+
+                <LinearLayout
+                    android:layout_marginTop="-4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/exp_date_tv"
+                   android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="@dimen/space_10dp"
+                    android:text=""
+                    android:textColor="@color/red"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/sfuitext_medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/header_sub_tittle_tv"
+                    app:layout_constraintTop_toBottomOf="@id/header_sub_tittle_tv" />
+
+                <TextView
+                    android:id="@+id/tv_free_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/spartan"
+                    android:text="Free"
+                    android:textColor="@color/primary_color"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/exp_date_tv" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:textSize="13sp"
+                        android:text="Rate Us"
+                        android:fontFamily="@font/sfuitext_medium"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/play_img"
+                android:layout_width="@dimen/space_30dp"
+                android:layout_height="@dimen/space_30dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_baseline_play_circle_filled_24" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1dp"
+        android:background="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_subsription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

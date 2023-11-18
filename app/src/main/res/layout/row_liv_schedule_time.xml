@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_live_date"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/space_1"
+            android:background="@color/light_gray"
+            android:ellipsize="end"
+            android:fontFamily="@font/lexend"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/space_4dp"
+            android:text="05-sep-2021"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_13sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/light_gray"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/light_gray"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/lin_go_live"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_live_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/space_1dp"
+                        android:ellipsize="end"
+                        android:paddingTop="@dimen/space_4dp"
+                        android:fontFamily="@font/lexend"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/space_8dp"
+                        android:text="10:00 am to 11:00 am"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_13sp" />
+
+                    <LinearLayout
+                        android:id="@+id/lin__live"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:paddingStart="@dimen/space_8dp"
+                        android:paddingBottom="@dimen/space_4dp"
+                        android:orientation="vertical"
+
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/space_1dp"
+                            android:fontFamily="@font/lexend"
+                            android:text="Go Live"
+                            android:gravity="center_horizontal"
+                            android:textColor="#2196F3"
+                            android:textSize="@dimen/space_12sp" />
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="1dp"
+                            android:background="#2196F3"
+                            android:layout_gravity="center_horizontal"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_edit_live"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/space_5dp"
+                    android:paddingLeft="@dimen/space_5dp"
+                    android:paddingEnd="@dimen/space_10dp"
+                    android:src="@drawable/ic_baseline_edit_white_24dp"
+                    app:tint="@color/green_500" />
+                <ImageView
+                    android:id="@+id/iv_delete_live"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/space_5dp"
+                    android:paddingLeft="@dimen/space_5dp"
+                    android:paddingEnd="@dimen/space_10dp"
+                    android:src="@drawable/ic_baseline_delete_red_24"
+                    app:tint="@color/primary_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+</LinearLayout>

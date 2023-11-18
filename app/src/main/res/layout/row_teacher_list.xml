@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:elevation="@dimen/space_5"
+        android:backgroundTint="@color/light_grey"
+        app:cardCornerRadius="@dimen/space_15">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_4"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img"
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:padding="@dimen/space_5"
+                   android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/space_4dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/header_tittle_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/lexend"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toEndOf="@id/img"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/desc_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/lexend"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toEndOf="@id/img"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_6dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/lexend"
+                    android:text="See Details"
+                    android:textColor="@color/red"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toEndOf="@id/img"
+                    app:layout_constraintTop_toTopOf="parent" />
+                    <View
+                        android:layout_width="75dp"
+                        android:layout_marginTop="@dimen/space_1dp"
+                        android:layout_height="@dimen/space_1dp"
+                        android:background="@color/red"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

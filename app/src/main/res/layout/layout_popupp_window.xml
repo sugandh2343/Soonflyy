@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="65dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:gravity="center"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/edit_box_round_corner"
+    android:backgroundTint="#CC000000">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_mic"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mute"
+        android:textSize="10sp"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:drawableTint="@color/white"
+        android:drawableTop="@drawable/ic_mic_on"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_stop"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:textSize="10sp"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:drawableTint="@color/white"
+        android:drawableTop="@drawable/baseline_videocam_24"/>
+
+
+    <TextView
+
+        android:id="@+id/tv_students"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students"
+        android:textSize="10sp"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:drawableTint="@color/white"
+        android:drawableTop="@drawable/scl_teachercap"/>
+
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/tv_switch_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:textColor="@color/white"
+        android:drawableTop="@drawable/baseline_flip_camera_ios_24"/>
+    <TextView
+
+        android:id="@+id/tv_leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End"
+        android:textSize="10sp"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:drawableTop="@drawable/baseline_logout_24"/>
+
+
+</LinearLayout>

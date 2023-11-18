@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="@dimen/space_8dp"
+        android:background="@drawable/bg_button"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_total_qstn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuitext_medium"
+                android:text="Total Questions : 10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12sp" />
+
+            <TextView
+                android:id="@+id/total_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuitext_medium"
+                android:text="Total Marks : 100"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center
+"
+            android:layout_margin="@dimen/space_10"
+            android:background="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_exam_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuitext_medium"
+                android:text="Exam Duration : 60 Min"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12sp" />
+
+            <TextView
+                android:id="@+id/passing_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuitext_medium"
+                android:text="Passing score : 75%"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

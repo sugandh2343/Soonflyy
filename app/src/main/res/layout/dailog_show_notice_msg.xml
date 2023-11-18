@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:paddingBottom="6dp"
+
+    app:cardCornerRadius="@dimen/space_15dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+
+            android:layout_gravity="end"
+            android:id="@+id/iv_cancel"
+            android:layout_width="@dimen/space_30dp"
+            android:layout_height="@dimen/space_30dp"
+            android:src="@drawable/ic_baseline_cancel_24"
+            android:layout_margin="@dimen/space_8dp"
+            app:tint="@color/red" />
+        <TextView
+            android:layout_marginTop="-10dp"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notice"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sfuitext_bold"
+            android:textSize="@dimen/text_size_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_gravity="center_horizontal"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/edit_box_round_corner"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:id="@+id/tv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:autoLink="all"
+                android:fontFamily="@font/sfuitext_medium"
+                android:gravity="top"
+                android:padding="@dimen/space_10dp"
+                android:singleLine="false"
+                android:text="hello this is my first notice. hello this is my first notice.hello this is my first notice"
+                android:textColor="@color/black"
+                android:linksClickable="true"
+                android:textColorLink="@color/graient2"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lin_attachemnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Attachments"
+                android:textColor="@color/graient1"
+                android:fontFamily="@font/sfuitext_semibold"
+                android:textSize="@dimen/space_10sp"
+                android:paddingStart="@dimen/space_10dp"
+                />
+            <View
+                android:layout_marginTop="-3dp"
+                android:layout_marginStart="@dimen/space_10dp"
+                android:layout_marginBottom="@dimen/space_10dp"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/space_1dp"
+                android:background="@color/graient1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

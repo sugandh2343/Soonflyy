@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cb_btn"
+            android:layout_width="@dimen/space_25dp"
+            android:layout_height="@dimen/space_25dp"
+            android:buttonTint="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/space_8dp"
+            android:layout_toRightOf="@id/cb_btn"
+            android:layout_marginLeft="@dimen/space_8dp"
+            android:background="@drawable/drawable_edit_text_shadow_bg"
+            android:gravity="center_vertical"
+
+            android:text="@string/question" />
+</LinearLayout>

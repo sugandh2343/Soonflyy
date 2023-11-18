@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="110dp"
+        app:cardBackgroundColor="@color/white_smoke"
+       app:cardCornerRadius="@dimen/space_15dp"
+    android:layout_height="100dp"
+        android:id="@+id/rel_main"
+    android:layout_margin="@dimen/space_5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/thumbnail_image">
+
+            <ImageView
+
+                android:id="@+id/img_edit"
+                android:layout_width="@dimen/space_30dp"
+                android:layout_height="@dimen/space_30dp"
+                android:layout_alignParentEnd="true"
+                android:padding="6dp"
+                android:src="@drawable/menu_icon"
+                app:tint="@color/black" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_edi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/img_edit"
+                android:layout_marginStart="-71dp"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_marginEnd="0dp"
+                android:padding="3dp"
+                android:visibility="gone"
+                app:cardCornerRadius="4dp">
+
+                <LinearLayout
+
+                    android:id="@+id/liner_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dailog_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dailog_edit"
+                        android:drawableStart="@drawable/ic_baseline_delete_24"
+                        android:drawableTint="@color/red"
+                        android:text="Delete"
+                        android:textAllCaps="false"
+                        android:textColor="@color/red"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        app:drawableTint="@color/red"
+                        tools:ignore="ObsoleteLayoutParam" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <ImageView
+
+            android:id="@+id/thumbnail_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/s_pdf" />
+
+        <LinearLayout
+            android:id="@+id/lin_name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_bottom_corner"
+            android:backgroundTint="@color/graient2"
+            android:elevation="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Note on ITO..."
+                android:textColor="@color/white"
+                android:fontFamily="@font/sfui_text_regular"
+                android:textSize="9sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+<!--    <com.makeramen.roundedimageview.RoundedImageView-->
+<!--        android:id="@+id/thumbnail_image"-->
+<!--        android:layout_width="110dp"-->
+<!--        android:layout_height="110dp"-->
+<!--        android:scaleType="centerInside"-->
+<!--        android:src="@drawable/s_pdf"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:riv_border_color="@color/light_grey"-->
+<!--        app:riv_border_width="1dp"-->
+<!--        app:riv_corner_radius="@dimen/space_15dp" />-->
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

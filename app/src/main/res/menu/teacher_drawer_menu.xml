@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/t_home"
+        android:icon="@drawable/ic_baseline_home_primary_color_24dp"
+        android:title="Home"/>
+    <item android:id="@+id/t_my_course"
+        android:icon="@drawable/ic_baseline_wifi_primary_color_24dp"
+        android:title="My Courses"/>
+    <item android:id="@+id/t_assignment"
+        android:icon="@drawable/shedule"
+        android:title="Student's Attendance"/>
+    <item android:id="@+id/t_about_us"
+        android:icon="@drawable/about"
+        android:title="About Us"/>
+    <item android:id="@+id/t_term_condition"
+        android:icon="@drawable/ic_baseline_receipt_long_primary_color_24dp"
+        android:title="Terms &amp; Condition"/>
+    <item android:id="@+id/t_help_center"
+        android:icon="@drawable/ic_discuess"
+        android:title="Discussions"/>
+    <item android:id="@+id/t_chat_session"
+        android:icon="@drawable/t_support"
+        android:title="Support"/>
+    <item android:id="@+id/t_logout"
+        android:iconTint="@color/primary_color"
+        android:icon="@drawable/ic_baseline_lock_open_white_24dp"
+        android:title="Logout"/>
+
+    <item android:id="@+id/t_my_test"
+            android:visible="false"
+            android:icon="@drawable/ic_baseline_assignment_ind_24"
+            android:title="My Test"/>
+    <item android:id="@+id/t_contact_us"
+            android:visible="false"
+            android:icon="@drawable/ic_baseline_contacts_primary_color_24dp"
+            android:title="Contact Us"/>
+    <item android:id="@+id/t_test_history"
+            android:visible="false"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="Test History"/>
+
+</menu>

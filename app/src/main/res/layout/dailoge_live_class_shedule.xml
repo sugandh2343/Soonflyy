@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/liner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_5"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginEnd="@dimen/space_5"
+            android:layout_marginBottom="@dimen/space_5"
+            android:background="@drawable/drawable_edit_text_shadow_bg"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/space_10">
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/sfuitext_bold"
+                    android:padding="4dp"
+                    android:text="Live Class Schedule "
+                    android:textAlignment="center"
+                    android:textColor="@color/graient2"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="130dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfuitext_bold"
+                    android:padding="4dp"
+                    android:text="Title*"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/space_10"
+                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                    android:hint="Enter title"
+                    android:padding="@dimen/space_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:fontFamily="@font/sfuitext_semibold"
+                    android:text=" Upload Cover Photo"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/lin_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:elevation="@dimen/space_5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_10"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_sub"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/upload_button" />
+                    <!--  </androidx.cardview.widget.CardView>-->
+                    <RelativeLayout
+                        android:id="@+id/rel_cover_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/image_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:background="@drawable/drawable_edit_text_shadow_bg"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/live_lecture"
+                            android:visibility="visible" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/cancel_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="6dp"
+                            android:src="@drawable/ic_baseline_cancel_24" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_img_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:fontFamily="@font/sfuitext_medium"
+                        android:text="@string/upload_your_file_here_choose_file_form_your_device"
+                        android:textAlignment="center"
+                        android:textColor="#434242"
+                        android:textSize="@dimen/space_12" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/img_upload_img"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_centerInParent="true"
+                            android:src="@color/red"
+                            app:riv_corner_radius="12dp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space_40dp"
+                            android:layout_height="@dimen/space_40dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="90dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/add_button" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/space_5"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:text="Date"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/et_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/space_10"
+                        android:background="@drawable/drawable_edit_text_shadow_bg"
+                        android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/sfuitext_medium"
+                        android:hint="Select date  "
+                        android:padding="@dimen/space_12"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/space_5"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:text=" Time"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/et_time1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/drawable_edit_text_shadow_bg"
+                            android:drawableEnd="@drawable/ic_baseline_watch_later_24"
+                            android:drawableTint="@color/grey"
+                            android:fontFamily="@font/sfuitext_medium"
+                            android:hint="From"
+                            android:padding="@dimen/space_12"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_14" />
+
+                        <TextView
+                            android:id="@+id/et_time2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/drawable_edit_text_shadow_bg"
+                            android:drawableEnd="@drawable/ic_baseline_watch_later_24"
+                            android:drawableTint="@color/grey"
+                            android:fontFamily="@font/sfuitext_medium"
+                            android:hint=" To"
+                            android:padding="@dimen/space_12"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_14" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:text="Discription"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_discription"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:background="@drawable/drawable_edit_text_shadow_bg"
+                        android:gravity="top"
+                        android:hint="Enter here "
+                        android:padding="@dimen/space_12" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_demo_live"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/set_demo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_40dp"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sfuitext_semibold"
+                    android:gravity="center_vertical"
+                    android:text="Set as Demo Class"
+                    android:textColor="@color/black" />
+
+                <Switch
+                    android:id="@+id/demo_switch"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:checked="true"
+                    android:layout_gravity="center_vertical" />
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:text="Schedule"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10dp"
+                android:layout_marginTop="@dimen/space_5"
+                android:fontFamily="@font/sfuitext_semibold"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textColor="@color/red" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/white_defoult"
+        android:layout_margin="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/lin_title"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logoo"
+                app:civ_circle_background_color="@color/white"
+                app:civ_border_color="@color/light_grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="1dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/assign_tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Vidhya Bharti Akhil Samiti School"
+                    android:textColor="@color/black"
+                  android:fontFamily="@font/sfuitext_semibold"
+                    android:textSize="@dimen/space_12sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/space_2dp"
+                android:background="@drawable/bg_button"
+                android:padding="@dimen/space_4dp"
+                android:text="Add"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sfuitext_medium"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

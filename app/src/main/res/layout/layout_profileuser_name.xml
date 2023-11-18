@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/space_4dp"
+    android:paddingBottom="@dimen/space_4dp"
+    android:background="@color/white_smoke">
+
+    <RelativeLayout
+        android:id="@+id/rel_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/space_6">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/assign_iv_profile_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:civ_border_color="@color/light_gray"
+            app:civ_border_width="@dimen/space_1dp"
+            android:src="@drawable/logoo" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/space_25dp"
+            android:layout_height="@dimen/space_25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/s_edit_icon"
+            android:id="@+id/iv_edit"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_toLeftOf="@+id/btn_profile"
+        android:layout_toRightOf="@+id/rel_profile"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/assign_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:fontFamily="@font/sfuitext_semibold"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_16sp" />
+
+        <TextView
+            android:id="@+id/assign_tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:fontFamily="@font/sfuitext_medium"
+            android:text="+91-"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_10sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="start"
+            android:layout_margin="@dimen/space_5"
+            android:layout_marginStart="@dimen/space_6"
+            android:background="@drawable/bg_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/space_24dp"
+                android:layout_height="@dimen/space_24dp"
+                android:src="@drawable/s_admin_subscription" />
+
+            <TextView
+                android:id="@+id/tv_subcriber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuitext_medium"
+                android:text="Total Subscribers:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12sp">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btn_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginEnd="@dimen/space_8dp"
+        android:backgroundTint="@color/graient2"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:gravity="center"
+        android:text="Profile"
+        android:textAllCaps="false" />
+</RelativeLayout>
+

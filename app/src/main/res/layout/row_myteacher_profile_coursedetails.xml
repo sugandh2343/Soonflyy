@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:id="@+id/lin_main"
+        android:background="@color/white_smoke"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:paddingTop="@dimen/space_6dp"
+            android:id="@+id/rel_edit"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_20"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/space_8dp"
+                android:padding="3dp"
+                android:src="@drawable/menu_icon"
+                app:tint="@color/black" />
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:background="@drawable/bg_rounded_corner"
+                android:id="@+id/cv_edi"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/img_edit"
+                android:layout_marginLeft="-81dp"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/liner_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:drawableTint="@color/red"
+                        android:id="@+id/dailog_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dailog_edit"
+                        android:drawableStart="@drawable/ic_block_24"
+                        android:text="Block"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/red"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        app:drawableTint="@color/red"
+                        tools:ignore="ObsoleteLayoutParam" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+           android:layout_marginTop="-16dp"
+            android:id="@+id/lin_manage"
+            android:layout_marginEnd="@dimen/space_5dp"
+            android:layout_marginStart="@dimen/space_5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:paddingBottom="@dimen/space_6"
+                android:paddingStart="@dimen/space_10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_course_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/student_img"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="301dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/space_4"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_course_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:text="Artificial Intelligence"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="-4dp"
+                        android:fontFamily="@font/sfuitext_medium"
+                        android:text="4000.00"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_12sp" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_arrowback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_left"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/space_8dp"
+                app:tint="@color/graient2" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@id/lin_main"
+        android:id="@+id/bottom_line"
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"/>
+
+
+</LinearLayout>

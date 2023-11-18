@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:supportsRtl="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+        android:name=".utlis.AppController"
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v7.app.CoreComponentFactory"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ExamHunter"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory">
+        <activity
+            android:name=".live.ParticipaintLiveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Download.PlayDownlaodVideoActivity"
+            android:configChanges="orientation|screenSize|layoutDirection"
+            android:exported="true" />
+        <activity
+            android:name=".YourSchooolPannel.SchoolMainActivity"
+            android:configChanges="orientation|screenSize|layoutDirection"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".YourSchooolPannel.SchoolCoachingSection.SchooRegisterMainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".YourSchooolPannel.SchoolLoginMainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".YourSchooolPannel.SchoolCoachingSection.SchoolCoachingSectionTutor.Fragment.School_CoaachingMainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".activity.MobileVerificationActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Teacher_Pannel.TeacherMainActivity"
+            android:configChanges="orientation|screenSize|layoutDirection"
+            android:windowSoftInputMode="adjustResize" />
+        <!--
+ <activity android:name=".Teacher.CreateCourseActivity" />
+        <activity android:name=".Teacher.ChooseQuestionActivity" />
+        <activity android:name=".Teacher.TestFreePaidActivity" />
+        <activity android:name=".Teacher.CreateTestActivity" />
+        -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".live.MeetingActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|layoutDirection" />
+        <activity
+            android:name=".live.LiveClassesActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|layoutDirection"/>
+        <activity
+            android:name=".activity.ChoiceActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".activity.SingUpActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.VerificationActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize|layoutDirection"
+            android:exported="true"
+            />
+        <!--        -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".services.UploadFileService" />
+        <service android:name=".Download.DownloadService" />
+        <service
+            android:name=".FireBaseMassaging"
+            android:directBootAware="true"
+            android:exported="false"
+            tools:targetApi="n">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/s_achievement" />
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/teal_200" />
+        </service>
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

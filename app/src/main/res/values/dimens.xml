@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_1dp">1dp</dimen>
+    <dimen name="space_2dp">2dp</dimen>
+    <dimen name="space_3dp">3dp</dimen>
+    <dimen name="space_4dp">4dp</dimen>
+    <dimen name="space_5dp">5dp</dimen>
+    <dimen name="space_6dp">6dp</dimen>
+    <dimen name="space_7dp">7dp</dimen>
+    <dimen name="space_8dp">8dp</dimen>
+    <dimen name="space_9dp">9dp</dimen>
+    <dimen name="space_10dp">10dp</dimen>
+    <dimen name="space_11dp">11dp</dimen>
+    <dimen name="space_12dp">12dp</dimen>
+    <dimen name="space_13dp">13dp</dimen>
+    <dimen name="space_14dp">14dp</dimen>
+    <dimen name="space_15dp">15dp</dimen>
+    <dimen name="space_16dp">16dp</dimen>
+    <dimen name="space_17dp">17dp</dimen>
+    <dimen name="space_18dp">18dp</dimen>
+    <dimen name="space_19dp">19dp</dimen>
+    <dimen name="space_20dp">20dp</dimen>
+    <dimen name="space_21dp">21dp</dimen>
+    <dimen name="space_22dp">22dp</dimen>
+    <dimen name="space_23dp">23dp</dimen>
+    <dimen name="space_24dp">24dp</dimen>
+    <dimen name="space_25dp">25dp</dimen>
+    <dimen name="space_26dp">26dp</dimen>
+    <dimen name="space_27dp">27dp</dimen>
+    <dimen name="space_28dp">28dp</dimen>
+    <dimen name="space_29dp">29dp</dimen>
+    <dimen name="space_30dp">30dp</dimen>
+
+
+
+    <dimen name="space_1sp">1sp</dimen>
+    <dimen name="space_2sp">2sp</dimen>
+    <dimen name="space_3sp">3sp</dimen>
+    <dimen name="space_4sp">4sp</dimen>
+    <dimen name="space_5sp">5sp</dimen>
+    <dimen name="space_6sp">6sp</dimen>
+    <dimen name="space_7sp">7sp</dimen>
+    <dimen name="space_8sp">8sp</dimen>
+    <dimen name="space_9sp">9sp</dimen>
+    <dimen name="space_10sp">10sp</dimen>
+    <dimen name="space_11sp">11sp</dimen>
+    <dimen name="space_12sp">12sp</dimen>
+    <dimen name="space_13sp">13sp</dimen>
+    <dimen name="space_14sp">14sp</dimen>
+    <dimen name="space_15sp">15sp</dimen>
+    <dimen name="space_16sp">16sp</dimen>
+    <dimen name="space_17sp">17sp</dimen>
+    <dimen name="space_18sp">18sp</dimen>
+    <dimen name="space_19sp">19sp</dimen>
+    <dimen name="space_20sp">20sp</dimen>
+    <dimen name="space_21sp">21sp</dimen>
+    <dimen name="space_22sp">22sp</dimen>
+    <dimen name="space_23sp">23sp</dimen>
+    <dimen name="space_24sp">24sp</dimen>
+    <dimen name="space_25sp">25sp</dimen>
+    <dimen name="space_26sp">26sp</dimen>
+    <dimen name="space_27sp">27sp</dimen>
+    <dimen name="space_28sp">28sp</dimen>
+    <dimen name="space_29sp">29sp</dimen>
+    <dimen name="space_30sp">30sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="text_size_XX_small">10sp</dimen>
+    <dimen name="text_size_XXX_small">8sp</dimen>
+    <dimen name="text_size_X_small">12sp</dimen>
+    <dimen name="text_size_small">13sp</dimen>
+    <dimen name="text_size_medium_small">14sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_page_title">20sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_x_large">28sp</dimen>
+    <dimen name="text_size_XX_large">34sp</dimen>
+    <dimen name="nav_view_textview_size">15sp</dimen>
+
+    <dimen name="space_1">1dp</dimen>
+    <dimen name="space_2">2dp</dimen>
+
+    <dimen name="space_3">3dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_5">5dp</dimen>
+    <dimen name="space_6">6dp</dimen>
+    <dimen name="space_7">7dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_9">9dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_11">11dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_13">13dp</dimen>
+    <dimen name="space_14">14dp</dimen>
+    <dimen name="space_15">15dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_17">17dp</dimen>
+    <dimen name="space_18">18dp</dimen>
+    <dimen name="space_19">19dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_25">25dp</dimen>
+    <dimen name="space_30">30dp</dimen>
+    <dimen name="space_40dp">40dp</dimen>
+    <dimen name="space_50dp">50dp</dimen>
+
+        <dimen name="reward_point_size">60dp</dimen>
+    <dimen name="reward_picture_size">100dp</dimen>
+    <dimen name="apply_coupon_code_layout_height">40dp</dimen>
+    <dimen name="select_payment_method">18dp</dimen>
+    <dimen name="confirm_order_button">32dp</dimen>
+    <dimen name="reward_point_layout_width">85dp</dimen>
+    <dimen name="tv_bold">25sp</dimen>
+    <dimen name="horizontal_text16sp">16sp</dimen>
+        <dimen name="login_logo_size120">90dp</dimen>
+        <dimen name="login_textsize">9pt</dimen>
+    <dimen name="all_tvsize16">16sp</dimen>
+        <dimen name="tv_14sp">14sp</dimen>
+    <dimen name="tv_bold_12pt">22sp</dimen>
+    <dimen name="all_iv_size40">50dp</dimen>
+    <dimen name="button_small_size">100dp</dimen>
+
+
+</resources>

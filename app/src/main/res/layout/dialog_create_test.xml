@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/space_8dp"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+
+        android:isScrollContainer="true">
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_edit_text_shadow_bg"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/space_10">
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_create_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:padding="4dp"
+                android:text="Create Test"
+                android:textAlignment="center"
+                android:textColor="@color/graient2"
+                android:textSize="18sp"
+                android:fontFamily="@font/sfuitext_bold" />
+            <View
+                android:layout_width="120dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/light_brown"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="@dimen/space_8dp"
+            android:padding="4dp"
+            android:text="Test Title*"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+           android:fontFamily="@font/sfuitext_semibold" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginTop="@dimen/space_8"
+            android:background="@drawable/drawable_edit_text_shadow_bg"
+            android:hint="Enter test title"
+            android:padding="@dimen/space_12"
+            android:textSize="@dimen/space_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_8dp"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="Duration*"
+            android:fontFamily="@font/sfuitext_semibold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+
+            android:id="@+id/tv_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:hint="00 min"
+            android:layout_marginTop="@dimen/space_8dp"
+            android:background="@drawable/drawable_edit_text_shadow_bg"
+            android:padding="@dimen/space_12"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfuitext_medium"
+            />
+
+        <TextView
+            android:layout_marginStart="@dimen/space_10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:text=" Date*"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfuitext_semibold"
+             />
+
+        <TextView
+
+            android:drawableTint="@color/black"
+            android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+            android:id="@+id/et_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginTop="@dimen/space_8"
+            android:background="@drawable/drawable_edit_text_shadow_bg"
+            android:hint="Select date  "
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfuitext_medium"
+            android:padding="@dimen/space_12"
+            android:textSize="@dimen/space_14" />
+        <TextView
+            android:layout_marginStart="@dimen/space_10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:text=" Time*"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfuitext_semibold"/>
+        <LinearLayout
+            android:weightSum="2"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/et_time1"
+                android:drawableTint="@color/grey"
+                android:drawableEnd="@drawable/ic_baseline_watch_later_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:hint="From"
+                android:textColor="@color/black"
+                android:padding="@dimen/space_12"
+                android:textSize="@dimen/space_14"
+                android:fontFamily="@font/sfuitext_medium"/>
+            <TextView
+                android:layout_weight="1"
+                android:drawableTint="@color/grey"
+                android:drawableEnd="@drawable/ic_baseline_watch_later_24"
+                android:id="@+id/et_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:hint=" To"
+                android:textColor="@color/black"
+                android:padding="@dimen/space_12"
+                android:textSize="@dimen/space_14"
+                android:fontFamily="@font/sfuitext_medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/mark_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_10dp"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="Total Marks*"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfuitext_semibold"/>
+
+        <TextView
+
+            android:id="@+id/tv_total_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@drawable/drawable_edit_text_shadow_bg"
+            android:padding="@dimen/space_12"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfuitext_medium"
+            android:textSize="@dimen/space_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_10dp"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="Passing Marks*"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+          android:fontFamily="@font/sfuitext_semibold" />
+
+        <EditText
+            android:id="@+id/et_passing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginTop="@dimen/space_10"
+            android:hint="Enter passing mark"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:background="@drawable/drawable_edit_text_shadow_bg"
+            android:padding="@dimen/space_12"
+            android:textColor="@color/black"
+            android:inputType="number" />
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:text="Create"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+          />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_10dp"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="Cancel"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/red"
+            android:fontFamily="@font/sfuitext_semibold"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+
+<!--</RelativeLayout>-->

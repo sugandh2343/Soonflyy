@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Teacher_Pannel.TeacherDPPFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_no_live"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_create_course"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:backgroundTint="@color/graient2"
+                                app:cardCornerRadius="@dimen/space_10dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/rel_test"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:layout_marginBottom="18dp"
+                                    android:background="@drawable/bg_button"
+                                    android:backgroundTint="@color/graient1"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/img_live"
+                                        android:layout_width="44dp"
+                                        android:layout_height="44dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/bg_circle_button"
+                                        android:backgroundTint="@color/red"
+                                        android:padding="@dimen/space_4"
+                                        android:src="@drawable/test_icon"
+                                        app:tint="@color/white" />
+
+                                    <TextView
+                                        android:id="@+id/tv_discription"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/img_live"
+                                        android:layout_centerInParent="true"
+                                        android:gravity="center"
+                                        android:text="Create Daily Practice Paper"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/space_22sp"
+                                       android:fontFamily="@font/sfuitext_semibold" />
+
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_showlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rec_dpp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/feb_dpp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:backgroundTint="@color/graient2"
+                            android:clickable="true"
+                            android:src="@drawable/ic_baseline_add_24"
+                            app:tint="@color/white">
+
+                        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

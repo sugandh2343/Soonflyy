@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:id="@+id/liner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="horizontal"
+                                android:id="@+id/lin_offer"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:elevation="4dp"
+                                android:background="@drawable/drawable_edit_text_shadow_bg"
+                                >
+                                <TextView
+                                        android:layout_weight="1.5"
+                                        android:textSize="16sp"
+                                        android:id="@+id/tv_courseoffer"
+                                        android:hint="Choose offer"
+                                        android:textColor="@color/black"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        />
+
+                                <ImageView
+                                        android:src="@drawable/ic_arrowup"
+                                        android:id="@+id/iv_dropup"
+                                        android:layout_weight="0.6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content"
+                                        app:tint="@color/black" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                                android:padding="@dimen/space_5dp"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="4dp"
+                                android:layout_height="wrap_content"
+                                 android:orientation="vertical">
+                                <SearchView
+                                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                                    android:id="@+id/search"
+                                        android:queryHint="Search..."
+                                    android:iconifiedByDefault="false"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp">
+
+                                </SearchView>
+                        </LinearLayout>
+                </LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_offerlist"
+                android:layout_width="match_parent"
+            android:paddingStart="@dimen/space_8dp"
+            android:paddingEnd="@dimen/space_8dp"
+                android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
+
+
+        </LinearLayout>
+</RelativeLayout>

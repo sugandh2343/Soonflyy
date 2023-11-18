@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/drawable_edit_text_shadow_bg"
+    android:backgroundTint="@color/light_grey">
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate Us"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:textColor="@color/graient2"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/sfuitext_bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="16dp"
+        />
+    <View
+        android:layout_gravity="center_horizontal"
+        android:background="@color/black"
+        android:layout_width="80dp"
+        android:layout_height="1dp"/>
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:numStars="5"
+        android:layout_marginTop="16dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textSize="14sp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="16dp"
+
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_5"
+        android:text="Cancel"
+       android:layout_gravity="center_horizontal"
+        android:textColor="@color/red"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:textSize="14sp" />
+
+
+
+</LinearLayout>

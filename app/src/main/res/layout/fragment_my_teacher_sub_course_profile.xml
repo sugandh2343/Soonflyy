@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Teacher_Pannel.MyTeacherPannel.AssigntTProfileDetailsFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white_smoke"
+                android:id="@+id/lin_pes_detail"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/layout_profileuser_name"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lin_pes_detail"
+                android:layout_marginTop="@dimen/space_15"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/layout_profile_about_detail"/>
+                <include layout="@layout/layout_profile_course_detail"/>
+                <include layout="@layout/layout_profile_subject_detail"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

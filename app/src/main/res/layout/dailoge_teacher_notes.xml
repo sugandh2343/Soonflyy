@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+                android:id="@+id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_marginEnd="@dimen/space_5"
+                android:layout_marginBottom="@dimen/space_5"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/space_10">
+
+                <LinearLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:padding="4dp"
+                                android:text="Upload Notes"
+                                android:textAlignment="center"
+                                android:textColor="@color/graient2"
+                                android:textSize="16sp"
+                               android:fontFamily="@font/sfuitext_bold" />
+                        <View
+                                android:layout_gravity="center"
+                                android:background="@color/black"
+                                android:layout_width="130dp"
+                                android:layout_height="1dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:layout_marginStart="@dimen/space_10dp"
+                            android:text="@string/note_title"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/sfuitext_semibold"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:background="@drawable/drawable_edit_text_shadow_bg"
+                            android:hint="Enter title"
+                            android:padding="@dimen/space_12"
+                            />
+
+                        <LinearLayout
+                                android:id="@+id/lin_sub"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space_4"
+                                android:elevation="@dimen/space_5"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="@dimen/space_10"
+                                android:visibility="visible">
+                                <ImageView
+                                        android:id="@+id/iv_sub"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:src="@drawable/upload_button" />
+                                <!--  </androidx.cardview.widget.CardView>-->
+
+                                <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/space_8"
+                                        android:text="@string/upload_your_file_here_choose_multiple_files_from_your_device_pdf_docx"
+                                        android:textAlignment="center"
+                                        android:textColor="#434242"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                        android:textSize="@dimen/space_12" />
+                                <TextView
+                                    android:id="@+id/tv_seleted_path"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/space_8"
+                                    android:text=""
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                    android:textSize="@dimen/space_12sp" />
+                                <RelativeLayout
+                                        android:visibility="gone"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <com.makeramen.roundedimageview.RoundedImageView
+                                                app:riv_corner_radius="12dp"
+                                                android:src="@color/red"
+                                                android:layout_centerInParent="true"
+                                                android:id="@+id/img_upload_img"
+                                                android:layout_width="120dp"
+                                                android:layout_height="120dp"/>
+
+                                        <ImageView
+                                                android:layout_width="@dimen/space_40dp"
+                                                android:layout_height="@dimen/space_40dp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_marginBottom="10dp"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_marginEnd="90dp"
+                                                android:src="@drawable/add_button" />
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_upload"
+                        android:layout_width="240dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="12dp"
+                        android:gravity="center"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                         />
+
+                <TextView
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_10dp"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:text="Cancel"
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/sfuitext_semibold" />
+
+
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_edit_text_shadow_bg"
+        android:backgroundTint="@color/white"
+        android:layout_margin="@dimen/space_8dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="4dp"
+            android:layout_margin="@dimen/space_8dp"
+               android:fontFamily="@font/sfuitext_bold"
+                android:text="Notice"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        <EditText
+
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/space_6"
+
+            android:background="@drawable/drawable_edit_text_shadow_bg"
+            android:gravity="top"
+            android:hint="Enter notice"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/space_12"
+            android:layout_marginStart="@dimen/space_8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black"
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_send"
+                android:layout_width="290dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:text="Sent"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+
+                />
+
+
+
+
+</LinearLayout>

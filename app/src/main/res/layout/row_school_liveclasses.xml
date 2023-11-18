@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/lin_main"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".Student_Pannel.TopicFragment">
+
+                <LinearLayout
+                        android:id="@+id/lin_topic"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_margin="@dimen/space_8dp">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                        android:id="@+id/thumbnail_image"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/logoo"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:riv_border_color="@color/light_gray"
+                                        app:riv_border_width="1dp"
+                                        app:riv_corner_radius="@dimen/space_15dp" />
+
+                                <TextView
+                                        android:id="@+id/tv_go_live"
+                                        android:layout_width="90dp"
+                                        android:layout_height="30dp"
+                                        android:background="@drawable/bg_button"
+                                        android:backgroundTint="@color/red"
+                                        android:drawableLeft="@drawable/ic_baseline_videocam_16"
+                                        android:fontFamily="@font/lexend"
+                                        android:gravity="center"
+                                        android:text="Go Live"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+
+                                        app:layout_constraintStart_toStartOf="@+id/thumbnail_image"
+                                        app:layout_constraintTop_toTopOf="@+id/thumbnail_image" />
+
+                                <TextView
+                                        android:id="@+id/tv_title"
+                                        android:layout_width="0dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginBottom="@dimen/space_8dp"
+                                        android:fontFamily="@font/lexend"
+                                        android:gravity="center"
+                                        android:paddingStart="@dimen/space_8"
+                                        android:text="Live class on Coordinate Geometry"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                        android:id="@+id/tv_duration"
+                                        android:layout_width="0dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginTop="4dp"
+
+                                        android:layout_marginBottom="@dimen/space_8dp"
+                                        android:fontFamily="@font/lexend"
+                                        android:gravity="center"
+                                        android:padding="4dp"
+                                        android:paddingStart="@dimen/space_8"
+                                        android:text="Duration:40min"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+                                <RelativeLayout
+                                        android:id="@+id/rel_manage"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:orientation="vertical"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <ImageView
+                                                android:id="@+id/img_edit"
+                                                android:layout_width="@dimen/space_30dp"
+                                                android:layout_height="@dimen/space_30dp"
+                                                android:layout_alignParentEnd="true"
+                                                android:padding="6dp"
+                                                android:src="@drawable/menu_icon"
+                                                app:tint="@color/black" />
+
+                                        <androidx.cardview.widget.CardView
+                                                android:id="@+id/cv_edi"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignStart="@+id/img_edit"
+                                                android:layout_marginStart="-71dp"
+                                                android:layout_marginTop="@dimen/space_10"
+                                                android:layout_marginEnd="0dp"
+                                                android:padding="3dp"
+                                                android:visibility="gone"
+                                                app:cardCornerRadius="6dp">
+
+                                                <LinearLayout
+                                                        android:id="@+id/liner_edit"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:orientation="vertical">
+
+                                                        <TextView
+                                                                android:id="@+id/dailog_edit"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:drawableStart="@drawable/ic_baseline_edit_24"
+                                                                android:drawablePadding="@dimen/space_3"
+                                                                app:drawableTint="@color/black"
+                                                                android:padding="@dimen/space_3"
+                                                                android:text="Edit"
+                                                                android:textAllCaps="false"
+                                                                android:textColor="@color/black"
+                                                                android:textSize="14sp"
+                                                                android:textStyle="normal"
+
+                                                                tools:ignore="ObsoleteLayoutParam" />
+
+                                                        <View
+
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="2dp"
+                                                                android:background="@color/gray" />
+
+                                                        <TextView
+                                                                android:id="@+id/dailog_delete"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_below="@id/dailog_edit"
+                                                                android:layout_gravity="center"
+                                                                android:drawableTint="@color/red"
+                                                                android:gravity="center"
+                                                                android:text="Delete"
+                                                                android:textAlignment="center"
+                                                                android:textAllCaps="false"
+                                                                android:textColor="@color/red"
+                                                                android:textSize="12sp"
+                                                                android:textStyle="normal"
+                                                                app:drawableStartCompat="@drawable/ic_baseline_delete_24"
+                                                                app:drawableTint="@color/red"
+                                                                tools:ignore="ObsoleteLayoutParam" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                </RelativeLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>

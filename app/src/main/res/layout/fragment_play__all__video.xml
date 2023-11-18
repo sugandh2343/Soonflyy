@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Common_Package.Play_All_VideoFragment">
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:id="@+id/container_player">-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--        <FrameLayout-->
+
+        <!--            android:id="@+id/video_container"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content">-->
+        <RelativeLayout
+            android:id="@+id/video_container"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/player_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:layout_alignParentTop="true"
+                app:controller_layout_id="@layout/custom_palback_controller"
+                />
+        </RelativeLayout>
+
+        <!--       // </FrameLayout>-->
+        <!--        <ProgressBar-->
+        <!--            android:visibility="gone"-->
+        <!--            android:id="@+id/loading_exoplayer"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            />-->
+        <!--    </RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_below="@+id/video_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lin_relative_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/player_view"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/lin_download"
+                    android:layout_marginTop="@dimen/space_6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="13sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/sfuitext_medium"
+                        android:text="Video on Internet Of thing"
+                        android:id="@+id/tv_title"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="@dimen/space_8dp"
+                        android:textColor="@color/white"
+                        android:text="Download"
+                        android:fontFamily="@font/sfuitext_medium"
+                        android:drawableEnd="@drawable/ic_baseline_download_24"
+
+                        android:background="@drawable/button_bg"
+
+                        android:id="@+id/tv_download"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray"
+                    android:layout_margin="@dimen/space_1dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/sfuitext_semibold"
+                    android:textColor="@color/graient2"
+                    android:text="Related Video" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rec_relatedVideo"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".Common_Package.Play_All_VideoFragment">-->
+
+
+<!--&lt;!&ndash;    <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="200dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/container_player">&ndash;&gt;-->
+
+<!--        <com.google.android.exoplayer2.ui.PlayerView-->
+<!--            android:id="@+id/player_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            app:controller_layout_id="@layout/custom_palback_controller"-->
+<!--            app:hide_on_touch="true"-->
+<!--            app:keep_content_on_player_reset="false" />-->
+<!--&lt;!&ndash;        <ProgressBar&ndash;&gt;-->
+<!--&lt;!&ndash;            android:visibility="gone"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/loading_exoplayer"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_centerInParent="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            />&ndash;&gt;-->
+<!--&lt;!&ndash;    </RelativeLayout>&ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/lin_relative_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@id/player_view"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:orientation="vertical">-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/lin_download"-->
+<!--        android:layout_marginTop="@dimen/space_6dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="4dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        <TextView-->
+
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:textSize="13sp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:fontFamily="@font/sfuitext_medium"-->
+<!--            android:text="Video on Internet Of thing"-->
+<!--            android:id="@+id/tv_title"/>-->
+<!--        <TextView-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:textSize="13sp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--            android:layout_marginEnd="@dimen/space_8dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:text="Download"-->
+<!--            android:fontFamily="@font/sfuitext_medium"-->
+<!--            android:drawableEnd="@drawable/ic_baseline_download_24"-->
+
+<!--            android:background="@drawable/button_bg"-->
+
+<!--        android:id="@+id/tv_download"/>-->
+<!--    </LinearLayout>-->
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="@color/gray"-->
+<!--        android:layout_margin="@dimen/space_1dp"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="13sp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:layout_marginStart="12dp"-->
+<!--        android:fontFamily="@font/sfuitext_semibold"-->
+<!--        android:textColor="@color/graient2"-->
+<!--        android:text="Related Video" />-->
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/rec_relatedVideo"/>-->
+<!--    </LinearLayout>-->
+<!--</LinearLayout>-->

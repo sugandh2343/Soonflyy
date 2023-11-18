@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_main"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+        <androidx.cardview.widget.CardView
+                android:id="@+id/card_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/space_5"
+                android:backgroundTint="@color/light_grey"
+                app:cardCornerRadius="@dimen/space_15">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                        android:id="@+id/img"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/test_edit"
+                                        app:layout_constraintVertical_bias="0.32"
+                                        />
+
+                                <LinearLayout
+                                        android:id="@+id/lin_chapter"
+                                        android:padding="8dp"
+                                        android:layout_weight="3"
+                                        android:gravity="center"
+                                        android:weightSum="2"
+                                        app:layout_constraintStart_toEndOf="@id/img"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                                android:layout_weight="1.5"
+                                                android:id="@+id/header_tittle_tv"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="Name"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                />
+
+                                        <TextView
+                                                android:id="@+id/tv_message"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight=".5"
+                                                android:background="@drawable/bg_button"
+                                                android:padding="@dimen/space_5"
+                                                android:text="Open"
+                                                android:textAlignment="center"
+                                                android:textAllCaps="false"
+                                                android:textColor="@color/white"
+                                                android:textSize="12sp" />
+
+
+                                </LinearLayout>
+                                <ImageView
+                                        android:layout_gravity="end"
+                                        android:id="@+id/img_edit"
+                                        android:padding="10dp"
+                                        android:src="@drawable/menu_icon"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_width="@dimen/space_30dp"
+                                        android:layout_height="@dimen/space_30dp"/>
+                                <androidx.cardview.widget.CardView
+                                        android:id="@+id/cv_edi"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="-81dp"
+                                        android:layout_alignLeft="@+id/img_edit"
+                                        android:layout_width="83dp"
+                                        android:layout_marginTop="@dimen/space_10"
+                                        android:layout_height="wrap_content"
+                                        android:padding="4dp">
+
+                                        <LinearLayout
+                                                android:id="@+id/liner_edit"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical"
+                                                >
+
+                                                <TextView
+                                                        android:visibility="gone"
+                                                        android:id="@+id/dailog_edit"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:drawableStart="@drawable/ic_baseline_edit_24"
+                                                        android:drawablePadding="@dimen/space_3"
+                                                        android:text="Edit"
+                                                        android:textAllCaps="false"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="14sp"
+                                                        android:textStyle="normal"
+                                                        app:drawableTint="@color/black"
+                                                        android:padding="@dimen/space_3"
+                                                        tools:ignore="ObsoleteLayoutParam" />
+
+                                                <View
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="1dp"
+                                                        android:background="@color/gray" />
+
+                                                <TextView
+                                                        android:drawableTint="@color/red"
+                                                        android:id="@+id/dailog_delete"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_below="@id/dailog_edit"
+
+                                                        android:drawableStart="@drawable/ic_baseline_delete_24"
+
+                                                        android:text="Delete"
+
+                                                        android:textAllCaps="false"
+                                                        android:textColor="@color/red"
+                                                        android:textSize="14sp"
+                                                        android:textStyle="normal"
+                                                        app:drawableTint="@color/red"
+                                                        tools:ignore="ObsoleteLayoutParam" />
+                                        </LinearLayout>
+                                </androidx.cardview.widget.CardView
+                                        >
+
+
+                        </LinearLayout>
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

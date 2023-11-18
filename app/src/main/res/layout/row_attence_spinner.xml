@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_text"
+            android:layout_marginStart="@dimen/space_2"
+            android:buttonTint="@color/graient1"
+            android:textSize="@dimen/space_12sp"
+            android:fontFamily="@font/sfuitext_semibold"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="My Teachers (Assigned to)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+        <View
+            android:id="@+id/bottom_line"
+            android:background="@color/white_smoke"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

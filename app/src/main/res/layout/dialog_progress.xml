@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="@dimen/space_50dp"
+        android:layout_height="@dimen/space_50dp"
+
+        app:cpb_background_progressbar_color="@color/white"
+        app:cpb_background_progressbar_width="3dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="@color/primary_color"
+        app:cpb_progressbar_width="5dp"
+        app:cpb_round_border="false" />
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textSize="@dimen/space_16sp"
+            android:fontFamily="@font/sfuitext_semibold"
+
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

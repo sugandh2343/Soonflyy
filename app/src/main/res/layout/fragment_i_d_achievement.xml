@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".Common_Package.IDSection.IDAchievementFragment">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ><RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nested_scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="true">
+
+                        <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+<RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/rel_button"
+        android:id="@+id/rel_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+                android:id="@+id/lin_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:padding="4dp"
+                        android:text="Add achievements details"
+                        android:textAlignment="center"
+                        android:textColor="@color/graient2"
+                        android:textSize="16sp"
+                       android:fontFamily="@font/sfuitext_bold" />
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_achievement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rec_achievement"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/graient2"
+                        android:clickable="true"
+                        android:src="@drawable/ic_baseline_add_24"
+                        app:tint="@color/white" />
+
+
+                </RelativeLayout>
+        </LinearLayout>
+
+</RelativeLayout>
+                           <RelativeLayout
+                                   android:gravity="center"
+                                   android:id="@+id/rel_button"
+                                   android:layout_centerInParent="true"
+                                    android:layout_alignParentBottom="true"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content">
+
+                               <androidx.appcompat.widget.AppCompatButton
+                                   android:id="@+id/fab_add"
+                                   android:layout_width="200dp"
+                                   android:layout_height="wrap_content"
+
+                                   android:padding="4dp"
+                                   android:text="@string/submit"
+                                   android:textAllCaps="false"
+                                   android:textColor="@color/white"
+                                 >
+
+                               </androidx.appcompat.widget.AppCompatButton>
+
+                           </RelativeLayout>
+
+                        </RelativeLayout>
+                </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Teacher_Pannel.T_Subject_ChaptersFragment">
+
+    <LinearLayout
+        android:id="@+id/lin_data"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/refresh_layout">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include
+                    android:id="@+id/include_assign_sub"
+                    layout="@layout/layout_assign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <include
+                    android:id="@+id/include_assign_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/row_assign_profile_layout"
+                    android:visibility="gone" />
+                <include
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/include_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/notice_layout"
+                    android:visibility="visible" />
+
+                <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nested_scroll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_today_title"
+                    android:layout_marginStart="@dimen/space_8dp"
+                    android:layout_marginTop="@dimen/space_8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today's Live Class"
+                    android:textSize="@dimen/space_16sp"
+                   android:fontFamily="@font/sfuitext_semibold"
+                    android:textColor="@color/black"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_live"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/space_8dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Chapters"
+                    android:gravity="center"
+                    android:background="@drawable/bg_round_red_outline"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/space_14sp"
+                    android:elevation="@dimen/space_5dp"
+                    android:fontFamily="@font/sfuitext_semibold"
+                    android:textColor="@color/graient1"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="@dimen/space_6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:id="@+id/rec_chapter"/>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/add_chapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/graient2"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/space_8dp"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.89"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.937">-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/add_chapter"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/graient2"-->
+<!--            android:src="@drawable/ic_baseline_add_24"-->
+<!--            app:tint="@color/white" />-->
+<!--    </LinearLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

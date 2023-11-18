@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                        android:id="@+id/tv_title"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="4dp"
+                        android:layout_marginStart="5dp"
+
+                    android:hint="Social media title"
+                    android:background="@color/white"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                       android:textStyle="bold"/>
+                <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_6dp"
+                    android:layout_marginEnd="@dimen/space_6dp"
+                    android:background="@drawable/drawable_edit_text_shadow_bg">
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/cancel_image"
+                            android:background="@color/white_smoke"
+                            android:hint="Enter here "
+                            android:padding="@dimen/space_10"
+                            android:text="" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/cancel_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end|top"
+                            android:layout_marginStart="6dp"
+                            android:src="@drawable/ic_baseline_cancel_24" />
+
+                </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+</RelativeLayout>

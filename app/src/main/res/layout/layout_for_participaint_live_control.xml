@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="65dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:gravity="center"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/edit_box_round_corner"
+    android:backgroundTint="#CC000000">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_mic"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mute"
+        android:textSize="10sp"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:drawableTint="@color/white"
+        android:drawableTop="@drawable/ic_mic_on"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_discussion"
+        android:layout_marginEnd="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discussion"
+        android:textSize="10sp"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:drawableTint="@color/white"
+        android:drawableTop="@drawable/ic_baseline_message_24"/>
+
+
+
+    <TextView
+
+        android:id="@+id/tv_leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit Class"
+        android:textSize="10sp"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:drawableTop="@drawable/baseline_logout_24"/>
+
+
+</LinearLayout>

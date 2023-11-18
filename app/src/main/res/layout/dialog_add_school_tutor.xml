@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_edit_text_shadow_bg"
+    android:backgroundTint="@color/white"
+    android:layout_margin="@dimen/space_8dp"
+    android:padding="@dimen/space_8dp">
+    <TextView
+        android:id="@+id/tv_udpate_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:padding="4dp"
+        android:text="Add New Tutor"
+        android:gravity="center"
+        android:textColor="@color/graient2"
+        android:textSize="18sp"
+        android:fontFamily="@font/sfuitext_bold" />
+    <View
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/light_brown"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="@dimen/space_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+
+                    android:text="Mobile Number"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sfuitext_semibold"  />
+
+                <EditText
+
+                    android:id="@+id/et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                    android:hint="Enter mobile number"
+                    android:padding="@dimen/space_12"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    />
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:text="Tutor's Name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:visibility="visible"
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                    android:hint="Enter tutor's name"
+                    android:padding="@dimen/space_12"
+                    android:textSize="@dimen/space_16" />
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:text="Email -id"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:visibility="visible"
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                    android:hint="Enter email-id"
+                    android:padding="@dimen/space_12"
+                    android:textSize="@dimen/space_16" />
+                <TextView
+
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:text="Father's Name"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:visibility="visible"
+                    android:id="@+id/et_father_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                    android:hint="Enter father's name"
+                    android:padding="@dimen/space_12"
+                    android:textSize="@dimen/space_16" />
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:text="Date of Birth"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                    android:hint="Enter date of birth"
+                    android:padding="@dimen/space_12"
+                    android:textSize="@dimen/space_16" />
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:text="Address"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:visibility="visible"
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                    android:hint="Enter address"
+                    android:padding="@dimen/space_12"
+                    android:textSize="@dimen/space_16" />
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add"
+                android:layout_width="290dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10dp"
+                android:layout_marginTop="@dimen/space_5"
+                android:text="Cancel"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/space_8dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/red"
+                android:fontFamily="@font/sfuitext_semibold"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

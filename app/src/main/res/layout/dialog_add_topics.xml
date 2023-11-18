@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/drawable_edit_text_shadow_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cancel_btn"
+            android:layout_width="25dp"
+            android:layout_height="@dimen/space_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/space_2dp"
+            android:layout_marginTop="@dimen/space_2dp"
+            android:layout_marginEnd="@dimen/space_2dp"
+            android:layout_marginBottom="@dimen/space_2dp"
+            android:src="@drawable/ic_baseline_cancel_24"
+            app:tint="@color/primary_color" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_16dp"
+            android:layout_marginRight="@dimen/space_16dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:text="@string/topic_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_14" />
+
+            <EditText
+                android:id="@+id/et_topic_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:gravity="center"
+                android:hint="@string/Enter_topic_name"
+                android:padding="@dimen/space_12"
+                android:textSize="@dimen/space_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8dp"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/space_10">
+
+                    <TextView
+                        android:id="@+id/tv_upload_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_baseline_slow_motion_video_black_24dp"
+                        android:drawablePadding="@dimen/space_5"
+                        android:drawableTint="@color/primary_color"
+                        android:padding="@dimen/space_3"
+                        android:text="Upload Vidoes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_14" />
+
+                    <ImageView
+                        android:id="@+id/iv_video"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:src="@drawable/ic_baseline_arrow_up_24"
+                        app:tint="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_2dp"
+                    android:layout_marginTop="@dimen/space_2dp"
+                    android:background="@color/light_grey" />
+
+                <LinearLayout
+                    android:id="@+id/lin_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:elevation="@dimen/space_5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_10"
+                    android:visibility="visible">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_upload_video"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/upload_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_8"
+                        android:text="Upload your file here,Choose file for creating a videolist"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/space_12" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_video_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_5dp"
+                            android:text="Selected Videos"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_12" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rc_select_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_uploaded_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_5dp"
+                            android:text="Uploaded Videos"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_12" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rc_uploaded_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_2dp"
+                    android:layout_marginTop="@dimen/space_2dp"
+                    android:background="@color/light_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/space_10">
+
+                    <TextView
+                        android:id="@+id/tv_upload_pdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/pdf_26px"
+                        android:drawablePadding="@dimen/space_5"
+                        android:drawableTint="@color/primary_color"
+                        android:padding="@dimen/space_3"
+                        android:text="Upload Pdf"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_14" />
+
+                    <ImageView
+                        android:id="@+id/iv_pdf"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:src="@drawable/ic_baseline_arrow_up_24"
+                        app:tint="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8dp"
+                android:text="@string/Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_14" />
+
+            <EditText
+                android:id="@+id/et_detail"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:gravity="top"
+                android:hint="Enter Details"
+                android:padding="@dimen/space_10"
+                android:textSize="@dimen/space_16" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/add_topic_tv"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="@dimen/space_4dp"
+        android:layout_marginStart="@dimen/space_4dp"
+        android:layout_marginBottom="@dimen/space_4dp"
+        android:backgroundTint="@color/primary_color"
+        android:background="@drawable/drawable_rectangle_button_black_15dp_bg"
+        android:gravity="center"
+        android:text="Add Topic"
+        android:textColor="@color/white"
+        android:textSize="@dimen/space_15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

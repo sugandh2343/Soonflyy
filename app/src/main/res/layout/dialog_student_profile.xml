@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="@dimen/space_5dp"
+        android:layout_marginTop="@dimen/space_5dp"
+        android:layout_marginEnd="@dimen/space_5dp"
+        android:layout_marginBottom="@dimen/space_5dp"
+        android:src="@drawable/ic_baseline_cancel_24"
+         />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancel_btn">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/signup_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Details"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_18sp"
+               android:fontFamily="@font/sfuitext_bold" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:background="@drawable/bottom_line"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="@dimen/space_10dp"
+                android:hint="Your Name"
+                android:textColor="@color/black"
+
+                app:drawableTint="@color/black" />
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/et_mobile_num"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bottom_line"
+                android:drawableStart="@drawable/ic_baseline_phone_iphone_light_black_24dp"
+                android:drawablePadding="@dimen/space_10dp"
+                android:drawableTint="@color/black"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bottom_line"
+                android:drawableStart="@drawable/ic_baseline_mail_light_black_24dp"
+                android:drawablePadding="@dimen/space_10dp"
+                android:drawableTint="@color/black"
+                android:hint="Email-ID"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+               />
+
+
+
+            <LinearLayout
+                android:id="@+id/lin_teacher_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/space_16dp"
+                    android:background="@drawable/bottom_line"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="@dimen/space_10dp"
+                    android:hint="City"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_16sp"
+                    app:drawableTint="@color/black" />
+                <EditText
+                    android:id="@+id/et_district"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/space_16dp"
+                    android:background="@drawable/bottom_line"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="@dimen/space_10dp"
+                    android:hint="District"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_16sp"
+                    app:drawableTint="@color/black" />
+                <EditText
+                    android:id="@+id/et_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/space_16dp"
+                    android:background="@drawable/bottom_line"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="@dimen/space_10dp"
+                    android:hint="State"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_16sp"
+                    app:drawableTint="@color/black" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_stdentfield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_father"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/space_16dp"
+                android:background="@drawable/bottom_line"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="@dimen/space_10dp"
+                android:hint="Father's Name"
+                android:textColor="@color/black"
+
+                app:drawableTint="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/space_16dp"
+                android:background="@drawable/bottom_line"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+                android:drawablePadding="@dimen/space_10dp"
+                android:hint="Date of birth"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_14sp"
+                android:fontFamily="@font/sfuitext_medium"
+                app:drawableTint="@color/black" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_workplace"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/space_16dp"
+                android:background="@drawable/bottom_line"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                android:drawableStart="@drawable/ic_baseline_assignment_24"
+                android:drawablePadding="@dimen/space_10dp"
+                android:hint="Your Workplace"
+                android:textColor="@color/black"
+                app:drawableTint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lin_gender">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_1"
+                android:layout_marginTop="@dimen/space_16dp"
+                android:layout_marginRight="@dimen/space_10dp"
+                android:text="Select Gender"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sfuitext_semibold" />
+
+
+            <RadioGroup
+                android:id="@+id/coruse_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_8">
+
+                <RadioButton
+                    android:id="@+id/male_r_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="8dp"
+                    android:text="Male"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_14sp"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:theme="@style/RadioBtnStyle" />
+
+                <RadioButton
+                    android:id="@+id/female_r_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_8"
+                    android:padding="@dimen/space_8dp"
+                    android:text="@string/female"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:textSize="@dimen/space_14sp"
+                    android:theme="@style/RadioBtnStyle" />
+            </RadioGroup>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_update"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space_16dp"
+                android:layout_marginBottom="10dp"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+
+        android:background="@color/purple_500"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+                android:layout_margin="5dp"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+                <LinearLayout
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="6dp"
+                        android:padding="5dp"
+                        android:gravity="start"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:id="@+id/iv_back"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/ic_baseline_arrow_back_black_24dp"
+                                app:tint="@color/white" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="true"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.SearchView
+                                        android:id="@+id/et_search"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginStart="6dp"
+                                    android:backgroundTint="@color/bg_circle"
+                                    android:layout_marginEnd="1dp"
+                                    android:background="@drawable/drawable_stroke_gray_bg"
+                                    app:queryHint="Search....."
+                                    app:searchIcon="@drawable/ic_baseline_search_24"
+                                    app:searchHintIcon="@drawable/ic_baseline_search_gray_24dp"
+                                    app:iconifiedByDefault="false"
+                                    android:inputType="text"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="10dp"
+
+                                    android:textSize="14sp"/>
+                        </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                                android:id="@+id/img_message"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/bg_cart_circle"
+                                android:backgroundTint="@color/bg_circle"
+                                android:padding="10dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                app:srcCompat="@drawable/ic_baseline_chat_24"
+                                app:tint="@color/white" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/iv_profile"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/profile"
+                            app:civ_circle_background_color="@color/white"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.225"
+                                app:layout_constraintStart_toEndOf="@+id/message_img"
+
+                                app:layout_constraintVertical_bias="0.0"
+                                tools:ignore="MissingConstraints">
+
+                        </de.hdodenhof.circleimageview.CircleImageView>
+                </LinearLayout>
+       </LinearLayout>
+
+
+
+        <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/bottom_line_view_shadow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+</LinearLayout>

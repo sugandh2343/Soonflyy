@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/card_main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/space_10"
+                app:cardBackgroundColor="@color/light_grey"
+                android:elevation="@dimen/space_5"
+                app:cardCornerRadius="@dimen/space_1">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <ImageView
+                                        android:id="@+id/img"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/test_list_icon"
+                                        app:layout_constraintVertical_bias="0.32" />
+
+                                <LinearLayout
+                                        android:id="@+id/lin_manage"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="2"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:padding="8dp"
+                                        android:weightSum="2"
+                                        app:layout_constraintStart_toEndOf="@id/img">
+
+                                        <TextView
+                                                android:id="@+id/header_tittle_tv"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1.2"
+                                                android:text="Name"
+                                                android:layout_marginEnd="4dp"
+                                                android:textColor="@color/black"
+                                            android:fontFamily="@font/sfuitext_semibold"
+                                                android:textSize="14sp" />
+
+                                        <TextView
+                                                android:id="@+id/tv_message"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight=".8"
+                                                android:background="@drawable/bg_button"
+                                                android:padding="@dimen/space_5"
+                                                android:text="See Details"
+                                                android:textAlignment="center"
+                                                android:textAllCaps="false"
+                                            android:fontFamily="@font/sfuitext_medium"
+                                                android:textColor="@color/white"
+                                                android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                        android:visibility="gone"
+                                        android:id="@+id/img_edit"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:padding="4dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/menu_icon"
+                                        app:tint="@color/black" />
+
+                                <androidx.cardview.widget.CardView
+                                        android:id="@+id/cv_edi"
+                                        android:layout_width="92dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="-91dp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:background="@color/white"
+                                        android:padding="4dp"
+                                        android:visibility="gone"
+                                        app:cardCornerRadius="8dp">
+
+                                        <LinearLayout
+
+                                                android:id="@+id/liner_edit"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical"
+                                                android:padding="4dp">
+
+                                                <LinearLayout
+                                                        android:id="@+id/line_edit"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:orientation="vertical">
+
+                                                        <TextView
+                                                                android:id="@+id/dailog_edit"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:drawableStart="@drawable/ic_baseline_edit_24"
+                                                                android:drawablePadding="@dimen/space_3"
+                                                                android:padding="@dimen/space_6"
+                                                                android:text="Edit"
+                                                                android:textAllCaps="false"
+                                                                android:textColor="@color/black"
+                                                                android:textSize="14sp"
+                                                                android:textStyle="normal"
+                                                                app:drawableTint="@color/black"
+
+                                                                tools:ignore="ObsoleteLayoutParam" />
+
+                                                        <View
+                                                                android:layout_width="wrap_content"
+
+                                                                android:layout_height="2dp"
+                                                                android:layout_below="@id/dailog_edit"
+                                                                android:layout_gravity="center"
+                                                                android:layout_marginStart="4dp"
+                                                                android:background="@color/gray" />
+
+                                                </LinearLayout>
+
+                                                <TextView
+                                                        android:id="@+id/dailog_delete"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:padding="3dp"
+                                                        android:text="Delete"
+                                                        android:textAllCaps="false"
+                                                        android:textColor="@color/red"
+                                                        android:textSize="14sp"
+                                                        android:textStyle="normal"
+                                                        app:drawableStartCompat="@drawable/ic_baseline_delete_24"
+                                                        app:drawableTint="@color/red"
+                                                        tools:ignore="ObsoleteLayoutParam" />
+                                        </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

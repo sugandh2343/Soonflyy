@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:id="@+id/liner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_5"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginEnd="@dimen/space_5"
+            android:layout_marginBottom="@dimen/space_5"
+            android:background="@drawable/drawable_edit_text_shadow_bg"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/space_10">
+
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/sfuitext_semibold"
+                            android:padding="4dp"
+                            android:text="Create Course"
+                            android:textAlignment="center"
+                            android:textColor="@color/graient2"
+                            android:textSize="20sp" />
+                        <View
+                            android:layout_marginTop="-4dp"
+                            android:layout_width="150dp"
+                            android:layout_height="@dimen/space_1dp"
+                            android:layout_gravity="center_horizontal"
+                                android:background="@color/black"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfuitext_semibold"
+                    android:padding="4dp"
+                    android:text="Course Title*"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                    android:enabled="false"
+                    android:hint="Enter test title"
+                    android:padding="@dimen/space_12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_10dp"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:fontFamily="@font/sfuitext_semibold"
+                    android:text=" Course Type*"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+
+                <LinearLayout
+                    android:id="@+id/liner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+
+                            android:elevation="1dp">
+
+
+                                <Spinner
+                                    android:id="@+id/type_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:autofillHints="Select your Company Name"
+                                    android:overlapAnchor="false">
+
+                                </Spinner>
+
+                                <TextView
+                                    android:id="@+id/tpe_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+                                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_black_24dp"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                    android:gravity="center_vertical"
+                                    android:hint="Type"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/space_12"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    tools:ignore="TextViewEdits" />
+
+                        </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_10dp"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:fontFamily="@font/sfuitext_semibold"
+                    android:text="Course Amount (Rs)*"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                    android:hint="Enter amount"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/space_12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_10dp"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="Discount Amount (Rs)"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                 android:fontFamily="@font/sfuitext_semibold"/>
+
+                <EditText
+                    android:id="@+id/et_disamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                    android:hint="Enter discount"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/space_12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_14" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_save"
+                    android:layout_width="290dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="12dp"
+                    android:gravity="center"
+                    android:text="Create Course"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                  />
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_10dp"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="Back"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+
+        </LinearLayout>
+</RelativeLayout>

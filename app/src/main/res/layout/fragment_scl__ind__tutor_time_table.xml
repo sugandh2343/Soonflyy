@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".YourSchooolPannel.School_IndepentTutorSection.Fragment.Scl_Ind_TutorTimeTableFragment">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/feb_addtimetable"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_50dp"
+                            android:background="@color/primary_color"
+                            android:elevation="@dimen/space_2dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/iv_back"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:src="@drawable/ic_arrow_back" />
+
+                                <TextView
+                                    android:id="@+id/tv_title_test"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_toEndOf="@+id/iv_back"
+                                    android:fontFamily="@font/sfuitext_semibold"
+                                    android:text="Time Table"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/space_18sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_test_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="10dp"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_date_filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edit_box_round_corner"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:padding="@dimen/space_4"
+                                    android:src="@drawable/ic_baseline_filter_list_24"
+                                    app:tint="@color/gray" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_fdate"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/img_live"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="2dp"
+                                    android:fontFamily="@font/sfuitext_semibold"
+                                    android:text="WedNesDay"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/space_12sp" />
+
+                                <ImageView
+                                    android:id="@+id/iv_day_icon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:src="@drawable/ic_arrow_down_24"
+                                    app:tint="@color/gray" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/black"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:weightSum="3">
+
+                                <TextView
+
+                                    android:id="@+id/tv_period"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".6"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/sfuitext_semibold"
+                                    android:gravity="center"
+                                    android:text="Period"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/space_13sp" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/space_1dp"
+                                    android:background="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/tv_subject"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.2"
+                                    android:fontFamily="@font/sfuitext_semibold"
+                                    android:gravity="center"
+
+                                    android:text="Subject"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/space_13sp"
+
+                                    />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/tv_time"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.2"
+                                    android:fontFamily="@font/sfuitext_semibold"
+                                    android:gravity="center"
+                                    android:text="Time"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/space_13sp"
+
+                                    />
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rec_time_table"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="40dp"
+                            android:orientation="vertical"
+                            android:text="Update"
+                            android:textColor="@color/white"
+                            android:visibility="gone">
+
+                        </androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/feb_addtimetable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:backgroundTint="@color/graient2"
+                        android:clickable="true"
+                        android:src="@drawable/ic_baseline_add_24"
+                        app:tint="@color/white">
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        </RelativeLayout>
+
+</RelativeLayout>

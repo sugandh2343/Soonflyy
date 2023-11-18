@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin_topic"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                        android:padding="4dp"
+                        android:src="@drawable/menu_icon"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="@dimen/space_30dp"
+                        android:layout_height="@dimen/space_30dp"/>
+                <RelativeLayout
+                        android:padding="6dp"
+                        android:id="@+id/rel_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="14dp">
+
+                        <RelativeLayout
+                                android:elevation="3dp"
+                                android:padding="@dimen/space_5"
+                                android:gravity="center"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+<!--                                <LinearLayout-->
+<!--                                        android:orientation="vertical"-->
+<!--                                        android:layout_alignParentTop="true"-->
+<!--                                        android:layout_centerInParent="true"-->
+<!--                                        android:id="@+id/rel_btn_live"-->
+<!--                                        android:layout_marginEnd="40dp"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+
+<!--                                        android:visibility="visible">-->
+<!--                                        <LinearLayout-->
+<!--                                                android:orientation="vertical"-->
+<!--                                                android:background="@drawable/bg_button"-->
+<!--                                                android:backgroundTint="@color/red"-->
+<!--                                                android:elevation="8dp"-->
+<!--                                                android:padding="@dimen/space_5"-->
+<!--                                                android:layout_width="wrap_content"-->
+<!--                                                android:layout_height="39dp">-->
+<!--                                                <TextView-->
+<!--                                                        android:id="@+id/tv_new"-->
+<!--                                                        android:layout_width="wrap_content"-->
+<!--                                                        android:layout_height="wrap_content"-->
+<!--                                                        android:drawableStart="@drawable/ic_live"-->
+<!--                                                        android:drawablePadding="@dimen/space_5dp"-->
+<!--                                                        android:drawableTint="@color/white"-->
+<!--                                                        android:gravity="center"-->
+<!--                                                        android:padding="6dp"-->
+<!--                                                        android:text="@string/go_live"-->
+<!--                                                        android:textColor="@color/white"-->
+<!--                                                        android:textSize="12sp"-->
+<!--                                                        android:textStyle="bold" />-->
+<!--                                        </LinearLayout>-->
+
+<!--                                    -->
+
+<!--                                </LinearLayout>-->
+
+                                <LinearLayout
+                                        android:weightSum="3"
+                                        android:gravity="center"
+                                        android:id="@+id/rel"
+                                        android:background="@color/color_dark_gray"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="90dp"
+                                        android:orientation="horizontal"
+
+                                        >
+
+                                        <TextView
+                                                android:layout_weight="1.8"
+
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="start"
+                                                android:padding="4dp"
+                                                android:text="Live Class on Cloud computing"
+                                                android:textColor="@color/white"
+                                                android:textSize="16sp"
+                                                android:textStyle="bold" />
+                                        <TextView
+                                                android:gravity="center"
+                                                android:background="@drawable/bg_button"
+
+                                                android:backgroundTint="@color/graient1"
+                                                android:elevation="8dp"
+                                                android:layout_weight="1.2"
+                                                android:drawableStart="@drawable/ic_live"
+                                                        android:drawablePadding="@dimen/space_5dp"
+                                                          android:drawableTint="@color/white"
+                                                       android:padding="4dp"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="Join"
+                                                android:textColor="@color/white"
+                                                android:textSize="16sp"
+                                                android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/imgCourse"
+                                android:layout_width="match_parent"
+                                android:layout_height="162dp"
+                                android:background="@drawable/drawable_edit_text_shadow_bg"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/logo_iot"
+                                app:riv_corner_radius="12dp" />
+
+                </RelativeLayout>
+
+        </RelativeLayout>
+</RelativeLayout>

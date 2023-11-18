@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".YourSchooolPannel.SchoolMobileVerificationFragment">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:fillViewport="true"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                                android:id="@+id/lnr_top"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <include layout="@layout/layout_school_student"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_below="@id/lnr_top"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/space_20dp">
+
+
+                                <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <ImageView
+                                                android:layout_width="60dp"
+                                                android:layout_height="60dp"
+                                                android:layout_marginTop="@dimen/space_24dp"
+                                                android:src="@drawable/logoo" />
+
+                                        <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:layout_marginStart="@dimen/space_5dp"
+                                                android:layout_marginTop="@dimen/space_16dp"
+                                                android:text="@string/app_name"
+                                                android:textAllCaps="true"
+                                                android:textColor="@color/teal_700"
+                                                android:textSize="18dp"
+                                                android:textStyle="bold" />
+
+
+                                        <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text=" APP"
+                                                android:textColor="@color/black"
+                                                android:textSize="20dp"
+                                                android:textStyle="bold"
+                                                android:visibility="gone" />
+                                </LinearLayout>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="50dp"
+                                        android:text="Proceed with your"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/space_16dp"
+                                        android:visibility="gone" />
+
+                                <TextView
+                                        android:id="@+id/login_tittle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/space_10dp"
+                                        android:text="Forgot Password"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/Accent_color"
+                                        android:textSize="@dimen/space_18sp"
+                                        android:fontFamily="@font/sfuitext_bold"/>/>
+
+                                <View
+                                        android:visibility="gone"
+                                        android:layout_width="215dp"
+                                        android:layout_height="2dp"
+                                        android:layout_marginTop="@dimen/space_2dp"
+                                        android:background="@color/primary_color" />
+
+                                <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/space_10dp"
+                                        android:text="Enter your registered mobile number"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/space_14sp"
+                                        android:fontFamily="@font/sfuitext_semibold" />
+
+                                <EditText
+                                        android:id="@+id/et_mobile_num"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/space_10dp"
+                                        android:background="@drawable/drawable_edit_text_shadow_bg"
+                                        android:drawableStart="@drawable/ic_baseline_phone_iphone_light_black_24dp"
+                                        android:drawablePadding="8dp"
+                                        android:drawableTint="@color/black"
+                                        android:hint="Email address or mobile number"
+                                        android:inputType="text"
+                                        android:paddingHorizontal="@dimen/space_12dp"
+                                        android:paddingVertical="@dimen/space_16dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/space_16sp" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/btn_submit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/space_16dp"
+                                        android:text="Submit"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp" />
+
+                                <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="30dp"
+                                        android:text="* We'll sent OTP at you registered mobile number"
+                                        android:textAlignment="center"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/space_14sp" />
+
+                        </LinearLayout>
+
+                </RelativeLayout>
+        </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YourSchooolPannel.SchoolCoachingSection.SchoolCoachingFragment.SchoolCoachingFeeFragment">
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        >-->
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/rel_detail"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:visibility="visible">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:padding="10dp">-->
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fillViewport="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/space_8dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/cv_class"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        app:cardCornerRadius="8dp"
+                                        app:cardBackgroundColor="@color/light_grey"
+                                        android:background="@drawable/edit_box_round_corner"
+                                        android:padding="4dp">
+<!--                                        <LinearLayout-->
+
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:gravity="center_vertical"-->
+<!--                                            android:orientation="horizontal">-->
+
+
+                                            <FrameLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="0.6"
+                                                android:elevation="1dp">
+
+
+                                                <Spinner
+                                                    android:id="@+id/class_spinner"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:autofillHints="Select your Company Name"
+                                                    android:overlapAnchor="false">
+
+                                                </Spinner>
+
+                                                <TextView
+
+                                                    android:id="@+id/tv_class"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                                                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_black_24dp"
+                                                    android:drawableStart="@drawable/ic_baseline_filter_list_24"
+                                                    android:drawableTint="@color/grey"
+                                                    android:drawablePadding="8dp"
+                                                    android:gravity="center_vertical"
+                                                    android:hint="Class"
+
+                                                    android:inputType="text"
+                                                    android:padding="8dp"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="@dimen/space_12sp"
+                                                    android:fontFamily="@font/sfuitext_medium"
+                                                    android:visibility="visible"
+                                                    tools:ignore="TextViewEdits" />
+
+
+                                            </FrameLayout>
+
+<!--                                        </LinearLayout>-->
+
+<!--                                        <LinearLayout-->
+<!--                                            android:layout_width="wrap_content"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:background="@drawable/edit_box_round_corner"-->
+<!--                                            android:gravity="center"-->
+<!--                                            android:orientation="horizontal">-->
+
+<!--                                            <ImageView-->
+<!--                                                android:layout_width="24dp"-->
+<!--                                                android:layout_height="24dp"-->
+<!--                                                android:padding="@dimen/space_4"-->
+<!--                                                android:src="@drawable/ic_baseline_filter_list_24"-->
+<!--                                                app:tint="@color/gray" />-->
+
+<!--                                            <LinearLayout-->
+<!--                                                android:id="@+id/liner2"-->
+<!--                                                android:layout_width="match_parent"-->
+<!--                                                android:layout_height="wrap_content"-->
+<!--                                                android:layout_below="@id/img_live"-->
+<!--                                                android:layout_centerInParent="true"-->
+<!--                                                android:gravity="center_vertical"-->
+<!--                                                android:orientation="horizontal">-->
+
+<!--                                                <FrameLayout-->
+<!--                                                    android:layout_width="wrap_content"-->
+<!--                                                    android:layout_height="wrap_content"-->
+<!--                                                    android:elevation="1dp">-->
+
+
+<!--                                                    <Spinner-->
+<!--                                                        android:id="@+id/class_spinner"-->
+<!--                                                        android:layout_width="wrap_content"-->
+<!--                                                        android:layout_height="wrap_content"-->
+<!--                                                        android:autofillHints="Select your Company Name"-->
+<!--                                                        android:overlapAnchor="false">-->
+
+<!--                                                    </Spinner>-->
+
+<!--                                                    <TextView-->
+<!--                                                        android:id="@+id/tv_class"-->
+<!--                                                        android:layout_width="match_parent"-->
+<!--                                                        android:layout_height="wrap_content"-->
+<!--                                                        android:layout_marginStart="2dp"-->
+<!--                                                        android:hint="Class"-->
+<!--                                                        android:textColor="@color/black"-->
+<!--                                                        android:textSize="@dimen/space_12sp"-->
+<!--                                                        android:textStyle="bold"-->
+<!--                                                        tools:ignore="TextViewEdits" />-->
+
+
+<!--                                                </FrameLayout>-->
+
+<!--                                            </LinearLayout>-->
+
+<!--                                            &lt;!&ndash;                                <TextView&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                        android:layout_marginStart="2dp"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                        android:layout_below="@id/img_live"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                        android:layout_centerInParent="true"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                        android:text="12th"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                    tools:ignore="TextViewEdits"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                        android:textColor="@color/black"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                        android:textSize="@dimen/space_12sp"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                        android:textStyle="bold" />&ndash;&gt;-->
+<!--                                            <ImageView-->
+<!--                                                android:layout_width="20dp"-->
+<!--                                                android:layout_height="20dp"-->
+<!--                                                android:gravity="center"-->
+<!--                                                android:src="@drawable/ic_arrow_down_24"-->
+<!--                                                app:tint="@color/gray" />-->
+
+
+<!--                                        </LinearLayout>-->
+                                    </androidx.cardview.widget.CardView>
+
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/cv_section"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        app:cardCornerRadius="8dp"
+                                        android:layout_toEndOf="@id/cv_class"
+                                        app:cardBackgroundColor="@color/light_grey"
+                                        android:background="@drawable/edit_box_round_corner"
+                                        android:padding="4dp">
+<!--                                        <LinearLayout-->
+
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:gravity="center_vertical"-->
+<!--                                            android:orientation="horizontal">-->
+
+
+
+                                            <FrameLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="0.6"
+                                                android:elevation="1dp">
+
+
+                                                <Spinner
+                                                    android:id="@+id/section_spinner"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:autofillHints="Select your Company Name"
+                                                    android:overlapAnchor="false">
+
+                                                </Spinner>
+
+                                                <TextView
+
+                                                    android:id="@+id/tv_section"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                                                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_black_24dp"
+                                                    android:drawableStart="@drawable/ic_baseline_filter_list_24"
+                                                    android:drawableTint="@color/grey"
+                                                    android:drawablePadding="8dp"
+                                                    android:gravity="center_vertical"
+                                                    android:hint="Section"
+                                                    android:fontFamily="@font/sfuitext_medium"
+                                                    android:inputType="text"
+                                                    android:padding="8dp"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="@dimen/space_12sp"
+                                                    android:visibility="visible"
+                                                    tools:ignore="TextViewEdits" />
+
+
+                                            </FrameLayout>
+
+<!--                                        </LinearLayout>-->
+<!--                                        <LinearLayout-->
+<!--                                            android:layout_width="wrap_content"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:background="@drawable/edit_box_round_corner"-->
+<!--                                            android:gravity="center"-->
+<!--                                            android:orientation="horizontal">-->
+
+<!--                                            <ImageView-->
+<!--                                                android:layout_width="24dp"-->
+<!--                                                android:layout_height="24dp"-->
+<!--                                                android:padding="@dimen/space_4"-->
+<!--                                                android:src="@drawable/ic_baseline_filter_list_24"-->
+<!--                                                app:tint="@color/gray" />-->
+
+<!--                                            <LinearLayout-->
+<!--                                                android:layout_width="match_parent"-->
+<!--                                                android:layout_height="wrap_content"-->
+<!--                                                android:layout_below="@id/img_live"-->
+<!--                                                android:layout_centerInParent="true"-->
+<!--                                                android:layout_marginStart="2dp"-->
+<!--                                                android:gravity="center_vertical"-->
+<!--                                                android:orientation="horizontal">-->
+
+<!--                                                <FrameLayout-->
+<!--                                                    android:layout_width="wrap_content"-->
+<!--                                                    android:layout_height="wrap_content"-->
+<!--                                                    android:elevation="1dp">-->
+
+
+<!--                                                    <Spinner-->
+<!--                                                        android:id="@+id/section_spinner"-->
+<!--                                                        android:layout_width="wrap_content"-->
+<!--                                                        android:layout_height="wrap_content"-->
+<!--                                                        android:autofillHints="Select your Company Name"-->
+<!--                                                        android:overlapAnchor="false">-->
+
+<!--                                                    </Spinner>-->
+
+<!--                                                    <TextView-->
+<!--                                                        android:id="@+id/tv_section"-->
+<!--                                                        android:layout_width="match_parent"-->
+<!--                                                        android:layout_height="wrap_content"-->
+<!--                                                        android:hint="Section"-->
+<!--                                                        android:textColor="@color/black"-->
+<!--                                                        android:textSize="@dimen/space_12sp"-->
+<!--                                                        android:textStyle="bold"-->
+<!--                                                        tools:ignore="TextViewEdits" />-->
+
+
+<!--                                                </FrameLayout>-->
+
+<!--                                            </LinearLayout>-->
+<!--                                            &lt;!&ndash;                                            <TextView&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:layout_width="match_parent"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:layout_below="@id/img_live"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:layout_centerInParent="true"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:layout_marginStart="2dp"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:text="A"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:textColor="@color/black"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:textSize="@dimen/space_12sp"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:textStyle="bold"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                tools:ignore="TextViewEdits" />&ndash;&gt;-->
+
+<!--                                            <ImageView-->
+<!--                                                android:layout_width="20dp"-->
+<!--                                                android:layout_height="20dp"-->
+<!--                                                android:gravity="center"-->
+<!--                                                android:src="@drawable/ic_arrow_down_24"-->
+<!--                                                app:tint="@color/gray" />-->
+
+
+<!--                                        </LinearLayout>-->
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/cv_month"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        app:cardCornerRadius="8dp"
+                                        android:layout_toEndOf="@id/cv_section"
+                                        android:background="@drawable/edit_box_round_corner"
+                                        app:cardBackgroundColor="@color/light_grey"
+                                        android:padding="4dp">
+
+
+<!--                                        <LinearLayout-->
+
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:gravity="center_vertical"-->
+<!--                                            android:orientation="horizontal">-->
+
+
+
+                                            <FrameLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="0.6"
+                                                android:elevation="1dp">
+
+
+                                                <Spinner
+                                                    android:id="@+id/month_spinner"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:autofillHints="Select your Company Name"
+                                                    android:overlapAnchor="false">
+
+                                                </Spinner>
+
+                                                <TextView
+
+                                                    android:id="@+id/tv_month"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                                                    android:drawableStart="@drawable/ic_baseline_filter_list_24"
+                                                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_black_24dp"
+                                                    android:drawablePadding="8dp"
+                                                    android:drawableTint="@color/grey"
+                                                    android:gravity="center_vertical"
+                                                    android:hint="Month"
+
+                                                    android:fontFamily="@font/sfuitext_medium"
+                                                    android:inputType="text"
+                                                    android:padding="8dp"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="@dimen/space_12sp"
+                                                    android:visibility="visible"
+                                                    tools:ignore="TextViewEdits" />
+
+
+                                            </FrameLayout>
+
+<!--                                        </LinearLayout>-->
+
+                                        <!--                                                                                <LinearLayout-->
+                                        <!--                                                                                    android:layout_width="wrap_content"-->
+                                        <!--                                                                                    android:layout_height="wrap_content"-->
+                                        <!--                                                                                    android:background="@drawable/edit_box_round_corner"-->
+                                        <!--                                                                                    android:gravity="center_vertical"-->
+                                        <!--                                                                                    android:orientation="horizontal">-->
+
+                                        <!--                                                                                        <ImageView-->
+                                        <!--                                                                                            android:layout_width="24dp"-->
+                                        <!--                                                                                            android:layout_height="24dp"-->
+                                        <!--                                                                                            android:padding="@dimen/space_4"-->
+                                        <!--                                                                                            android:src="@drawable/ic_baseline_filter_list_24"-->
+                                        <!--                                                                                            app:tint="@color/gray" />-->
+
+                                        <!--                                                                                        <LinearLayout-->
+                                        <!--                                                                                            android:layout_width="wrap_content"-->
+                                        <!--                                                                                            android:layout_height="wrap_content"-->
+                                        <!--                                                                                            android:layout_below="@id/img_live"-->
+                                        <!--                                                                                            android:layout_centerInParent="true"-->
+                                        <!--                                                                                            android:layout_marginStart="2dp"-->
+                                        <!--                                                                                            android:orientation="horizontal">-->
+
+                                        <!--                                                                                                <FrameLayout-->
+                                        <!--                                                                                                    android:layout_width="0dp"-->
+                                        <!--                                                                                                    android:layout_height="wrap_content"-->
+                                        <!--                                                                                                    android:layout_weight="0.6"-->
+                                        <!--                                                                                                    android:elevation="1dp">-->
+
+
+                                        <!--                                                                                                        <Spinner-->
+                                        <!--                                                                                                            android:id="@+id/month_spinner"-->
+                                        <!--                                                                                                            android:layout_gravity="center_vertical"-->
+                                        <!--                                                                                                            android:layout_width="match_parent"-->
+                                        <!--                                                                                                            android:layout_height="30dp"-->
+                                        <!--                                                                                                            android:autofillHints="Select your Company Name"-->
+                                        <!--                                                                                                            android:overlapAnchor="false">-->
+
+                                        <!--                                                                                                        </Spinner>-->
+
+                                        <!--                                                                                                        <TextView-->
+                                        <!--                                                                                                            android:id="@+id/tv_month"-->
+                                        <!--                                                                                                            android:layout_width="match_parent"-->
+                                        <!--                                                                                                            android:layout_height="match_parent"-->
+                                        <!--                                                                                                            android:hint="Month"-->
+                                        <!--                                                                                                            android:layout_gravity="center_vertical"-->
+                                        <!--                                                                                                            android:textColor="@color/black"-->
+                                        <!--                                                                                                            android:textSize="@dimen/space_12sp"-->
+                                        <!--                                                                                                            android:gravity="center"-->
+                                        <!--                                                                                                            android:textStyle="bold"-->
+                                        <!--                                                                                                            tools:ignore="TextViewEdits" />-->
+
+
+                                        <!--                                                                                                </FrameLayout>-->
+
+                                        <!--                                                                                        </LinearLayout>-->
+
+                                        <!--                                                                                        &lt;!&ndash;                                            <TextView&ndash;&gt;-->
+                                        <!--                                                                                        &lt;!&ndash;                                                android:layout_width="match_parent"&ndash;&gt;-->
+                                        <!--                                                                                        &lt;!&ndash;                                                android:layout_height="wrap_content"&ndash;&gt;-->
+                                        <!--                                                                                        &lt;!&ndash;                                                android:layout_below="@id/img_live"&ndash;&gt;-->
+                                        <!--                                                                                        &lt;!&ndash;                                                android:layout_centerInParent="true"&ndash;&gt;-->
+                                        <!--                                                                                        &lt;!&ndash;                                                android:layout_marginStart="2dp"&ndash;&gt;-->
+                                        <!--                                                                                        &lt;!&ndash;                                                android:text="March"&ndash;&gt;-->
+                                        <!--                                                                                        &lt;!&ndash;                                                android:textColor="@color/black"&ndash;&gt;-->
+                                        <!--                                                                                        &lt;!&ndash;                                                android:textSize="@dimen/space_12sp"&ndash;&gt;-->
+                                        <!--                                                                                        &lt;!&ndash;                                                android:textStyle="bold" />&ndash;&gt;-->
+
+                                        <!--&lt;!&ndash;                                                                                        <ImageView&ndash;&gt;-->
+                                        <!--&lt;!&ndash;                                                                                            android:visibility="gone"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;                                                                                            android:layout_width="20dp"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;                                                                                            android:layout_height="20dp"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;                                                                                            android:gravity="center"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;                                                                                            android:src="@drawable/ic_arrow_down_24"&ndash;&gt;-->
+                                        <!--&lt;!&ndash;                                                                                            app:tint="@color/gray" />&ndash;&gt;-->
+
+
+                                        <!--                                                                                </LinearLayout>-->
+                                    </androidx.cardview.widget.CardView>
+
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/cv_fee_status"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_toEndOf="@id/cv_month"
+                                        android:background="@drawable/edit_box_round_corner"
+                                        android:padding="7dp">
+<!--                                        <LinearLayout-->
+
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:gravity="center_vertical"-->
+<!--                                            android:orientation="horizontal">-->
+
+
+
+                                            <FrameLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="0.6"
+                                                android:elevation="1dp">
+
+
+                                                <Spinner
+                                                    android:id="@+id/status_spinner"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:autofillHints="Select your Company Name"
+                                                    android:overlapAnchor="false">
+
+                                                </Spinner>
+
+                                                <TextView
+
+                                                    android:id="@+id/tv_fee_status"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                                                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_black_24dp"
+                                                    android:drawableStart="@drawable/ic_baseline_filter_list_24"
+                                                    android:drawableTint="@color/grey"
+                                                    android:drawablePadding="8dp"
+                                                    android:gravity="center_vertical"
+                                                    android:hint="Status"
+
+                                                    android:inputType="text"
+                                                    android:padding="8dp"
+                                                    android:fontFamily="@font/sfuitext_medium"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="@dimen/space_12sp"
+                                                    android:visibility="visible"
+                                                    tools:ignore="TextViewEdits" />
+
+
+                                            </FrameLayout>
+
+<!--                                        </LinearLayout>-->
+
+<!--                                        <LinearLayout-->
+<!--                                            android:layout_width="wrap_content"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:background="@drawable/edit_box_round_corner"-->
+<!--                                            android:gravity="center"-->
+<!--                                            android:orientation="horizontal">-->
+
+<!--                                            <ImageView-->
+<!--                                                android:layout_width="24dp"-->
+<!--                                                android:layout_height="24dp"-->
+<!--                                                android:padding="@dimen/space_4"-->
+<!--                                                android:src="@drawable/ic_baseline_filter_list_24"-->
+<!--                                                app:tint="@color/gray" />-->
+
+<!--                                            <LinearLayout-->
+<!--                                                android:layout_width="match_parent"-->
+<!--                                                android:layout_height="wrap_content"-->
+<!--                                                android:layout_below="@id/img_live"-->
+<!--                                                android:layout_centerInParent="true"-->
+<!--                                                android:layout_marginStart="2dp"-->
+<!--                                                android:gravity="center_vertical"-->
+<!--                                                android:orientation="horizontal">-->
+
+<!--                                                <FrameLayout-->
+<!--                                                    android:layout_width="wrap_content"-->
+<!--                                                    android:layout_height="wrap_content"-->
+<!--                                                    android:elevation="1dp">-->
+
+
+<!--                                                    <Spinner-->
+<!--                                                        android:id="@+id/status_spinner"-->
+<!--                                                        android:layout_width="wrap_content"-->
+<!--                                                        android:layout_height="wrap_content"-->
+<!--                                                        android:autofillHints="Select your Company Name"-->
+<!--                                                        android:overlapAnchor="false">-->
+
+<!--                                                    </Spinner>-->
+
+<!--                                                    <TextView-->
+<!--                                                        android:id="@+id/tv_fee_status"-->
+<!--                                                        android:layout_width="match_parent"-->
+<!--                                                        android:layout_height="wrap_content"-->
+<!--                                                        android:hint="Stauts"-->
+<!--                                                        android:textColor="@color/black"-->
+<!--                                                        android:textSize="@dimen/space_12sp"-->
+<!--                                                        android:textStyle="bold"-->
+<!--                                                        tools:ignore="TextViewEdits" />-->
+
+
+<!--                                                </FrameLayout>-->
+
+<!--                                            </LinearLayout>-->
+
+<!--                                            &lt;!&ndash;                                            <TextView&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:layout_width="match_parent"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:layout_below="@id/img_live"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:layout_centerInParent="true"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:layout_marginStart="2dp"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:text="Paid"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:textColor="@color/black"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:textSize="@dimen/space_12sp"&ndash;&gt;-->
+<!--                                            &lt;!&ndash;                                                android:textStyle="bold" />&ndash;&gt;-->
+
+<!--                                            <ImageView-->
+<!--                                                android:layout_width="20dp"-->
+<!--                                                android:layout_height="20dp"-->
+<!--                                                android:gravity="center_vertical"-->
+<!--                                                android:src="@drawable/ic_arrow_down_24"-->
+<!--                                                app:tint="@color/gray" />-->
+
+
+<!--                                        </LinearLayout>-->
+                                    </androidx.cardview.widget.CardView>
+
+                                </RelativeLayout>
+                            </HorizontalScrollView>
+
+<!--                        </RelativeLayout>-->
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/rel_showlist"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/rel_detail"-->
+<!--                        android:visibility="visible">-->
+
+
+                        <LinearLayout
+                            android:id="@+id/lin_rec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="35dp"
+                                android:background="@color/black"
+                                android:orientation="horizontal"
+                                android:visibility="visible"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/tv_student"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="@dimen/space_1dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:paddingStart="@dimen/space_8dp"
+                                    android:paddingEnd="@dimen/space_8dp"
+                                    android:text="Student"
+                                    android:fontFamily="@font/sfuitext_semibold"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/space_13sp" />
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/gray" />
+
+                                <TextView
+                                    android:id="@+id/tv_status"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="@dimen/space_1dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:paddingStart="@dimen/space_8dp"
+                                    android:paddingEnd="@dimen/space_8dp"
+                                    android:text="Status"
+                                    android:fontFamily="@font/sfuitext_semibold"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/space_13sp" />
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rec_fee_status"
+                                android:layout_width="match_parent"
+                                android:nestedScrollingEnabled="false"
+                                android:layout_height="wrap_content">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/fee_upload"
+                                android:layout_width="210dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/lin_rec"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:text="Update"
+                                android:visibility="gone"
+                                android:textSize="@dimen/space_14sp"
+                                android:layout_gravity="center_horizontal"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white">
+
+                            </androidx.appcompat.widget.AppCompatButton>
+
+                        </LinearLayout>
+
+
+<!--                    </RelativeLayout>-->
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+<!--    </RelativeLayout>-->
+</RelativeLayout>

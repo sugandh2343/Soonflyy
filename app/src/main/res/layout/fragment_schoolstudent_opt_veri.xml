@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".YourSchooolPannel.SchoolstudentOptVeriFragment">
+
+        <ScrollView
+                android:fillViewport="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true">
+                                <LinearLayout
+                                        android:id="@+id/lnr_top"
+                                        android:orientation="horizontal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentTop="true"
+                               >
+                                        <include
+                                                android:id="@+id/layout_schoolstudent"
+                                                layout="@layout/layout_school_student"/>
+                                        <include android:visibility="gone"
+                                                android:id="@+id/layout_schooltutor"
+                                                layout="@layout/layout_school_coaching"/>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/lin_otp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_above="@id/tv_otp_hint"
+                                    android:layout_below="@id/lnr_top"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/space_10dp">
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:fontFamily="@font/sfuitext_bold"
+                                            android:text="OTP Verification"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/Accent_color"
+                                            android:textSize="@dimen/space_18sp" />
+
+                                        <TextView
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="-4dp"
+                                            android:fontFamily="@font/sfuitext_semibold"
+                                            android:text="Enter one time password here"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/space_14" />
+
+                                        <in.aabhasjindal.otptextview.OtpTextView
+                                            android:id="@+id/otp_view"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="24dp"
+                                            android:textColor="@color/black"
+                                            app:height="40dp"
+                                            app:length="4"
+                                            app:otp_box_background="@drawable/bottom_line"
+                                            app:otp_text_size="@dimen/space_18sp"
+                                            app:width="40dp" />
+
+                                        <LinearLayout
+                                            android:id="@+id/lnr_otptime"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="@dimen/space_10dp"
+                                                    android:fontFamily="@font/sfuitext_semibold"
+                                                    android:gravity="center"
+                                                    android:text="Time left: "
+                                                    android:textColor="@color/light_black"
+                                                    android:textSize="@dimen/space_14sp" />
+
+                                                <TextView
+                                                    android:id="@+id/tv_timer"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="@dimen/space_10dp"
+                                                    android:fontFamily="@font/sfuitext_semibold"
+                                                    android:gravity="center"
+                                                    android:text="00:00"
+                                                    android:textColor="@color/light_black"
+                                                    android:textSize="@dimen/space_14sp" />
+                                                <!--                                                <TextView-->
+                                                <!--                                                        android:visibility="gone"-->
+                                                <!--                                                        android:id="@+id/tv_resend"-->
+                                                <!--                                                        android:layout_width="wrap_content"-->
+                                                <!--                                                        android:layout_height="wrap_content"-->
+                                                <!--                                                        android:layout_marginTop="@dimen/space_10dp"-->
+                                                <!--                                                        android:enabled="false"-->
+                                                <!--                                                        android:layout_weight="1"-->
+                                                <!--                                                        android:text="Resend OTP"-->
+                                                <!--                                                        android:gravity="center"-->
+                                                <!--                                                        android:textSize="@dimen/space_16sp"-->
+                                                <!--                                                        android:textColor="@color/primary_color" />-->
+                                        </LinearLayout>
+
+
+                                        <androidx.appcompat.widget.AppCompatButton
+                                            android:id="@+id/btn_submit"
+                                            android:layout_width="200dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="@dimen/space_16dp"
+                                            android:backgroundTint="@color/graient2"
+                                            android:text="Submit"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/space_18sp" />
+
+                                        <LinearLayout
+                                            android:id="@+id/lin_resend_otp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:orientation="vertical"
+                                            android:visibility="visible">
+
+                                                <TextView
+                                                    android:id="@+id/tv_resend"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_horizontal"
+                                                    android:layout_marginTop="@dimen/space_10dp"
+                                                    android:enabled="false"
+                                                    android:fontFamily="@font/sfuitext_bold"
+                                                    android:gravity="center"
+                                                    android:text="Resend OTP"
+                                                    android:textColor="@color/graient2"
+                                                    android:textSize="@dimen/space_14sp"
+                                                    android:visibility="visible" />
+
+                                                <View
+                                                    android:layout_width="100dp"
+                                                    android:layout_height="1dp"
+                                                    android:layout_gravity="center_horizontal"
+                                                    android:layout_marginTop="4dp"
+                                                    android:background="@color/graient2"
+                                                    android:visibility="visible" />
+                                        </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_otp_hint"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="24dp"
+                                    android:text="@string/please_do_not_share_this_otp_with_anyone"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                    android:textSize="@dimen/space_14sp" />
+
+                        </RelativeLayout>
+                </RelativeLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

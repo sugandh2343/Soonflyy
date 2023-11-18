@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="@color/light_grey"
+        android:elevation="1dp"
+        app:cardCornerRadius="@dimen/space_12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_8"
+            android:orientation="vertical"
+            android:padding="@dimen/space_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/question_no_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Question"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_14"
+                 android:fontFamily="@font/sfuitext_semibold">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/mark_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marks: "
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/mark_edit"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_2"
+                        android:background="@drawable/edit_box_question"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+
+                      >
+
+                    </EditText>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/question_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8dp"
+                android:background="@drawable/edit_box_question"
+                android:gravity="center_vertical"
+                android:hint="Enter question"
+                android:paddingStart="10dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_14" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/option_1_radio_btn"
+                        android:layout_width="@dimen/space_27dp"
+                        android:layout_height="25dp"
+                        android:theme="@style/RadioButtonStyle"
+
+                        />
+
+                    <EditText
+
+                        android:id="@+id/option_1_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_box_question"
+                        android:gravity="center_vertical"
+                        android:hint="Answer 1"
+                        android:paddingStart="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_14"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/option_2_radio_btn"
+                        android:layout_width="@dimen/space_27dp"
+                        android:layout_height="25dp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <EditText
+                        android:id="@+id/option_2_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_box_question"
+                        android:gravity="center_vertical"
+                        android:hint="Answer 2"
+                        android:paddingStart="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_14"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/option_3_radio_btn"
+                        android:layout_width="@dimen/space_27dp"
+                        android:layout_height="25dp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <EditText
+                        android:id="@+id/option_3_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_3dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_box_question"
+                        android:gravity="center_vertical"
+                        android:hint="Answer 3"
+                        android:paddingStart="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_14"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/option_4_radio_btn"
+                        android:layout_width="@dimen/space_27dp"
+                        android:layout_height="25dp"
+                        android:theme="@style/RadioButtonStyle" />
+
+                    <EditText
+                        android:id="@+id/option_4_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_3dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_box_question"
+                        android:gravity="center_vertical"
+                        android:hint="Answer 4"
+                        android:paddingStart="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_14"
+
+                        />
+                </LinearLayout>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space_25dp"
+                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                    android:backgroundTint="@color/green_100"
+                    android:drawableLeft="@drawable/answer_key_icon"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/space_8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/answer_ley"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/answer_key_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/space_5dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/sfuitext_medium"
+                        android:textSize="@dimen/space_14sp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lin_remove"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/red"
+                    android:background="@drawable/circle_blck"
+                    android:orientation="horizontal">
+                <View
+                    android:visibility="visible"
+
+                    android:layout_width="15dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                      android:background="@color/white"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8dp"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/space_25dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/space_5dp"
+                    android:text="@string/comment"
+                    android:fontFamily="@font/lexend"
+                    android:textSize="@dimen/space_15"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_box_question"
+                    android:paddingStart="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="8dp">
+
+                    <EditText
+                        android:id="@+id/description_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:gravity="top"
+                        android:hint="Enter your text here"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/space_5dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lexend"
+                        android:textSize="@dimen/space_14"
+
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

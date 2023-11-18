@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".Teacher_Pannel.Create_Course_MainFragment">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+   <LinearLayout
+ android:orientation="vertical"
+android:layout_width="match_parent"
+ android:layout_height="match_parent">
+  <RelativeLayout
+          android:id="@+id/rel_trck"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:visibility="gone"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:padding="10dp">
+
+          <LinearLayout
+              android:id="@+id/lin_1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:elevation="1dp"
+              android:gravity="center"
+              android:orientation="vertical">
+              <!--                                   <LinearLayout-->
+              <!--                                           android:layout_width="wrap_content"-->
+              <!--                                           android:layout_height="wrap_content"-->
+              <!--                                           android:orientation="horizontal">-->
+
+              <TextView
+                  android:id="@+id/tv_no_1"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:background="@drawable/tracker_bg_circle"
+                  android:gravity="center"
+                  android:text="1"
+                  android:textAllCaps="false"
+                  android:textColor="@color/black"
+                  android:textSize="16sp"
+                  android:textStyle="bold" />
+
+              <!--                                       <View-->
+              <!--                                           android:layout_width="40dp"-->
+              <!--                                           android:layout_height="3dp"-->
+              <!--                                           android:visibility="gone"-->
+              <!--                                           android:layout_gravity="center"-->
+              <!--                                           android:background="@color/graient1" />-->
+              <!--                                   </LinearLayout>-->
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="26dp"
+                  android:fontFamily="@font/sfuitext_medium"
+                  android:text="Basic"
+                  android:textAlignment="center"
+                  android:textAllCaps="false"
+                  android:textColor="@color/graient2"
+                  android:textSize="14sp" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/lin_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginStart="-8dp"
+              android:orientation="vertical">
+
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+
+                  <View
+                      android:layout_width="40dp"
+                      android:layout_height="3dp"
+                      android:layout_gravity="center"
+                      android:background="@color/graient1"
+                      android:visibility="visible" />
+
+                  <TextView
+                      android:id="@+id/tv_tracker2"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:background="@drawable/tracker_bg_circle"
+                      android:gravity="center"
+                      android:text="2"
+                      android:textAlignment="center"
+                      android:textAllCaps="false"
+                      android:textColor="@color/black"
+                      android:textSize="16sp"
+                      android:textStyle="bold" />
+
+                  <View
+                      android:layout_width="40dp"
+                      android:layout_height="3dp"
+                      android:layout_gravity="center"
+                      android:background="@color/graient1" />
+              </LinearLayout>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:fontFamily="@font/sfuitext_medium"
+                  android:text="Subject"
+                  android:textAllCaps="false"
+                  android:textColor="@color/graient2"
+                  android:textSize="14sp" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/lin_3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="-4dp"
+              android:gravity="center"
+              android:orientation="vertical">
+
+              <LinearLayout
+
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:id="@+id/tv_tracker3"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:background="@drawable/tracker_bg_circle"
+                      android:gravity="center"
+                      android:text="3"
+                      android:textAlignment="center"
+                      android:textAllCaps="false"
+                      android:textColor="@color/black"
+                      android:textSize="16sp"
+                      android:textStyle="bold" />
+
+                  <View
+                      android:layout_width="40dp"
+                      android:layout_height="3dp"
+                      android:layout_gravity="center"
+                      android:background="@color/graient1"
+                      android:visibility="gone" />
+              </LinearLayout>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/sfuitext_medium"
+                  android:text="Test"
+                  android:textAlignment="center"
+                  android:textAllCaps="false"
+                  android:textColor="@color/graient2"
+                  android:textSize="14sp" />
+
+          </LinearLayout>
+
+      </LinearLayout>
+           </RelativeLayout>
+
+       <FrameLayout
+           android:id="@+id/course_container_layout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+ </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

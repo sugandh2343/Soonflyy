@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottom_sheet_bg">
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="90dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/darkgray"
+        android:background="@drawable/drawable_rectangle_button_black_15dp_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/need_your_help_with_any_examination_and_with_subcciption"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view16"/>
+
+    <ImageView
+        android:id="@+id/close_imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="16dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/description_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/description_tv"
+        app:layout_constraintTop_toTopOf="@+id/title1"
+        app:srcCompat="@drawable/support" />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/loreum_pushem_color_it_consulter_with_binplus"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@id/close_imageView"
+        app:layout_constraintTop_toBottomOf="@id/title1"
+        app:layout_constraintStart_toStartOf="@id/title1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/callUs_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/primary_color"
+        android:background="@drawable/edit_box_round_corner"
+        android:text="Call Us"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

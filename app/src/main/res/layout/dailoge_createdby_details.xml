@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/space_30"
+        android:layout_height="@dimen/space_30"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/space_2"
+        android:layout_margin="@dimen/space_4"
+        android:src="@drawable/ic_baseline_close_24"
+        app:tint="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_below="@id/iv_close"
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_edit_text_shadow_bg"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/space_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:elevation="@dimen/space_4"
+                    android:layout_height="120dp"
+                    android:layout_margin="@dimen/space_6"
+                    android:src="@drawable/student_img" />
+
+                <TextView
+                    android:id="@+id/tv_dailoge_creator_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sharda Institute of Technology and Management"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sfuitext_bold">
+
+                </TextView>
+                <TextView
+                    android:layout_margin="@dimen/space_6"
+                    android:id="@+id/tv_dailoge_course_creator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/course_creator"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/sfuitext_medium">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/space_6"
+                android:id="@+id/tv_dailoge_user_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:fontFamily="@font/sfuitext_medium">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

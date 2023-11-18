@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="@dimen/space_4dp"
+    android:id="@+id/lin_main"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/s_dpp_icon"
+        android:layout_gravity="center_vertical"
+        app:tint="@color/graient2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_dpp_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/sfuitext_semibold"
+            android:textSize="@dimen/space_14sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:text=""
+            android:fontFamily="@font/sfuitext_medium"
+            android:textSize="@dimen/space_10sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_left"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/space_8dp"
+
+        app:tint="@color/graient2" />
+
+</LinearLayout>

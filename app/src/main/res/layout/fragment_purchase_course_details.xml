@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student_Pannel.Purchase_Course_Details">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_course_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lin_course_thumbnail"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="match_parent"
+                            android:layout_height="232dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/logoo" />
+
+                        <ImageView
+                            android:id="@+id/save_img"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="-20dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/bg_cart_circle"
+                            android:elevation="8dp"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_baseline_bookmark_24"
+                            app:tint="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:padding="4dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/course_tittle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="2dp"
+                                    android:text=""
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/sfuitext_semibold" />
+
+                                <TextView
+                                    android:id="@+id/course_details"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="2dp"
+                                    android:layout_marginTop="-3dp"
+                                    android:text=""
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/space_30dp"
+                                android:layout_gravity="end"
+                                android:gravity="center"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/bg_button"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/s_student_subscription"
+                                     />
+
+                                <TextView
+                                    android:id="@+id/tv_subscription"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/space_30dp"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                    android:paddingStart="8dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Subscriptions:1000"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="10sp">
+
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="@dimen/space_8dp"
+                        android:background="@color/light_gray"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rel_deatl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_pr_detail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:gravity="start"
+                                    android:text="About Course"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/tv_14sp"
+                                    android:fontFamily="@font/sfuitext_semibold" />
+
+                                <TextView
+                                    android:id="@+id/tv_liveclass"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/txt_pr_detail"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginTop="-5dp"
+                                    android:text=""
+                                    android:fontFamily="@font/sfui_text_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/space_13sp">
+
+                                </TextView>
+                                <LinearLayout
+                                    android:layout_margin="@dimen/space_5"
+                                    android:background="@color/white_smoke"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:id="@+id/lin_created_course"
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:id="@+id/txt_created_course_detail"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginStart="4dp"
+                                            android:layout_marginTop="4dp"
+                                            android:layout_marginEnd="4dp"
+                                            android:gravity="start"
+                                            android:text="Course Created by"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/tv_14sp"
+                                            android:fontFamily="@font/sfuitext_semibold" />
+                                        <LinearLayout
+                                            android:layout_marginTop="@dimen/space_4"
+                                            android:id="@+id/lin_creator"
+                                            android:layout_gravity="center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+
+                                            android:paddingEnd="@dimen/space_4dp"
+                                            android:orientation="horizontal">
+                                            <de.hdodenhof.circleimageview.CircleImageView
+                                               android:id="@+id/iv_creator_img"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                app:civ_border_width="1dp"
+                                                android:layout_marginStart="18dp"
+                                                android:scaleType="centerCrop"
+                                                app:civ_border_color="@color/light_grey"
+                                                android:src="@drawable/men_img"
+                                                />
+                                            <TextView
+                                                android:id="@+id/tv_creator_name"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="start"
+                                                android:text="Name"
+                                                android:layout_marginStart="@dimen/space_6dp"
+                                                android:layout_marginEnd="@dimen/space_4dp"
+                                                android:textColor="@color/black"
+                                                android:textSize="12sp"
+                                                android:fontFamily="@font/sfuitext_semibold" />
+
+
+                                        </LinearLayout>
+                                        <View
+                                            android:layout_marginTop="@dimen/space_8"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/space_1dp"
+                                            android:layout_marginEnd="8dp"
+                                            android:layout_marginStart="@dimen/space_8dp"
+                                            android:background="@color/light_gray"/>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/lin_tutors"
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginStart="4dp"
+                                            android:layout_marginTop="4dp"
+                                            android:layout_marginEnd="4dp"
+                                            android:gravity="start"
+                                            android:text="Tutors"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/tv_14sp"
+                                            android:fontFamily="@font/sfuitext_semibold" />
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/recTutors"
+                                            android:layout_marginStart="@dimen/space_6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                        </androidx.recyclerview.widget.RecyclerView>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:gravity="start"
+                                    android:text="Rating"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                   android:fontFamily="@font/sfuitext_semibold" />
+
+                                <RatingBar
+                                    android:id="@+id/rating_bar"
+                                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                                    android:layout_width="190dp"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="5"
+                                    android:padding="4dp"
+                                    android:progressTint="@color/yellow"
+
+                                     />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="start"
+                                android:text="Course Provides"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/sfuitext_semibold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:nestedScrollingEnabled="false"
+                                android:id="@+id/rec_provider"/>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="4dp"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <ImageView
+                                    android:layout_width="@dimen/space_20dp"
+                                    android:layout_height="@dimen/space_20"
+                                    android:layout_gravity="center"
+                                    android:padding="4dp"
+                                    android:src="@drawable/bg_cart_circle"
+                                    app:tint="@color/black" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:text="About Course"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/space_20dp"
+                                    android:layout_height="@dimen/space_20"
+                                    android:layout_gravity="center"
+                                    android:padding="4dp"
+                                    android:src="@drawable/bg_cart_circle"
+                                    app:tint="@color/black"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:text="About Course"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/space_20dp"
+                                    android:layout_height="@dimen/space_20"
+                                    android:layout_gravity="center"
+                                    android:padding="4dp"
+                                    android:src="@drawable/bg_cart_circle"
+                                    app:tint="@color/black" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:text="About Course"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lin_offer_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
+                                android:text="Course Offers"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/sfuitext_semibold" />
+
+
+                            <LinearLayout
+                                android:id="@+id/lin_course_offer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/space_20dp"
+                                    android:layout_height="@dimen/space_20"
+                                    android:layout_gravity="center"
+                                    android:padding="4dp"
+                                    android:src="@drawable/bg_cart_circle"
+                                    app:tint="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/tv_course_offer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:text=""
+                                    android:fontFamily="@font/sfui_text_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lin_demo_offer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="4dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/space_20dp"
+                                    android:layout_height="@dimen/space_20"
+                                    android:layout_gravity="center"
+                                    android:padding="4dp"
+                                    android:src="@drawable/bg_cart_circle"
+                                    app:tint="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/tv_demo_offer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:text=""
+                                    android:fontFamily="@font/sfui_text_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_demo_live"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="start"
+                            android:text="Live Videos Demo"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/sfuitext_semibold" />
+
+                        <include
+                            android:id="@+id/lin_demo_view"
+                            layout="@layout/row_demo_live_video"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="@dimen/space_8"
+                        android:id="@+id/lin_other_course">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="start"
+                            android:text="Creator Other Courses"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/sfuitext_semibold" />
+                        <androidx.recyclerview.widget.RecyclerView
+
+                            android:id="@+id/demo_video_rec_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:id="@+id/rel_join_course"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/graient1"
+                        android:padding="@dimen/space_10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Buy Course"
+                            android:fontFamily="@font/sfuitext_semibold"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

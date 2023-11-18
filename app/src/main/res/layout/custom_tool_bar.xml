@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_500">
+<!--<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    app:elevation="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+      app:contentInsetStart="0dp"
+        android:layout_marginStart="10dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/custom_tool_item"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="visible"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="visible"
+            android:elevation="1dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/menuImageView"
+                android:layout_width="@dimen/space_24dp"
+                android:layout_height="@dimen/space_24dp"
+                app:srcCompat="@drawable/ic_baseline_menu_black_24dp"
+                app:tint="@color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome !"
+                android:layout_marginStart="8dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:fontFamily="@font/sfuitext_semibold" />
+        </LinearLayout>
+
+            <LinearLayout
+                    android:visibility="visible"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="32dp"
+                android:layout_marginEnd="@dimen/space_10dp"
+                android:layout_marginTop="-20dp"
+                    android:layout_height="wrap_content">
+                <include layout="@layout/common_home_support_toolbar"/>
+
+
+            </LinearLayout>
+
+
+
+
+<!--            <ImageView-->
+<!--                    android:visibility="gone"-->
+<!--                android:id="@+id/userTextview"-->
+<!--                android:layout_width="@dimen/space_30dp"-->
+<!--                android:layout_height="@dimen/space_30dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/menuImageView"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/menuImageView"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/menuImageView"-->
+<!--                app:srcCompat="@drawable/logoo" />-->
+
+<!--            <LinearLayout-->
+<!--                    android:visibility="gone"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:focusableInTouchMode="true"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/menuImageView"-->
+<!--                app:layout_constraintEnd_toStartOf="@id/iv_filterTextView"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/userTextview"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/menuImageView"-->
+<!--                android:orientation="vertical">-->
+<!--            <AutoCompleteTextView-->
+<!--                android:id="@+id/et_search"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:background="@drawable/drawable_stroke_gray_bg"-->
+<!--                android:drawableEnd="@drawable/ic_baseline_search_gray_24dp"-->
+<!--                android:drawablePadding="5dp"-->
+<!--                android:ems="10"-->
+<!--                android:hint="Search courses"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingHorizontal="10dp"-->
+<!--                android:paddingVertical="10dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="@color/light_gray"-->
+<!--                android:textSize="16sp"-->
+<!--               />-->
+<!--            </LinearLayout>-->
+
+<!--            <ImageView-->
+<!--                    android:visibility="gone"-->
+<!--                android:id="@+id/iv_filterTextView"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:src="@drawable/ic_baseline_filter_alt_24"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:tint="@color/primary_color" />-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_toolbar_action"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+               android:fontFamily="@font/sfuitext_semibold"
+                android:layout_marginStart="@dimen/space_8dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_18"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.MaterialToolbar>>
+
+    <View
+            android:visibility="gone"
+        android:id="@+id/divider7"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:elevation="@dimen/space_8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+    <!--</com.google.android.material.appbar.AppBarLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:padding="@dimen/space_2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/space_10dp"
+    android:minHeight="?attr/actionBarSize"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <ImageView
+        android:layout_width="@dimen/space_30dp"
+        android:src="@drawable/ic_baseline_menu_black_24dp"
+        android:layout_height="40dp"/>
+    <ImageView
+        android:layout_width="@dimen/space_30dp"
+        android:src="@drawable/logoo"
+        android:paddingLeft="@dimen/space_5dp"
+        android:layout_height="40dp"/>
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/space_20dp"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_filter"
+        android:layout_width="@dimen/space_30"
+        android:src="@drawable/filter_24px"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_height="@dimen/space_20"/>
+</androidx.appcompat.widget.Toolbar>-->

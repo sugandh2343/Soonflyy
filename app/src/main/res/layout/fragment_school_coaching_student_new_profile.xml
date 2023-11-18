@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".YourSchooolPannel.SchoolCoachingSection.SchoolCoachingFragment.SchoolCoachingStudentNewProfileFragment">
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:id="@+id/swipe"
+                android:layout_height="wrap_content">
+                <androidx.core.widget.NestedScrollView
+                        android:scrollbars="none"
+                        android:fillViewport="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <!--                                <RelativeLayout-->
+                                <!--                                        android:id="@+id/rel_no_live"-->
+                                <!--                                        android:layout_centerInParent="true"-->
+                                <!--                                        android:layout_width="match_parent"-->
+                                <!--                                        android:layout_height="wrap_content">-->
+                                <!--                                        <RelativeLayout-->
+                                <!--                                                android:layout_centerInParent="true"-->
+                                <!--                                                android:layout_gravity="center"-->
+                                <!--                                                android:layout_width="match_parent"-->
+                                <!--                                                android:layout_height="wrap_content">-->
+
+                                <!--                                                <ImageView-->
+                                <!--                                                        android:layout_width="match_parent"-->
+                                <!--                                                        android:layout_height="wrap_content"-->
+                                <!--                                                        android:src="@drawable/nodata">-->
+
+                                <!--                                                </ImageView>-->
+                                <!--                                        </RelativeLayout>-->
+                                <!--                                </RelativeLayout>-->
+                                <RelativeLayout
+                                        android:id="@+id/rel_showlist"
+                                        android:visibility="visible"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                                android:id="@+id/rec_school_profile"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:nestedScrollingEnabled="false">
+
+                                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                                </RelativeLayout>
+                        </RelativeLayout>
+
+                </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

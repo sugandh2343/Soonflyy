@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/nointernet"/>
+        <Button
+            android:layout_margin="@dimen/space_20dp"
+            android:id="@+id/btn_again"
+            android:text="Try Again"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+<!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:id="@+id/iv_ytube"-->
+<!--      android:layout_centerHorizontal="true"-->
+<!--        android:src="@drawable/no_internet"-->
+<!--        android:tint="@android:color/transparent"-->
+<!--        android:layout_width="match_parent"-->
+
+<!--        android:layout_height="300dp"-->
+
+<!--        />-->
+
+</RelativeLayout>

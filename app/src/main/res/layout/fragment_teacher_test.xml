@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Teacher_Pannel.TeacherTestFragment">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/refresh_layout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_nested"
+        android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_10dp"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:text=" Test Title*"
+                            android:fontFamily="@font/sfuitext_semibold"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                           />
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:background="@drawable/drawable_edit_text_shadow_bg"
+                            android:hint="Enter test title"
+                            android:padding="@dimen/space_8dp"
+                            android:textSize="@dimen/space_14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_10dp"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:text=" Duration*"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                           android:fontFamily="@font/sfuitext_semibold" />
+
+                        <TextView
+                            android:id="@+id/et_duration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:background="@drawable/drawable_edit_text_shadow_bg"
+                            android:hint="Enter duration"
+                            android:textColor="@color/black"
+                            android:padding="@dimen/space_8"
+                            android:fontFamily="@font/sfuitext_medium"
+                            android:textSize="@dimen/space_14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_10dp"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:text=" Date*"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                           android:fontFamily="@font/sfuitext_semibold"/>
+
+                        <TextView
+                            android:id="@+id/et_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:background="@drawable/drawable_edit_text_shadow_bg"
+                            android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+                            android:drawableTint="@color/black"
+                            android:hint="Select date  "
+                            android:textColor="@color/black"
+                            android:padding="@dimen/space_8"
+                            android:fontFamily="@font/sfuitext_medium"
+                            android:textSize="@dimen/space_14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_10dp"
+                            android:layout_marginTop="@dimen/space_5"
+                            android:text=" Time*"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                          android:fontFamily="@font/sfuitext_semibold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal"
+                            android:padding="8dp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/et_time1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/drawable_edit_text_shadow_bg"
+                                android:drawableEnd="@drawable/ic_baseline_watch_later_24"
+                                android:drawableTint="@color/grey"
+                                android:hint="From"
+                                android:textColor="@color/black"
+                                android:padding="@dimen/space_8"
+                                android:fontFamily="@font/sfuitext_medium"
+                                android:textSize="@dimen/space_14" />
+
+                            <TextView
+                                android:id="@+id/et_time2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/drawable_edit_text_shadow_bg"
+                                android:drawableEnd="@drawable/ic_baseline_watch_later_24"
+                                android:drawableTint="@color/grey"
+                                android:hint=" To"
+                                android:textColor="@color/black"
+                                android:padding="@dimen/space_8dp"
+                                android:fontFamily="@font/sfuitext_medium"
+                                android:textSize="@dimen/space_14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titel_tv"
+                            android:layout_width="180dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:elevation="@dimen/space_5dp"
+                            android:layout_marginTop="@dimen/space_5dp"
+                            android:background="@drawable/bg_round_red_outline"
+                            android:gravity="center"
+                            android:text="Create Question Paper"
+                            android:textColor="@color/graient2"
+                            android:textSize="14sp"
+                           android:fontFamily="@font/sfuitext_semibold"/>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@+id/include" >-->
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/add_new"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:backgroundTint="@color/graient2"
+                                android:clickable="true"
+                                android:src="@drawable/ic_baseline_add_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:tint="@color/white" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rec_main"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="@dimen/space_8dp"
+                                android:nestedScrollingEnabled="false"
+                                app:layout_constraintBottom_toTopOf="@+id/add_new"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+
+                        android:id="@+id/create_test_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/bg_button"
+                        android:gravity="center"
+                        android:text="Finish"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

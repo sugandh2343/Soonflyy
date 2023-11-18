@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".YourSchooolPannel.SchoolStudentSignupFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lnr_top"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/layout_student"
+                    layout="@layout/layout_school_student" />
+
+                <include
+                    android:id="@+id/layout_school"
+                    layout="@layout/layout_school_coaching"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lnr_top"
+                android:layout_margin="@dimen/space_10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+              >
+
+                <include layout="@layout/layout_student_signup" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+<!--    </ScrollView>-->
+</ScrollView>
+

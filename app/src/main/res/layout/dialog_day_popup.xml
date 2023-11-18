@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lin_parent"
+    android:background="@drawable/bg_bottom_corner"
+    android:backgroundTint="@color/white_smoke"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:paddingBottom="@dimen/space_10dp">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-6dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        android:hint="Select here"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/lin_search"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginEnd="@dimen/space_10"-->
+<!--        android:layout_toLeftOf="@+id/iv_notification"-->
+<!--        android:background="@drawable/bg_language_selected_button"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <androidx.appcompat.widget.SearchView-->
+
+<!--            android:id="@+id/searchView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="35dp"-->
+
+<!--            android:layout_weight="1"-->
+<!--            android:focusableInTouchMode="true"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:iconifiedByDefault="false"-->
+<!--            app:iconifiedByDefault="false"-->
+<!--            app:searchIcon="@drawable/ic_search_white"-->
+<!--            app:queryHint="Search......"-->
+<!--            />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_margin="@dimen/space_5"-->
+<!--            android:background="@drawable/bg_ractangle"-->
+<!--            android:padding="@dimen/space_6"-->
+<!--            android:src="@drawable/ic_right_arrow"-->
+<!--            app:tint="@color/black" />-->
+
+<!--    </LinearLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:padding="@dimen/space_10dp" />
+</LinearLayout>
+    </LinearLayout>

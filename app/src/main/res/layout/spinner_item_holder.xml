@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="@dimen/space_10dp"
+    android:paddingTop="@dimen/space_12dp"
+    android:paddingBottom="@dimen/space_12dp"
+    android:hint="Select"
+    android:fontFamily="@font/sfuitext_semibold"
+    android:textColor="@color/black"
+    android:background="@color/light_grey"
+    android:textSize="@dimen/space_14sp">
+
+
+</TextView>

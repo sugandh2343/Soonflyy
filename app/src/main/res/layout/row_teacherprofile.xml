@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/lin_main"
+        android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                        android:id="@+id/lin_manage"
+                        android:layout_margin="@dimen/space_5dp"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                                android:id="@+id/iv_profile"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:src="@drawable/ic_person"
+                                android:padding="@dimen/space_4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:tint="@color/black" />
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                        android:id="@+id/tv_title"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title"
+                                        android:textStyle="bold"
+                                        android:textSize="@dimen/space_14sp"
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        />
+                        </LinearLayout>
+                        <ImageView
+                                android:id="@+id/iv_arrowback"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:src="@drawable/ic_arrow_right"
+                                android:padding="@dimen/space_4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/space_8dp"
+                                app:tint="@color/black" />
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

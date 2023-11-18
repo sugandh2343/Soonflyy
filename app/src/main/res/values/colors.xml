@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <!--simplee color-->
+
+    <!--nbps file picker library color-->
+    <!--    <color name="colorPrimary">#3F51B5</color>-->
+    <!--    <color name="colorPrimaryDark">#303F9F</color>-->
+    <!--    <color name="colorAccent">#FF4081</color>-->
+    <color name="calendar_all_txt_color">#B80000</color>
+    <color name="calendar_divider_color">#B80000</color>
+    <color name="purple_200">#B80000</color>
+    <color name="purple_500">#B80000</color>
+    <color name="purple_700">#B80000</color>
+    <color name="teal_200">#FF018786</color>
+    <!--    <color name="teal_700">#FF018786</color>-->
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_smoke">#F5F5F5</color>
+    <color name="white_defoult">#F0FBF8F8</color>
+    <color name="gray">#989393</color>
+    <color name="transparent_black">#5D5C60</color>
+
+    <color name="graient1">#20BAD9</color>
+    <color name="Accent_color">#20BAD9</color>
+    <color name="track_color">#7DE2F6</color>
+
+    <color name="graient2">#2383BF</color>
+    <color name="timetble">#87BDDF</color>
+    <color name="timetble2">#B496F8</color>
+    <color name="dark_graient2">#014168</color>
+    <color name="dark_graient1">#17BEDF</color>
+
+    <color name="dark_red">#680303</color>
+    <color name="rec_bg">#EEEEEE</color>
+    <color name="orange">#FB8B03</color>
+    <color name="cyan">#20BAD9</color>
+    <color name="primary_color">#B80000</color>
+    <color name="hidecolor">#B7B6B0B0</color>
+    <color name="red">#F11414</color>
+    <color name="yellow">#FFC300</color>
+    <color name="all">#F8F5F5</color>
+    <color name="offWhite">#EC9B9B</color>
+    <color name="green">#07F837</color>
+    <color name="green_100">#049521</color>
+    <color name="light_green">#3DD45B</color>
+    <color name="light_grey">#F2F3F2</color>
+    <color name="green_500">#FF018786</color>
+    <color name="green_trans">#864CAF50</color>
+    <color name="light_gray">#DCDCDC</color>
+    <color name="purple">#51329F</color>
+    <color name="light_brown">#696969</color>
+    <color name="color_dark_gray">#566573</color>#566573 808B96
+    <color name="light_black">#2A2A2A</color>#17202A
+
+    <color name="darkgray">#A9A9A9</color>
+    <color name="dark_blue">#122037</color>
+    <color name="bg_circle">#870202</color>
+    <color name="text_color">#434242</color>
+    <color name="media_black_color">#CC000000</color>
+
+    <color name="light_purple_1">#B19CD9</color>
+    <color name="light_purple_2">#CDB7F6</color>
+
+    <color name="time_table_1">#8dcfec</color>
+    <color name="time_table_2">#b8e2f4</color>
+
+
+</resources>

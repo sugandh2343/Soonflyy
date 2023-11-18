@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_5dp"
+    android:background="@drawable/bg_studentchap">
+
+    <ImageView
+        android:layout_width="@dimen/space_15dp"
+        android:layout_height="@dimen/space_15dp"
+        android:layout_marginStart="@dimen/space_6dp"
+        android:layout_marginTop="@dimen/space_6dp"
+        android:src="@drawable/circle_blck"
+        android:visibility="gone"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_chaper_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:fontFamily="@font/sfuitext_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_13sp" />
+
+        <TextView
+            android:id="@+id/tv_chapter_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-5dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_15sp"
+            android:fontFamily="@font/sfuitext_semibold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

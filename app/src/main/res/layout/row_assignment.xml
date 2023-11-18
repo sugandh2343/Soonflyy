@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_margin="@dimen/space_10"
+        android:elevation="@dimen/space_5"
+        android:backgroundTint="@color/light_grey"
+        app:cardCornerRadius="@dimen/space_15">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_4"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/men_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.32" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="@dimen/space_5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/header_tittle_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/spartan"
+                        android:text="Assignment 1"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/img"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+
+
+                            android:id="@+id/header_sub_tittle_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lexend"
+                            android:text="@string/description"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:layout_marginEnd="@dimen/space_5dp"
+                            app:layout_constraintEnd_toStartOf="@id/play_img"
+                            app:layout_constraintStart_toStartOf="@id/header_tittle_tv"
+                            app:layout_constraintTop_toBottomOf="@id/header_tittle_tv" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/lexend"
+                        android:text="@string/date"
+                        android:textColor="@color/primary_color"
+                        android:textSize="10sp"
+                        android:layout_marginEnd="@dimen/space_5dp"
+                        app:layout_constraintEnd_toStartOf="@id/play_img"
+                        app:layout_constraintStart_toStartOf="@id/header_tittle_tv"
+                        app:layout_constraintTop_toBottomOf="@id/header_tittle_tv" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

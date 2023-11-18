@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student_Pannel.Subject_Chapter_Details_Fragment">
+
+
+
+    <include
+        android:visibility="gone"
+        layout="@layout/row_tutor_name"
+        android:id="@+id/lin_t_name"/>
+
+    <View
+
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lin_t_name"
+        android:background="@color/black" />
+<!--    <View-->
+<!--        android:id="@+id/view2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/black" />-->
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/line_top"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/view2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:id="@+id/lin_live_classes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/video_img"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/video_call_24px"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_live_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Live Classes"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:layout_marginStart="@dimen/space_4dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="@dimen/space_1dp"
+                    android:layout_height="50dp"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:id="@+id/lin_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/iv_video_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/s_video_icon"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_video_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_4dp"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:text="Videos"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_chpter"
+                    android:layout_width="@dimen/space_1dp"
+                    android:layout_height="50dp"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:id="@+id/lin_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/iv_notes_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/s_notes_icon"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_notes_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_4dp"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:text="Notes"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="@dimen/space_1dp"
+                    android:layout_height="50dp"
+                    android:background="@color/black"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:id="@+id/lin_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_dpp_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/s_dpp_icon"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_dpp_icon"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_4dp"
+                        android:text="DPP"
+
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="@dimen/space_1dp"
+                    android:layout_height="50dp"
+                    android:background="@color/black"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:id="@+id/lin_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_test_icon"
+                        android:layout_width="@dimen/space_24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/test_icon"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:id="@+id/tv_test_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_4dp"
+                        android:text="Test"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearlayout"
+        android:background="@color/black" />
+    <include
+        android:visibility="gone"
+        android:id="@+id/include_assign_to"
+        layout="@layout/row_assign_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view3"/>
+    <FrameLayout
+        android:id="@+id/sub_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_assign_to"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

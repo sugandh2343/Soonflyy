@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+
+        android:background="@drawable/main_toolbar_bg">
+
+        <RelativeLayout
+            android:id="@+id/rel_bordersss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="start"
+            android:layout_marginStart="2dp"
+            android:padding="4dp"
+            tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="4dp"
+                    android:src="@drawable/exo_ic_settings" />
+
+                <LinearLayout
+                    android:id="@+id/lnr_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_setting"
+                    android:orientation="horizontal"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/space_6dp"
+                    android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sfuitext_bold"
+                                    android:text="Your School"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="26sp" />
+
+                                <LinearLayout
+                                    android:layout_marginTop="-4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="6dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:visibility="gone"
+                                            android:id="@+id/iv_icon"
+                                            android:layout_width="@dimen/space_24dp"
+                                            android:layout_height="@dimen/space_24dp"
+                                            android:layout_marginEnd="@dimen/space_4dp"
+                                            android:src="@drawable/s_education" />
+
+                                        <TextView
+                                            android:id="@+id/tv_t_hometitle"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:fontFamily="@font/sfuitext_medium"
+                                            android:text="School / Coaching Section"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+
+                                </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                          >
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:drawableTint="@color/white"
+                                    android:drawableStart="@drawable/ic_phone"
+                                    android:drawablePadding="@dimen/space_4dp"
+                                    android:fontFamily="@font/sfuitext_semibold"
+                                    android:text="Mobile number"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_mob_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-4dp"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                    android:text="Mobile number"
+                                    android:paddingStart="@dimen/space_8dp"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+                        </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnr_title"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="4dp"
+                    android:visibility="gone">
+
+
+                </RelativeLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".YourSchooolPannel.SchoolCoachingSection.SchoolCoachingSectionTutor.Fragment.Scl_SelectChpNotesFragment">
+<!--        <include-->
+<!--                android:id="@+id/include"-->
+<!--                layout="@layout/custom_tool_bar_second"/>-->
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.core.widget.NestedScrollView
+                                android:fillViewport="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <RelativeLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                        <RelativeLayout
+                                                android:id="@+id/rel_no_live"
+                                                android:layout_centerInParent="true"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+                                                <RelativeLayout
+                                                        android:layout_centerInParent="true"
+                                                        android:layout_gravity="center"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content">
+                                                        <androidx.cardview.widget.CardView
+                                                                android:id="@+id/card_create_course"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_margin="4dp"
+                                                                android:backgroundTint="@color/graient2"
+                                                                app:cardCornerRadius="@dimen/space_10dp">
+
+                                                                <RelativeLayout
+                                                                        android:id="@+id/rel_test"
+                                                                        android:layout_width="match_parent"
+                                                                        android:layout_height="120dp"
+                                                                        android:layout_marginBottom="10dp"
+                                                                        android:background="@drawable/bg_button"
+                                                                        android:backgroundTint="@color/graient1"
+                                                                        android:gravity="center">
+
+                                                                        <ImageView
+                                                                                android:id="@+id/img_live"
+                                                                                app:tint="@color/white"
+                                                                                android:layout_width="44dp"
+                                                                                android:layout_height="44dp"
+                                                                                android:layout_alignParentTop="true"
+                                                                                android:layout_centerInParent="true"
+                                                                                android:layout_marginTop="5dp"
+                                                                                android:background="@drawable/bg_circle_button"
+                                                                                android:backgroundTint="@color/dark_graient2"
+                                                                                android:padding="@dimen/space_8"
+                                                                                android:src="@drawable/ic_notice" />
+
+
+                                                                        <TextView
+                                                                            android:id="@+id/tv_discription"
+                                                                            android:layout_width="match_parent"
+                                                                            android:layout_height="wrap_content"
+                                                                            android:layout_below="@id/img_live"
+                                                                            android:layout_centerInParent="true"
+                                                                            android:gravity="center"
+                                                                            android:text="Upload  first notes here"
+                                                                            android:textColor="@color/white"
+                                                                            android:textSize="@dimen/space_20sp"
+                                                                           android:fontFamily="@font/sfuitext_semibold" />
+
+                                                                </RelativeLayout>
+                                                        </androidx.cardview.widget.CardView>
+
+                                                </RelativeLayout>
+                                        </RelativeLayout>
+                                        <RelativeLayout
+                                                android:id="@+id/rel_showlist"
+                                                android:visibility="gone"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+
+                                                <androidx.recyclerview.widget.RecyclerView
+                                                        android:id="@+id/rec_notes"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content">
+
+                                                </androidx.recyclerview.widget.RecyclerView>
+
+                                                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                                        android:id="@+id/feb_notes"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentRight="true"
+                                                        android:layout_alignParentBottom="true"
+                                                        android:backgroundTint="@color/graient2"
+                                                        android:clickable="true"
+                                                        android:src="@drawable/ic_baseline_add_24"
+                                                        app:tint="@color/white">
+
+                                                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                                        </RelativeLayout>
+                                </RelativeLayout>
+
+
+
+                        </androidx.core.widget.NestedScrollView>
+
+                </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "575368268653",
+    "firebase_url": "https://soonflyy-default-rtdb.firebaseio.com",
+    "project_id": "soonflyy",
+    "storage_bucket": "soonflyy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575368268653:android:a96b512e119c83ba89a864",
+        "android_client_info": {
+          "package_name": "soonflyy.learning.hub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575368268653-3lvgb1lms3gft7l0004g9a2k8auv7a2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "soonflyy.learning.hub",
+            "certificate_hash": "19bb93d7fbf873a4f520105bd6749e39588e251c"
+          }
+        },
+        {
+          "client_id": "575368268653-6ci1g3p3ujl1j6c0qjl21js3h6ggupks.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "soonflyy.learning.hub",
+            "certificate_hash": "e233287b21792bb6bcaa5679db39a116cde1e182"
+          }
+        },
+        {
+          "client_id": "575368268653-hfeo3kpmj84eatj5q6p0so26gr98uqu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAubAlKwtHwO2YuPK20T42xDVCxFsZKFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575368268653-hfeo3kpmj84eatj5q6p0so26gr98uqu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

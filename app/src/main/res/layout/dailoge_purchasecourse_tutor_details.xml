@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_edit_text_shadow_bg"
+    android:backgroundTint="@color/white"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/space_24dp"
+        android:layout_height="@dimen/space_24dp"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/space_2"
+        android:layout_margin="@dimen/space_4"
+        android:src="@drawable/close_circle"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/iv_close"
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="@dimen/space_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile_image"
+                    android:layout_width="80dp"
+                    android:elevation="@dimen/space_4"
+                    android:layout_height="80dp"
+                    android:layout_margin="@dimen/space_6"
+                    android:src="@drawable/logoo" />
+
+                <TextView
+                    android:id="@+id/tv_dailoge_tutor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/user_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/sfuitext_bold">
+
+                </TextView>
+                <TextView
+                    android:layout_margin="@dimen/space_6"
+                    android:id="@+id/tv_dailoge_tutor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tutor"
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/sfuitext_medium">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_gravity="center"
+                android:background="#B80000"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/tv_dailoge_user_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/space_6"
+                android:fontFamily="@font/sfuitext_medium"
+                android:gravity="start"
+                android:text="@string/tutor"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

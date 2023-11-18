@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_box_round_corner"
+    android:layout_margin="@dimen/space_20dp"
+    android:paddingStart="@dimen/space_20"
+    android:paddingEnd="@dimen/space_20"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:id="@+id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:backgroundTint="@color/white"
+            android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:padding="4dp"
+                                android:text=""
+                            android:fontFamily="@font/sfuitext_semibold"
+                                android:textAlignment="center"
+                                android:textColor="@color/graient2"
+                                android:textSize="16sp"
+                                 />
+                        <View
+                                android:layout_gravity="center"
+                                android:background="@color/black"
+                                android:layout_width="130dp"
+                                android:layout_height="1dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_16dp"
+                        android:gravity="center_vertical"
+
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                                android:gravity="center_vertical"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Marks"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                            android:fontFamily="@font/sfuitext_semibold"
+                                android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_total"
+                                android:gravity="end"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="100"
+                            android:fontFamily="@font/sfuitext_semibold"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_6dp"
+
+                        android:gravity="center_vertical"
+
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                                android:gravity="start"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                            android:fontFamily="@font/sfuitext_semibold"
+                                android:text="Obtain Marks"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+
+                        <TextView
+                                android:gravity="end"
+                            android:id="@+id/tv_obtained"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="100"
+                            android:fontFamily="@font/sfuitext_semibold"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_remark"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remark"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/sfuitext_semibold"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/et_remark"
+                            android:enabled="false"
+                            android:background="@drawable/edit_box_round_corner"
+                            android:gravity="top"
+                            android:layout_marginTop="3dp"
+                           android:padding="@dimen/space_10dp"
+                            android:backgroundTint="@color/white_smoke"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:text="Good luck"
+                            android:inputType="textMultiLine"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+
+                            />
+
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_10dp"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:text="Close"
+                    android:fontFamily="@font/sfuitext_semibold"
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                        android:textSize="14sp" />
+
+
+        </LinearLayout>
+</LinearLayout>

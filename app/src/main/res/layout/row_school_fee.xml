@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/lin_student_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+                        <TextView
+                                android:id="@+id/tv_student"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Student"
+                                android:textSize="@dimen/space_13sp"
+                                android:textColor="@color/black"
+                                android:paddingStart="@dimen/space_8dp"
+                                android:paddingEnd="@dimen/space_8dp"
+                                android:gravity="center"
+                                android:ellipsize="end"
+                            android:fontFamily="@font/sfuitext_medium"
+                                android:layout_marginEnd="@dimen/space_1dp"
+                                />
+                        <TextView
+                                android:id="@+id/tv_fee"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Fee"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/space_1dp"
+                                android:paddingStart="@dimen/space_8dp"
+                                android:paddingEnd="@dimen/space_8dp"
+                                android:textSize="@dimen/space_13sp"
+                            android:fontFamily="@font/sfuitext_medium"
+                                android:textColor="@color/black"
+                                android:layout_marginEnd="@dimen/space_1dp"
+
+                                />
+                        <TextView
+                                android:id="@+id/tv_status"
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:text="Status"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:paddingStart="@dimen/space_8dp"
+                                android:paddingEnd="@dimen/space_8dp"
+                                android:textSize="@dimen/space_13sp"
+                            android:fontFamily="@font/sfuitext_medium"
+                                android:layout_marginStart="@dimen/space_1dp"
+                                android:textColor="@color/black"
+                                />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lin_s_t_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/space_3dp"
+                    android:paddingTop="@dimen/space_3dp"
+                        android:weightSum="2"
+                    android:gravity="center_vertical"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+                        <TextView
+                                android:layout_weight="1"
+                            android:id="@+id/tv_st_student"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Student"
+                                android:textSize="@dimen/space_13sp"
+                                android:textColor="@color/black"
+                                android:paddingStart="@dimen/space_8dp"
+                                android:paddingEnd="@dimen/space_8dp"
+                                android:gravity="center"
+                                android:ellipsize="end"
+                            android:fontFamily="@font/sfuitext_medium"
+                                android:layout_marginEnd="@dimen/space_1dp"
+                                />
+<!--                        <TextView-->
+<!--                                -->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:text="Fee"-->
+<!--                                android:gravity="center"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:layout_marginStart="@dimen/space_1dp"-->
+<!--                                android:paddingStart="@dimen/space_8dp"-->
+<!--                                android:paddingEnd="@dimen/space_8dp"-->
+<!--                                android:textSize="@dimen/space_13sp"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:layout_marginEnd="@dimen/space_1dp"-->
+
+<!--                                />-->
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:id="@+id/tv_st_status"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:paddingStart="@dimen/space_8dp"
+                                android:paddingEnd="@dimen/space_8dp"
+                                android:textSize="@dimen/space_13sp"
+                                android:layout_marginStart="@dimen/space_1dp"
+                                android:textColor="@color/black">
+                                <LinearLayout
+                                    android:id="@+id/lin_spinner"
+                                    android:layout_width="120dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/space_5">
+
+                                        <FrameLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:layout_weight="0.6"
+                                            android:elevation="1dp">
+
+
+                                                <Spinner
+                                                    android:id="@+id/st_spiner"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="4dp"
+                                                    android:autofillHints="Select your Company Name"
+                                                    android:overlapAnchor="false">
+
+                                                </Spinner>
+
+                                                <TextView
+                                                    android:id="@+id/tv_selected"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/bg_spinner"
+                                                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                                                    android:drawablePadding="8dp"
+                                                    android:drawableTint="@color/black"
+                                                    android:gravity="center_vertical"
+                                                    android:paddingStart="12dp"
+                                                    android:hint="Select"
+                                                    android:inputType="text"
+
+                                                    android:textColor="@color/black"
+                                                    android:textSize="@dimen/space_13sp"
+                                                    android:visibility="visible"
+                                                    android:fontFamily="@font/sfuitext_medium"
+                                                    tools:ignore="TextViewEdits" />
+
+
+                                        </FrameLayout>
+
+                                </LinearLayout>
+<!--                                <Spinner-->
+<!--                                    android:visibility="visible"-->
+<!--                                        android:background="@drawable/edit_box_round_corner"-->
+<!--                                         android:id="@+id/st_spiner"-->
+<!--                                        android:text="Status"-->
+<!--                                        android:gravity="center"-->
+
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="40dp">-->
+
+
+<!--                                </Spinner>-->
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/tv_fee_status"
+                                    android:layout_width="70dp"
+                                    android:layout_height="40dp"
+                                    android:text="paid"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/space_12sp"
+                                    android:textColor="@color/white"
+                                    android:paddingStart="8dp"
+                                    android:paddingEnd="8dp"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                    android:backgroundTint="@color/green"
+                                    android:background="@drawable/edit_box_round_corner"
+                                    android:layout_marginEnd="@dimen/space_1dp"
+                                    />
+                        </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

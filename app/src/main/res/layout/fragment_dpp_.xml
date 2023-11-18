@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student_Pannel.Dpp_Fragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/space_8dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_dpp_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text=""
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+               android:fontFamily="@font/sfuitext_bold"
+                android:textColor="@color/black"
+                />
+
+            <androidx.cardview.widget.CardView
+               android:id="@+id/card_tFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="@dimen/space_8dp"
+                app:cardBackgroundColor="@color/light_grey"
+                android:elevation="@dimen/space_5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_margin="@dimen/space_8dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/s_pdf"
+                        app:tint="@color/red" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/tv_tFile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/space_13sp"
+                           android:fontFamily="@font/sfuitext_semibold"
+                            android:text=""/>
+                        <TextView
+                            android:id="@+id/tv_sub_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-2dp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/space_12sp"
+                            android:fontFamily="@font/sfuitext_medium"
+                            android:text=""/>
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/iv_download"
+                        android:layout_marginEnd="@dimen/space_8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_baseline_download_24"
+                        app:tint="@color/black" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:text="Submission Status"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+               android:fontFamily="@font/sfuitext_bold"
+                android:textColor="@color/black"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/space_5dp"
+                android:layout_gravity="center_horizontal"
+                app:cardBackgroundColor="@color/light_grey"
+                app:cardCornerRadius="@dimen/space_15dp"
+                android:layout_marginTop="@dimen/space_8">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_8dp">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_column="1"
+
+                                android:background="@drawable/bg_table_row"
+                                android:fontFamily="@font/sfuitext_semibold"
+                                android:gravity="center_vertical"
+                                android:paddingStart="@dimen/space_14dp"
+                                android:text="Submission Status"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_11sp" />
+
+                            <TextView
+                                android:id="@+id/tv_sub_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:hint="No attempt"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_12sp"
+                                android:fontFamily="@font/sfuitext_semibold"
+                                android:background="@drawable/bg_table_row"
+                                android:gravity="center_vertical|end"
+                                android:paddingStart="@dimen/space_4dp"
+                                android:paddingEnd="@dimen/space_16dp"
+                                android:layout_weight="1"
+                                android:layout_column="2"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="Grading status"
+                                android:gravity="center_vertical"
+
+                                android:fontFamily="@font/sfuitext_semibold"
+                                android:background="@drawable/bg_table_row"
+                                android:paddingStart="@dimen/space_14dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_12sp"
+                                android:layout_column="1"/>
+                            <TextView
+                                android:id="@+id/tv_grade_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:hint="Not graded"
+                                android:background="@drawable/bg_table_row"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sfuitext_semibold"
+                                android:textSize="@dimen/space_11sp"
+                                android:gravity="center_vertical|end"
+                                android:paddingStart="@dimen/space_4dp"
+                                android:paddingEnd="@dimen/space_16dp"
+                                android:layout_weight="1"
+                                android:layout_column="2"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="Due Date"
+                                android:gravity="center_vertical"
+
+                                android:background="@drawable/bg_table_row"
+                                android:paddingStart="@dimen/space_14dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_11sp"
+                                android:fontFamily="@font/sfuitext_semibold"
+                                android:layout_column="1"/>
+
+                            <TextView
+                                android:id="@+id/tv_last_date"
+                                android:layout_width="94dp"
+                                android:layout_height="35dp"
+                                android:layout_column="2"
+                                android:background="@drawable/bg_table_row"
+                                android:fontFamily="@font/sfuitext_semibold"
+                                android:gravity="center_vertical|end"
+                                android:paddingStart="@dimen/space_4dp"
+                                android:paddingEnd="@dimen/space_16dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/space_11sp" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:text="Time remaining"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingStart="@dimen/space_16dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_14sp"
+                                android:layout_column="1"/>
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="10 Hours"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/space_14sp"
+                                android:gravity="center_vertical|end"
+                                android:paddingStart="@dimen/space_8dp"
+                                android:paddingEnd="@dimen/space_16dp"
+                                android:layout_column="2"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="Marks"
+                                android:gravity="center_vertical"
+
+                                android:paddingStart="@dimen/space_14dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/space_11sp"
+                                android:fontFamily="@font/sfuitext_semibold"
+                                android:layout_column="1"/>
+                            <TextView
+                                android:id="@+id/tv_mark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:hint="-"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sfuitext_semibold"
+                                android:textSize="@dimen/space_11sp"
+                                android:gravity="center_vertical|end"
+                                android:paddingStart="@dimen/space_4dp"
+                                android:paddingEnd="@dimen/space_16dp"
+                                android:layout_weight="1"
+                                android:layout_column="2"/>
+                        </TableRow>
+
+                    </TableLayout>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/lin_submit_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:text="File Submission"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:fontFamily="@font/sfuitext_semibold"
+                android:textColor="@color/black"
+                />
+
+            <androidx.cardview.widget.CardView
+               android:id="@+id/card_sfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:layout_marginTop="@dimen/space_8dp"
+                app:cardBackgroundColor="@color/light_grey"
+                android:elevation="@dimen/space_5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/space_8dp"
+                    android:layout_marginEnd="@dimen/space_8dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="40dp"
+                        android:src="@drawable/s_pdf"
+                        android:layout_margin="@dimen/space_8dp"
+                        app:tint="@color/red" />
+
+                    <TextView
+                        android:id="@+id/tv_student_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/space_13sp"
+                      android:fontFamily="@font/sfuitext_semibold"/>
+                    <TextView
+                        android:id="@+id/tv_file_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical|end"
+                        android:textSize="@dimen/space_12sp"
+                        android:fontFamily="@font/sfuitext_medium"
+                        android:paddingEnd="@dimen/space_4dp"
+                        android:text=""/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+             <androidx.cardview.widget.CardView
+                android:id="@+id/card_upload_file"
+                 android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_10dp"
+                app:cardBackgroundColor="@color/graient2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/space_14sp"
+                        android:fontFamily="@font/sfuitext_semibold"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Add Submission"/>
+                    <TextView
+                        android:layout_marginTop="-6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/sfui_text_regular"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/space_10sp"
+                        android:text="jpeg, pdf, word etc"/>
+                </LinearLayout>
+             </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_no_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:text="You have not made a submission yet"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:fontFamily="@font/sfuitext_medium"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

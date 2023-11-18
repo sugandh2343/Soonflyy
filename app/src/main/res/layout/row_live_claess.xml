@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_smoke"
+    android:layout_marginBottom="@dimen/space_4dp"
+    android:orientation="vertical">
+    <!--<LinearLayout
+        android:id="@+id/lnr_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/rel_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+
+                android:id="@+id/rel_btn_live"
+
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_button"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:padding="@dimen/space_5"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_new_text"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/go_live"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_new_text"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:drawablePadding="@dimen/space_5dp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/space_5"
+                    android:paddingHorizontal="5dp"
+                    android:text="12:30 pm"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_live"
+                    app:drawableTint="@color/white" />
+
+
+            </RelativeLayout>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgCourse"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_subject"
+                app:riv_corner_radius="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/sfuitext_semibold"
+                    android:text="Live Class on Hyperbolic Functions"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_14sp"
+                    android:visibility="visible" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/sfuitext_semibold"
+                    android:text="Duration : 30 min"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/space_12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>-->
+    <RelativeLayout
+        android:id="@+id/rel_manage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="@dimen/space_30dp"
+            android:layout_height="@dimen/space_30dp"
+            android:layout_alignParentEnd="true"
+            android:padding="6dp"
+            android:src="@drawable/menu_icon"
+            app:tint="@color/black" />
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:id="@+id/cv_edi"
+            app:cardCornerRadius="6dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginEnd="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/img_edit"
+            android:layout_marginStart="-71dp"
+            android:padding="3dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/liner_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/dailog_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_edit_24"
+                    android:drawablePadding="@dimen/space_3"
+                    android:text="Edit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:drawableTint="@color/black"
+                    android:padding="@dimen/space_3"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:drawableTint="@color/red"
+                    android:id="@+id/dailog_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_below="@id/dailog_edit"
+                    android:text="Delete"
+                    android:textAllCaps="false"
+                    android:textColor="@color/red"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:drawableTint="@color/red"
+                    tools:ignore="ObsoleteLayoutParam"
+                    app:drawableStartCompat="@drawable/ic_baseline_delete_24" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Student_Pannel.TopicFragment">
+
+        <LinearLayout
+            android:id="@+id/lin_topic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/space_8dp">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/thumbnail_image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@color/color_dark_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_border_color="@color/light_gray"
+                    app:riv_border_width="1dp"
+                    app:riv_corner_radius="@dimen/space_15dp" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/play_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play_circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                     />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_see_details"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_button"
+                    android:backgroundTint="@color/red"
+                    android:drawableLeft="@drawable/ic_baseline_videocam_16"
+                    android:fontFamily="@font/sfuitext_semibold"
+                    android:gravity="center"
+                    android:text="Go Live"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="@+id/thumbnail_image"
+                    app:layout_constraintTop_toTopOf="@+id/thumbnail_image" />
+
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/lin_time"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@drawable/bg_button"
+                    app:layout_constraintStart_toStartOf="@+id/thumbnail_image"
+                    app:layout_constraintTop_toTopOf="@+id/thumbnail_image"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_live_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="Today"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        />
+                    <TextView
+                        android:layout_marginTop="-8dp"
+                        android:id="@+id/tv_live_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:drawablePadding="4dp"
+                        android:drawableLeft="@drawable/ic_baseline_videocam_16"
+                        android:gravity="center"
+                        android:text="07:00 PM"
+                        android:fontFamily="@font/sfuitext_medium"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfuitext_semibold"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/space_8"
+                    android:text="Live class on Internet of things"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lin_time" />
+                <TextView
+                    android:id="@+id/tv_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/space_8"
+                    android:text="Duration:45 min"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_video_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:textSize="@dimen/space_14sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/space_8dp"
+        android:text="Business Analysis"/>
+
+</LinearLayout>

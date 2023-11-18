@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".YourSchooolPannel.School_IndepentTutorSection.Fragment.Scl_Indp_TutorManageStudentFragment">
+
+        <include
+            android:id="@+id/include"
+            android:visibility="gone"
+            layout="@layout/custom_tool_bar_second">
+
+        </include>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe"
+                android:layout_below="@id/include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.core.widget.NestedScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fillViewport="true">
+
+                                <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:id="@+id/lin_filter"
+                                            android:layout_marginTop="@dimen/space_8dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_horizontal"
+                                                android:orientation="horizontal">
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/cv_class"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            app:cardBackgroundColor="@color/light_grey"
+                                            app:cardCornerRadius="8dp"
+                                            android:background="@drawable/edit_box_round_corner"
+                                            android:padding="4dp">
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center_vertical"
+                                                    android:orientation="horizontal">
+
+
+                                                        <FrameLayout
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_gravity="center_vertical"
+                                                            android:layout_weight="0.6"
+                                                            android:elevation="1dp">
+
+
+                                                                <Spinner
+                                                                    android:id="@+id/f_class_spinner"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:autofillHints="Select your Company Name"
+                                                                    android:overlapAnchor="false">
+
+                                                                </Spinner>
+
+                                                                <TextView
+
+                                                                    android:id="@+id/f_tv_s_class"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                                                                    android:drawableStart="@drawable/ic_baseline_filter_list_24"
+                                                                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_black_24dp"
+                                                                    android:drawablePadding="8dp"
+                                                                    android:drawableTint="@color/grey"
+                                                                    android:fontFamily="@font/sfuitext_semibold"
+                                                                    android:gravity="center_vertical"
+                                                                    android:hint="Class"
+
+                                                                    android:inputType="text"
+                                                                    android:padding="8dp"
+                                                                    android:textColor="@color/black"
+                                                                    android:textSize="12sp"
+                                                                    android:visibility="visible"
+                                                                    tools:ignore="TextViewEdits" />
+
+
+                                                        </FrameLayout>
+
+                                                </LinearLayout>
+
+<!--                                                <LinearLayout-->
+<!--                                                    android:gravity="center"-->
+<!--                                                    android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                                                    android:background="@drawable/edit_box_round_corner"-->
+<!--                                                    android:orientation="horizontal"-->
+<!--                                                    >-->
+
+<!--                                                        <ImageView-->
+<!--                                                            android:layout_width="24dp"-->
+<!--                                                            android:layout_height="24dp"-->
+<!--                                                            android:padding="@dimen/space_4"-->
+<!--                                                            android:src="@drawable/ic_baseline_filter_list_24"-->
+<!--                                                            app:tint="@color/gray"/>-->
+<!--                                                        <LinearLayout-->
+<!--                                                            android:id="@+id/liner2"-->
+<!--                                                            android:layout_marginStart="2dp"-->
+<!--                                                            android:layout_width="match_parent"-->
+<!--                                                            android:layout_height="wrap_content"-->
+<!--                                                            android:layout_below="@id/img_live"-->
+<!--                                                            android:layout_centerInParent="true"-->
+<!--                                                            android:gravity="center_vertical"-->
+<!--                                                            android:orientation="horizontal">-->
+
+<!--                                                                <FrameLayout-->
+<!--                                                                    android:layout_width="wrap_content"-->
+<!--                                                                    android:layout_height="wrap_content"-->
+<!--                                                                    android:elevation="1dp">-->
+
+
+<!--                                                                        <Spinner-->
+<!--                                                                            android:id="@+id/f_class_spinner"-->
+<!--                                                                            android:layout_width="wrap_content"-->
+<!--                                                                            android:layout_height="wrap_content"-->
+<!--                                                                            android:autofillHints="Select your Company Name"-->
+<!--                                                                            android:overlapAnchor="false">-->
+
+<!--                                                                        </Spinner>-->
+
+<!--                                                                        <TextView-->
+<!--                                                                            android:id="@+id/f_tv_s_class"-->
+<!--                                                                            android:layout_width="wrap_content"-->
+<!--                                                                            android:layout_height="wrap_content"-->
+<!--                                                                            android:layout_marginStart="2dp"-->
+<!--                                                                            android:text=""-->
+<!--                                                                            android:textColor="@color/black"-->
+<!--                                                                            android:textSize="@dimen/space_12sp"-->
+<!--                                                                            android:textStyle="bold"-->
+<!--                                                                            tools:ignore="TextViewEdits" />-->
+
+
+<!--                                                                </FrameLayout>-->
+
+<!--                                                        </LinearLayout>-->
+
+<!--                                                        &lt;!&ndash;                                                                                <TextView&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:layout_marginStart="2dp"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:layout_below="@id/img_live"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:layout_centerInParent="true"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:text="12th"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:textColor="@color/black"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:textSize="@dimen/space_12sp"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:textStyle="bold" />&ndash;&gt;-->
+<!--                                                        <ImageView-->
+<!--                                                            android:gravity="center"-->
+<!--                                                            android:layout_width="20dp"-->
+<!--                                                            android:layout_height="20dp"-->
+<!--                                                            android:src="@drawable/ic_arrow_down_24"-->
+<!--                                                            app:tint="@color/gray" />-->
+
+
+<!--                                                </LinearLayout>-->
+                                        </androidx.cardview.widget.CardView>
+
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_marginStart="10dp"
+                                            android:layout_toEndOf="@id/cv_class"
+                                            android:id="@+id/cv_section"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/edit_box_round_corner"
+                                            android:padding="7dp">
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center_vertical"
+                                                    android:orientation="horizontal">
+
+
+                                                        <FrameLayout
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_gravity="center_vertical"
+                                                            android:layout_weight="0.6"
+                                                            android:elevation="1dp">
+
+
+                                                                <Spinner
+                                                                    android:id="@+id/f_section_spinner"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:autofillHints="Select your Company Name"
+                                                                    android:overlapAnchor="false">
+
+                                                                </Spinner>
+
+                                                                <TextView
+
+                                                                    android:id="@+id/f_tv_section"
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                                                                    android:drawableStart="@drawable/ic_baseline_filter_list_24"
+                                                                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_black_24dp"
+                                                                    android:drawablePadding="8dp"
+                                                                    android:drawableTint="@color/grey"
+                                                                    android:fontFamily="@font/sfuitext_medium"
+                                                                    android:gravity="center_vertical"
+                                                                    android:hint="Section"
+
+                                                                    android:inputType="text"
+                                                                    android:padding="8dp"
+                                                                    android:textColor="@color/black"
+                                                                    android:textSize="12sp"
+                                                                    android:visibility="visible"
+                                                                    tools:ignore="TextViewEdits" />
+
+
+                                                        </FrameLayout>
+
+                                                </LinearLayout>
+<!--                                                <LinearLayout-->
+<!--                                                    android:gravity="center"-->
+<!--                                                    android:layout_width="wrap_content"-->
+<!--                                                    android:layout_height="wrap_content"-->
+<!--                                                    android:background="@drawable/edit_box_round_corner"-->
+<!--                                                    android:orientation="horizontal"-->
+<!--                                                    >-->
+
+<!--                                                        <ImageView-->
+<!--                                                            android:layout_width="24dp"-->
+<!--                                                            android:layout_height="24dp"-->
+<!--                                                            android:padding="@dimen/space_4"-->
+<!--                                                            android:src="@drawable/ic_baseline_filter_list_24"-->
+<!--                                                            app:tint="@color/gray" />-->
+
+<!--                                                        <LinearLayout-->
+<!--                                                            android:layout_marginStart="2dp"-->
+<!--                                                            android:layout_width="match_parent"-->
+<!--                                                            android:layout_height="wrap_content"-->
+<!--                                                            android:layout_below="@id/img_live"-->
+<!--                                                            android:layout_centerInParent="true"-->
+<!--                                                            android:gravity="center_vertical"-->
+<!--                                                            android:orientation="horizontal">-->
+
+<!--                                                                <FrameLayout-->
+<!--                                                                    android:layout_width="wrap_content"-->
+<!--                                                                    android:layout_height="wrap_content"-->
+<!--                                                                    android:elevation="1dp">-->
+
+
+<!--                                                                        <Spinner-->
+<!--                                                                            android:id="@+id/f_section_spinner"-->
+<!--                                                                            android:layout_width="wrap_content"-->
+<!--                                                                            android:layout_height="wrap_content"-->
+<!--                                                                            android:autofillHints="Select your Company Name"-->
+<!--                                                                            android:overlapAnchor="false">-->
+
+<!--                                                                        </Spinner>-->
+
+<!--                                                                        <TextView-->
+<!--                                                                            android:id="@+id/f_tv_section"-->
+<!--                                                                            android:layout_width="match_parent"-->
+<!--                                                                            android:layout_height="wrap_content"-->
+<!--                                                                            android:text=""-->
+<!--                                                                            android:textColor="@color/black"-->
+<!--                                                                            android:textSize="@dimen/space_12sp"-->
+<!--                                                                            android:textStyle="bold"-->
+<!--                                                                            tools:ignore="TextViewEdits" />-->
+
+
+<!--                                                                </FrameLayout>-->
+
+<!--                                                        </LinearLayout>-->
+
+<!--                                                        &lt;!&ndash;                                                                                <TextView&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:layout_marginStart="2dp"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:layout_below="@id/img_live"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:layout_centerInParent="true"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:text="Section"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:textColor="@color/black"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:textSize="@dimen/space_12sp"&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                                                                        android:textStyle="bold" />&ndash;&gt;-->
+<!--                                                        <ImageView-->
+<!--                                                            android:gravity="center"-->
+<!--                                                            android:layout_width="20dp"-->
+<!--                                                            android:layout_height="20dp"-->
+<!--                                                            android:src="@drawable/ic_arrow_down_24"-->
+<!--                                                            app:tint="@color/gray" />-->
+
+
+<!--                                                </LinearLayout>-->
+                                        </androidx.cardview.widget.CardView>
+                                        </LinearLayout>
+
+                                        <RelativeLayout
+                                                android:id="@+id/rel_showclass"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:visibility="visible">
+                                                <RelativeLayout
+                                                        android:layout_alignParentTop="true"
+                                                        android:layout_above="@id/feb_manage_student"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content">
+
+                                                        <androidx.recyclerview.widget.RecyclerView
+                                                            android:layout_marginTop="@dimen/space_6dp"
+                                                            android:id="@+id/rec_manage_student"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+
+                                                        </androidx.recyclerview.widget.RecyclerView>
+
+                                                </RelativeLayout>
+
+                                                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                                        android:id="@+id/feb_manage_student"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentRight="true"
+                                                        android:layout_alignParentBottom="true"
+                                                        android:backgroundTint="@color/graient2"
+                                                        android:clickable="true"
+                                                        android:src="@drawable/ic_baseline_add_24"
+                                                        app:tint="@color/white">
+
+                                                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                                        </RelativeLayout>
+                                </LinearLayout>
+
+
+                        </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

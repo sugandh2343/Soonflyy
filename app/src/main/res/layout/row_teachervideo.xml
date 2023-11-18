@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_main"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+        <androidx.cardview.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="@dimen/space_15dp">
+                <RelativeLayout
+                        android:elevation="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                                android:id="@+id/img_edit"
+                                android:layout_width="@dimen/space_30dp"
+                                android:layout_height="@dimen/space_30dp"
+                                android:layout_alignParentEnd="true"
+                                android:padding="6dp"
+                                android:src="@drawable/menu_icon"
+                                app:tint="@color/white" />
+
+                        <androidx.cardview.widget.CardView
+                                android:visibility="gone"
+                                android:id="@+id/cv_edi"
+                                app:cardCornerRadius="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/space_10"
+                                android:layout_marginEnd="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/img_edit"
+                                android:layout_marginStart="-71dp"
+                                android:padding="3dp">
+
+                                <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/liner_edit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <TextView
+                                                android:drawableTint="@color/red"
+                                                android:id="@+id/dailog_delete"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/dailog_edit"
+                                                android:drawableStart="@drawable/ic_baseline_delete_24"
+                                                android:text="Delete"
+                                                android:textAllCaps="false"
+                                                android:textColor="@color/red"
+                                                android:textSize="14sp"
+                                                android:textStyle="normal"
+                                                app:drawableTint="@color/red"
+                                                tools:ignore="ObsoleteLayoutParam" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <VideoView
+                        android:id="@+id/videoView"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp" />
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

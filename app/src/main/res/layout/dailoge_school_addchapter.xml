@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_box_round_corner"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+                android:id="@+id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_marginEnd="@dimen/space_5"
+                android:layout_marginBottom="@dimen/space_5"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/space_10">
+
+                <LinearLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_c_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:padding="4dp"
+                                android:text="Add Chapter "
+                                android:textAlignment="center"
+                                android:textColor="@color/graient2"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/sfuitext_bold" />
+                        <View
+                                android:layout_gravity="center"
+                                android:background="@color/black"
+                                android:layout_width="130dp"
+                                android:layout_height="1dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:padding="4dp"
+                                android:text="@string/chapter_name"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                               android:fontFamily="@font/sfuitext_semibold" />
+
+                        <EditText
+                                android:id="@+id/et_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="@dimen/space_10"
+                                android:background="@drawable/drawable_edit_text_shadow_bg"
+                                android:hint="@string/Enter_chapter_name"
+                                android:padding="@dimen/space_12"
+                               />
+
+
+
+                </LinearLayout>
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_add"
+                        android:layout_width="240dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="12dp"
+                        android:gravity="center"
+                        android:text="Add"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        />
+
+                <TextView
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_10dp"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:text="Cancel"
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                    android:fontFamily="@font/sfuitext_semibold"
+                        android:textSize="16sp" />
+
+
+        </LinearLayout>
+</RelativeLayout>

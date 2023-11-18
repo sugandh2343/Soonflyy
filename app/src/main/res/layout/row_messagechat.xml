@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<RelativeLayout
+        android:layout_margin="@dimen/space_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="end"
+        android:fontFamily="@font/sfuitext_semibold"
+        android:gravity="center"
+        android:padding="@dimen/space_5dp"
+        android:text="@string/text"
+        android:textAlignment="center"
+        android:textColor="@color/Accent_color"
+        android:textSize="14sp" />
+    <LinearLayout
+
+
+        android:layout_below="@id/tv_date"
+        android:id="@+id/msg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_5"
+
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginEnd="@dimen/space_5"
+        android:padding="@dimen/space_3dp"
+        android:layout_marginBottom="@dimen/space_5"
+        android:orientation="vertical">
+
+
+
+        <TextView
+
+            android:id="@+id/tv_teacher_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:textSize="@dimen/space_13sp"
+            android:padding="@dimen/space_5dp"
+            android:text=""
+            android:fontFamily="@font/sfuitext_medium"
+
+
+            android:textColor="@color/white" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_teacher_msg"
+            android:background="#F3EFEF"
+            app:cardCornerRadius="@dimen/space_15dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/images"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="8dp"
+                app:riv_border_width="1dp"
+                app:riv_border_color="@color/light_grey"
+                android:visibility="gone" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+      <!--  <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_student_msg"
+            android:layout_below="@id/tv_teacher_msg"
+            android:layout_alignParentEnd="true"
+            android:layout_width="120dp"
+            android:text="Typing......"
+            android:padding="@dimen/space_5"
+            android:textColor="@color/white"
+            android:backgroundTint="#A5A2A2"
+            android:background="@drawable/drawable_rectangle_button_black_15dp_bg"
+            android:layout_height="wrap_content"/>
+            -->
+   <!-- </RelativeLayout>-->
+
+</RelativeLayout>

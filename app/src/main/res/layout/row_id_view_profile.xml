@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/lin_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                                android:id="@+id/img_edit"
+                                android:layout_width="@dimen/space_30dp"
+                                android:layout_height="@dimen/space_30dp"
+                                android:layout_alignParentEnd="true"
+                                android:padding="6dp"
+                                android:src="@drawable/menu_icon"
+                                app:tint="@color/black" />
+
+                        <androidx.cardview.widget.CardView
+                                android:id="@+id/cv_edi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/img_edit"
+                                android:layout_marginLeft="-81dp"
+                                android:layout_marginTop="@dimen/space_10"
+                                android:padding="3dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                        android:id="@+id/liner_edit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                                android:id="@+id/dailog_delete"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/dailog_edit"
+                                                android:drawableStart="@drawable/ic_baseline_delete_24"
+                                                android:drawableTint="@color/red"
+                                                android:text="Delete"
+                                                android:textAllCaps="false"
+                                                android:textColor="@color/red"
+                                                android:textSize="14sp"
+                                                android:textStyle="normal"
+                                                app:drawableTint="@color/red"
+                                                tools:ignore="ObsoleteLayoutParam" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                        android:padding="8dp"
+                        android:id="@+id/lin_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space_5dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/profile_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/profile"
+                                app:civ_circle_background_color="@color/white"
+                                app:civ_border_color="@color/light_grey"/>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                        android:id="@+id/tv_Name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="Name"
+                                        android:padding="3dp"
+
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/space_14sp"
+                                        android:fontFamily="@font/sfuitext_semibold"/>
+
+                                <TextView
+                                    android:layout_marginTop="-3dp"
+                                        android:id="@+id/tv_user_title"
+                                        android:padding="3dp"
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="User Identity"
+                                        android:textColor="@color/black"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                        android:textSize="@dimen/space_12sp"
+                                         />
+                        </LinearLayout>
+
+                        <TextView
+                                android:id="@+id/tv_viewprofile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="0dp"
+                                android:background="@drawable/bg_button"
+                                android:padding="8dp"
+                                android:text="View Profile"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                            android:fontFamily="@font/sfuitext_medium"
+                                android:textSize="14sp" />
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

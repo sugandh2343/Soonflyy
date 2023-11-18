@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".YourSchooolPannel.SchoolCoachingSection.SchoolCoachingSectionTutor.Fragment.SchoolApplyForLeaveFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                <RelativeLayout
+
+                    android:id="@+id/rel_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/white"
+
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/space_1dp"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:text="@string/date_time"
+                            android:fontFamily="@font/sfuitext_semibold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/space_13sp" />
+
+<!--                        <View-->
+<!--                            android:layout_width="1dp"-->
+<!--                            android:layout_height="2dp"-->
+<!--                            android:background="@color/white" />-->
+
+                        <TextView
+                            android:id="@+id/tv_leave_reason"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:text="@string/leave"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/sfuitext_semibold"
+                            android:textSize="@dimen/space_13sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_leave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/liner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginStart="@dimen/space_5"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:layout_marginEnd="@dimen/space_5"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:background="@drawable/edit_box_round_corner"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_10">
+
+                    <LinearLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:padding="4dp"
+                            android:text="Here you can apply for leaves"
+                            android:textAlignment="center"
+                            android:textColor="@color/graient2"
+                            android:textSize="16sp"
+                           android:fontFamily="@font/sfuitext_bold" />
+
+                        <View
+                            android:layout_width="130dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:background="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:text="Enter Leave Reason"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/sfuitext_medium"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+
+                            android:layout_marginTop="@dimen/space_10"
+                            android:background="@drawable/drawable_edit_text_shadow_bg"
+                            android:gravity="top"
+                            android:hint="@string/enter_here"
+                            android:padding="@dimen/space_12"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:text="Upload Document"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sfuitext_semibold" />
+
+                            <LinearLayout
+                                android:id="@+id/lin_sub"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space_4"
+                                android:elevation="@dimen/space_5"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="@dimen/space_10"
+                                android:backgroundTint="@color/light_grey"
+                                android:background="@drawable/drawable_edit_text_shadow_bg"
+                                android:visibility="visible">
+                                    <ImageView
+                                        android:id="@+id/iv_upload_file"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:src="@drawable/upload_button" />
+                                    <!--  </androidx.cardview.widget.CardView>-->
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/space_8"
+                                        android:text="Upload file (PDF,jpg,png) here, choose file from your device"
+                                        android:textAlignment="center"
+                                        android:textColor="#434242"
+                                        android:fontFamily="@font/sfuitext_medium"
+                                        android:textSize="@dimen/space_12" />
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:id="@+id/lin_path"
+                                    android:layout_marginTop="@dimen/space_8"
+                                    android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/tv_seleted_path"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text=""
+                                    android:layout_marginStart="@dimen/space_16dp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                    android:textSize="@dimen/space_12sp" />
+                                    <ImageView
+                                        android:layout_marginEnd="@dimen/space_16"
+                                        android:layout_width="@dimen/space_24dp"
+                                        android:layout_height="@dimen/space_24dp"
+                                        android:id="@+id/iv_cancle_doc"
+                                        android:src="@drawable/ic_baseline_cancel_24"/>
+                                </LinearLayout>
+                                    <RelativeLayout
+                                        android:visibility="gone"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                            <com.makeramen.roundedimageview.RoundedImageView
+                                                app:riv_corner_radius="12dp"
+                                                android:src="@color/red"
+                                                android:layout_centerInParent="true"
+                                                android:id="@+id/img_upload_img"
+                                                android:layout_width="120dp"
+                                                android:layout_height="120dp"/>
+
+                                            <ImageView
+                                                android:layout_width="@dimen/space_40dp"
+                                                android:layout_height="@dimen/space_40dp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_marginBottom="10dp"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_marginEnd="90dp"
+                                                android:src="@drawable/add_button" />
+                                    </RelativeLayout>
+
+
+                            </LinearLayout>
+                    </LinearLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_save"
+                        android:layout_width="240dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="12dp"
+                        android:gravity="center"
+                        android:text="@string/submit"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

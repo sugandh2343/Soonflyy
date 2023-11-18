@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+        <LinearLayout
+                android:id="@+id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_marginEnd="@dimen/space_5"
+                android:layout_marginBottom="@dimen/space_5"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/space_10">
+
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:padding="4dp"
+                        android:text="Time Table"
+                        android:gravity="center"
+                        android:textColor="@color/graient2"
+                        android:textSize="16sp"
+                       android:fontFamily="@font/sfuitext_bold" />
+
+                <View
+                        android:layout_width="130dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/black" />
+
+        </LinearLayout>
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="@dimen/space_5"
+                                android:text=" Subject"
+                            android:fontFamily="@font/sfuitext_bold"
+                            android:textSize="@dimen/space_14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                            />
+                        <LinearLayout
+                            android:id="@+id/liner2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                                <FrameLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6"
+                                    android:elevation="1dp">
+
+
+                                        <Spinner
+                                            android:id="@+id/spinner_subject"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:autofillHints="Select your Company Name"
+                                            android:overlapAnchor="false">
+
+                                        </Spinner>
+
+                                        <TextView
+                                            android:id="@+id/tv_subject"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/space_40dp"
+                                            android:background="@drawable/drawable_edit_text_shadow_bg"
+                                            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_black_24dp"
+                                            android:drawableTint="@color/grey"
+                                            android:fontFamily="@font/sfuitext_medium"
+                                            android:hint="Subject"
+                                            android:inputType="text"
+                                            android:padding="12dp"
+                                            android:textColor="@color/black"
+                                            android:gravity="center_vertical"
+
+                                            android:textSize="@dimen/space_12sp"
+                                            android:visibility="visible"
+
+                                            tools:ignore="TextViewEdits" />
+
+
+                                </FrameLayout>
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="@dimen/space_5"
+                                android:text=" Period"
+                            android:fontFamily="@font/sfuitext_semibold"
+                            android:textSize="@dimen/space_14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                               />
+
+                        <EditText
+                                android:id="@+id/et_period"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_40dp"
+                                android:layout_margin="5dp"
+                            android:gravity="center_vertical"
+                                android:background="@drawable/drawable_edit_text_shadow_bg"
+                                android:hint="Period"
+                            android:inputType="number"
+                            android:textSize="@dimen/space_12sp"
+                            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                            android:maxLength="2"
+                                android:padding="@dimen/space_12"
+                                 />
+
+                </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="@dimen/space_5"
+                                android:text=" Day"
+                            android:fontFamily="@font/sfuitext_semibold"
+                            android:textSize="@dimen/space_14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+                        <TextView
+                                android:id="@+id/tv_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+
+                                android:background="@drawable/drawable_edit_text_shadow_bg"
+                                android:hint="Select day"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/space_12sp"
+                            android:fontFamily="@font/sfuitext_medium"
+                            android:textColor="@color/black"
+                                android:drawableTint="@color/gray"
+                                android:drawablePadding="10dp"
+                                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                                android:padding="@dimen/space_8" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="@dimen/space_5"
+                            android:fontFamily="@font/sfuitext_semibold"
+                            android:text=" Time"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_14sp" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_40dp"
+                                android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/space_5dp"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/tv_s_time"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/drawable_edit_text_shadow_bg"
+                                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                                    android:drawableTint="@color/grey"
+                                    android:fontFamily="@font/sfui_text_regular"
+
+                                    android:hint="From"
+                                    android:gravity="center_vertical"
+                                    android:paddingStart="@dimen/space_8"
+
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/space_10sp" />
+
+                                <TextView
+                                        android:id="@+id/tv_e_time"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/drawable_edit_text_shadow_bg"
+                                        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                                        android:drawableTint="@color/grey"
+                                        android:hint=" To"
+                                        android:paddingStart="@dimen/space_8"
+                                    android:gravity="center_vertical"
+
+                                        android:textColor="@color/black"
+                                    android:fontFamily="@font/sfui_text_regular"
+                                        android:textSize="@dimen/space_10sp" />
+
+                        </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_create"
+                        android:layout_width="240dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="12dp"
+                        android:gravity="center"
+                        android:text="Create"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                     />
+
+                <TextView
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_10dp"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:text="Cancel"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                    android:fontFamily="@font/sfuitext_semibold"
+                        android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+</RelativeLayout>

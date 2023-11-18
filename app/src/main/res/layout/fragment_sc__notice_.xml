@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".YourSchooolPannel.SchoolCoachingSection.SchoolCoachingFragment.Sc_Notice_Fragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh_layout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/bottom_school"
+                layout="@layout/tab_student"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:elevation="6dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:layout_below="@id/bottom_school"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_above="@+id/feb_notice"
+    android:layout_marginBottom="4dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_header"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="3"
+
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_notice_sno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="S.No."
+            android:layout_weight="1.2"
+            android:textSize="@dimen/space_13sp"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:paddingStart="@dimen/space_8dp"
+            android:paddingEnd="@dimen/space_8dp"
+            android:gravity="center"
+            android:ellipsize="end"
+
+            android:layout_marginEnd="@dimen/space_1dp"
+            />
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Recent Notice"
+            android:gravity="center_vertical"
+            android:layout_weight="0.8"
+            android:paddingStart="@dimen/space_8dp"
+            android:paddingEnd="@dimen/space_8dp"
+            android:textSize="@dimen/space_13sp"
+            android:textColor="@color/white"
+            android:background="@color/black"                    android:layout_marginEnd="@dimen/space_1dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Date &amp; time"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/space_8dp"
+            android:paddingEnd="@dimen/space_8dp"
+            android:textSize="@dimen/space_13sp"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            />
+    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_notice"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rel_notice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@+id/ivimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_blck"
+            android:backgroundTint="@color/white"
+            android:elevation="@dimen/space_3dp"
+            android:padding="@dimen/space_6dp"
+
+            android:src="@drawable/ic_notification"
+            app:civ_circle_background_color="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/graient1" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/ivimg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-16dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:paddingStart="@dimen/space_8dp"
+            android:paddingEnd="@dimen/space_8dp"
+            android:text="Create a notice for your students\n and keep them updated"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sfuitext_medium"
+            android:textSize="@dimen/space_16sp" />
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/feb_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/graient2"
+                android:clickable="true"
+                android:layout_margin="@dimen/space_4dp"
+                android:src="@drawable/ic_baseline_add_24"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

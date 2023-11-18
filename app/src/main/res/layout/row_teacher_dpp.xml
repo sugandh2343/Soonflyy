@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/lin_main"
+        android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+
+                                android:id="@+id/img_edit"
+                                android:layout_width="@dimen/space_30dp"
+                                android:layout_height="@dimen/space_30dp"
+                                android:layout_alignParentEnd="true"
+                                android:padding="6dp"
+                                android:src="@drawable/menu_icon"
+                                app:tint="@color/black" />
+                        <androidx.cardview.widget.CardView
+                                android:visibility="gone"
+                                android:id="@+id/cv_edi"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="@dimen/space_10"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/img_edit"
+                                android:layout_marginLeft="-81dp"
+                                android:padding="3dp">
+
+                                <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/liner_edit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <TextView
+                                                android:drawableTint="@color/red"
+                                                android:id="@+id/dailog_delete"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/dailog_edit"
+                                                android:drawableStart="@drawable/ic_baseline_delete_24"
+                                                android:text="Delete"
+                                                android:textAllCaps="false"
+                                                android:textColor="@color/red"
+                                                android:textSize="14sp"
+                                                android:textStyle="normal"
+                                                app:drawableTint="@color/red"
+                                                tools:ignore="ObsoleteLayoutParam" />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                        android:id="@+id/lin_manage"
+                        android:layout_margin="@dimen/space_5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/s_dpp_icon"
+                                android:layout_gravity="center_vertical"
+                                app:tint="@color/graient2" />
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                        android:id="@+id/tv_dpp_title"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Paper on fundamental of AI"
+                                       android:fontFamily="@font/sfuitext_semibold"
+                                        android:textSize="@dimen/space_14sp"
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        />
+                                <TextView
+                                        android:id="@+id/tv_date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                    android:layout_marginTop="-6dp"
+                                        android:text="Date: 15-02-2022"
+                                        android:textSize="@dimen/space_10sp"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        />
+                        </LinearLayout>
+                        <TextView
+                                android:id="@+id/tv_manage"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:padding="@dimen/space_4dp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/bg_button"
+                                android:text="Manage"
+                                android:textSize="16sp"
+                            android:fontFamily="@font/sfuitext_medium"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/space_8dp"
+                                />
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+
+            <solid android:color="@color/primary_color"/>
+            <size android:width="30dp"
+                android:height="30dp"/>
+
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_baseline_cloud_upload_24"
+        android:gravity="center"
+        android:top="@dimen/space_16dp"
+        android:bottom="@dimen/space_16dp"
+        android:left="@dimen/space_16dp"
+        android:right="@dimen/space_16dp"/>
+
+</layer-list>

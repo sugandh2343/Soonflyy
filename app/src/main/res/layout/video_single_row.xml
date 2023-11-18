@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        android:layout_margin="@dimen/space_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:src="@drawable/lecture_img"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/save_img"
+                android:layout_width="@dimen/space_20dp"
+                android:layout_height="@dimen/space_20dp"
+                android:src="@drawable/ic_baseline_bookmark_white_24dp"
+                android:padding="@dimen/space_2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/space_10dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/light_gray" />
+
+            <ImageView
+                android:id="@+id/play_img"
+                android:layout_width="@dimen/space_30dp"
+                android:layout_height="@dimen/space_30dp"
+                android:src="@drawable/ic_baseline_play_circle_filled_white_24dp"
+                android:padding="@dimen/space_2dp"
+                app:layout_constraintEnd_toEndOf="@id/img"
+                app:layout_constraintStart_toStartOf="@id/img"
+                app:layout_constraintBottom_toBottomOf="@id/img"
+                app:layout_constraintTop_toTopOf="@id/img"/>
+
+            <TextView
+                android:id="@+id/lecture_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SSC Demo Video 01"
+                android:textSize="13sp"
+                android:layout_marginStart="@dimen/space_16dp"
+                android:layout_marginEnd="@dimen/space_10dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:layout_marginBottom="@dimen/space_10dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            <!--<ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="220dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="4dp"
+                android:adjustViewBounds="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:src="@drawable/swiming_img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#72AAAAAA"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1"></View>
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:maxLines="2"
+                android:text="Rafting"
+                android:textColor="@color/text_color"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="From"
+                android:textColor="@color/edit_text_hint_color"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="@+id/tittle"
+                app:layout_constraintTop_toBottomOf="@+id/tittle" />
+
+            <TextView
+                android:id="@+id/dollarTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/dollar"
+                android:drawablePadding="4dp"
+                android:text="1200"
+                android:textColor="@color/ColorOrange"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="@+id/from"
+                app:layout_constraintTop_toBottomOf="@+id/from" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_favorite_gray_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.813"
+                app:layout_constraintStart_toEndOf="@id/dollarTv"
+                app:layout_constraintTop_toTopOf="@id/dollarTv"
+                app:layout_constraintVertical_bias="0.631" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

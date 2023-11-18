@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".YourSchooolPannel.SchoolCoachingSection.SchoolCoachingFragment.SchoolCoachingViewProfileFragment">
+
+       <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <LinearLayout
+                       android:padding="10dp"
+                       android:orientation="vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                       <LinearLayout
+                               android:padding="12dp"
+                               android:orientation="vertical"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content">
+                               <TextView
+                                   android:id="@+id/tv_profile_name"
+                                   android:layout_width="50dp"
+                                   android:layout_height="50dp"
+                                   android:layout_gravity="center_horizontal"
+                                   android:text=""
+                                   android:gravity="center"
+                                   android:background="@drawable/circle_blck"
+                                   android:backgroundTint="@color/green"
+                                   android:textColor="@color/white"
+                                   android:textSize="@dimen/space_16sp"
+                                  android:fontFamily="@font/sfuitext_bold"
+                                   />
+                               <TextView
+                                   android:id="@+id/assign_tv_name"
+                                       android:layout_gravity="center"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:gravity="center"
+                                       android:text=" Name "
+                                       android:textAllCaps="false"
+                                       android:textColor="@color/black"
+                                       android:textSize="18sp"
+                                   android:layout_marginTop="8dp"
+                                      android:fontFamily="@font/sfuitext_bold" />
+                       </LinearLayout>
+                       <LinearLayout
+                               android:orientation="vertical"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content">
+                               <LinearLayout
+                                       android:padding="4dp"
+                                       android:gravity="center_vertical"
+                                   android:background="@color/light_grey"
+                                       android:weightSum="2"
+                                       android:orientation="horizontal"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content">
+                                       <TextView
+                                               android:drawableStart="@drawable/ic_phone"
+                                               android:drawablePadding="@dimen/space_3"
+                                               app:drawableTint="@color/black"
+                                               android:padding="@dimen/space_6"
+                                               android:layout_weight="1"
+                                               android:id="@+id/tv_q1"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="start"
+                                               android:text="Mobile number"
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                               android:textSize="16sp"
+                                               android:fontFamily="@font/sfuitext_semibold" />
+                                       <TextView
+
+                                               android:padding="@dimen/space_8"
+                                               android:layout_weight="1"
+                                               android:id="@+id/tv_q2"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="end"
+                                               android:text=""
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                               android:textSize="16sp"
+                                               android:fontFamily="@font/sfuitext_semibold" />
+                               </LinearLayout>
+                               <LinearLayout
+                                       android:padding="4dp"
+                                       android:gravity="center_vertical"
+
+                                       android:weightSum="2"
+                                       android:orientation="horizontal"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content">
+                                       <TextView
+                                               android:drawableStart="@drawable/ic_baseline_email_24"
+                                               android:drawablePadding="@dimen/space_3"
+                                               app:drawableTint="@color/black"
+                                               android:padding="@dimen/space_6"
+                                               android:layout_weight="1"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="start"
+                                               android:text="Email Id"
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                               android:textSize="16sp"
+                                               android:fontFamily="@font/sfuitext_semibold" />
+                                       <TextView
+                                               android:padding="@dimen/space_8"
+                                               android:layout_weight="1"
+                                               android:id="@+id/tv_emailid"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="end"
+                                               android:text=""
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                               android:textSize="16sp"
+                                               android:fontFamily="@font/sfuitext_semibold"/>
+                               </LinearLayout>
+                               <LinearLayout
+                                       android:padding="4dp"
+                                       android:gravity="center_vertical"
+                                   android:background="@color/light_grey"
+                                       android:weightSum="2"
+                                       android:orientation="horizontal"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content">
+                                       <TextView
+                                               android:drawableStart="@drawable/ic_person"
+                                               android:drawablePadding="@dimen/space_3"
+                                               app:drawableTint="@color/black"
+                                               android:padding="@dimen/space_6"
+                                               android:layout_weight="1"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="start"
+                                               android:text="Father's Name"
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                               android:textSize="16sp"
+                                               android:fontFamily="@font/sfuitext_semibold" />
+                                       <TextView
+                                               android:layout_weight="1"
+                                               android:id="@+id/tv_fathername"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="end"
+                                               android:padding="@dimen/space_8"
+                                               android:text=""
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                               android:textSize="16sp"
+                                               android:fontFamily="@font/sfuitext_semibold" />
+                               </LinearLayout>
+                               <LinearLayout
+                                       android:padding="4dp"
+                                       android:gravity="center_vertical"
+
+                                       android:weightSum="2"
+                                       android:orientation="horizontal"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content">
+                                       <TextView
+                                               android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+                                               android:drawablePadding="@dimen/space_3"
+                                               app:drawableTint="@color/black"
+                                               android:padding="@dimen/space_6"
+                                               android:layout_weight="1"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="start"
+                                               android:text="Date of Birth"
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                               android:textSize="16sp"
+                                              android:fontFamily="@font/sfuitext_semibold" />
+                                       <TextView
+                                               android:padding="@dimen/space_8"
+                                               android:layout_weight="1"
+                                               android:id="@+id/tv_dob"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="end"
+                                               android:text=""
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                               android:textSize="16sp"
+                                              android:fontFamily="@font/sfuitext_semibold" />
+                               </LinearLayout>
+                               <LinearLayout
+                                   android:id="@+id/lin_classes"
+                                    android:visibility="visible"
+                                       android:padding="4dp"
+                                       android:gravity="center"
+                                       android:layout_gravity="center"
+                                       android:weightSum="2"
+                                   android:background="@color/light_grey"
+                                       android:orientation="horizontal"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content">
+                                       <TextView
+                                               android:drawableStart="@drawable/ic_baseline_library_books_24"
+                                               android:drawablePadding="@dimen/space_3"
+                                               app:drawableTint="@color/black"
+                                               android:padding="@dimen/space_6"
+                                               android:layout_weight="1"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="start"
+                                               android:text="Class"
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                           android:textSize="16sp"
+                                           android:fontFamily="@font/sfuitext_semibold" />
+                                       <TextView
+                                               android:padding="@dimen/space_8"
+                                               android:layout_weight="1"
+                                               android:id="@+id/tv_class"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="end"
+                                               android:text=""
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                           android:textSize="16sp"
+                                           android:fontFamily="@font/sfuitext_semibold" />
+                               </LinearLayout>
+                               <LinearLayout
+                                   android:id="@+id/linin_address"
+                                       android:padding="4dp"
+                                       android:gravity="center_vertical"
+                                   android:background="@color/white"
+                                       android:weightSum="2"
+                                       android:orientation="horizontal"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content">
+                                       <TextView
+                                               android:layout_weight="1"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="start"
+                                               android:text="Address"
+                                               android:drawableStart="@drawable/ic_baseline_location_on_24"
+                                               android:drawablePadding="@dimen/space_3"
+                                               app:drawableTint="@color/black"
+                                               android:padding="@dimen/space_6"
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                               android:textSize="16sp"
+                                               android:fontFamily="@font/sfuitext_semibold" />
+                                       <TextView
+                                               android:padding="@dimen/space_8"
+                                               android:layout_weight="1"
+                                               android:id="@+id/tv_address"
+                                               android:layout_width="0dp"
+                                               android:layout_height="wrap_content"
+                                               android:gravity="end"
+                                               android:text=""
+                                               android:textAllCaps="false"
+                                               android:textColor="@color/black"
+                                               android:textSize="16sp"
+                                               android:fontFamily="@font/sfuitext_semibold" />
+                               </LinearLayout>
+                       </LinearLayout>
+                       <LinearLayout
+                               android:padding="10dp"
+                               android:gravity="center_horizontal|center_vertical"
+                               android:layout_margin="6dp"
+                               android:orientation="horizontal"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content">
+                               <ImageView
+                                       android:layout_margin="6dp"
+                                       android:background="@drawable/bg_cart_circle"
+                                       android:backgroundTint="@color/green"
+                                       android:id="@+id/iv_right"
+                                       android:layout_gravity="center"
+                                       android:textAlignment="center"
+                                       android:src="@drawable/check_icon"
+
+                                       android:layout_width="35dp"
+                                       android:layout_height="35dp"
+                                       app:tint="@color/white" />
+                               <ImageView
+                                       android:layout_margin="6dp"
+                                       android:background="@drawable/bg_cart_circle"
+                                       android:backgroundTint="@color/red"
+                                       android:id="@+id/iv_close"
+                                       android:layout_gravity="center"
+                                       android:textAlignment="center"
+                                       android:src="@drawable/ic_baseline_close_24"
+
+                                   android:layout_width="35dp"
+                                   android:layout_height="35dp"
+                                       app:tint="@color/white" />
+                               <ImageView
+                                       android:layout_margin="6dp"
+                                       android:background="@drawable/bg_cart_circle"
+                                       android:backgroundTint="@color/white"
+                                       android:id="@+id/iv_block"
+                                       android:layout_gravity="center"
+                                       android:textAlignment="center"
+                                       android:src="@drawable/ic_block_24"
+
+                                   android:layout_width="35dp"
+                                   android:layout_height="35dp"
+                                       app:tint="@color/red" />
+                       </LinearLayout>
+               </LinearLayout>
+
+       </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/drawable_shadow_bg"
+    android:layout_marginStart="@dimen/space_4dp"
+    android:layout_marginEnd="@dimen/space_4dp"
+    android:layout_marginTop="2dp"
+   android:layout_marginBottom="@dimen/space_2dp"
+    android:backgroundTint="@color/light_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+            <TextView
+                android:id="@+id/question_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question"
+                android:textSize="16sp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:layout_marginStart="@dimen/space_10dp"
+                android:fontFamily="@font/lexend"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/question_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/space_8dp"
+        android:layout_marginTop="@dimen/space_5dp"
+        android:layout_marginEnd="@dimen/space_10dp"
+        android:fontFamily="@font/lexend"
+        android:background="@drawable/drawable_edit_text_shadow_bg"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/question_tittle"
+        app:layout_constraintTop_toBottomOf="@+id/question_tittle" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/question_tv"
+        app:layout_constraintStart_toStartOf="@+id/question_tv"
+        app:layout_constraintTop_toBottomOf="@+id/question_tv">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:fontFamily="@font/lexend"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_4dp"
+                android:layout_weight="1"
+                android:id="@+id/edit_option_a"
+                android:fontFamily="@font/lexend"
+                android:layout_marginEnd="@dimen/space_4dp"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="4dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_4dp"
+                android:text="B"
+                android:fontFamily="@font/lexend"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_4dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lexend"
+                android:id="@+id/edit_option_b"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="4dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:fontFamily="@font/lexend"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_4dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lexend"
+                android:id="@+id/edit_option_c"
+                android:layout_marginEnd="@dimen/space_4dp"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:gravity="center_vertical"
+
+                android:paddingStart="4dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_4dp"
+                android:text="D"
+                android:fontFamily="@font/lexend"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_4dp"
+                android:layout_weight="1"
+
+                android:fontFamily="@font/lexend"
+                android:id="@+id/edit_option_d"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:gravity="center_vertical"
+
+                android:paddingStart="4dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/go_btn"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lexend"
+        android:text="OK"
+        android:textSize="@dimen/space_12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout10"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout10"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

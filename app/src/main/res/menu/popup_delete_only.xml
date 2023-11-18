@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item android:id="@+id/popup_edit"-->
+<!--        android:iconTint="@color/colorPrimary"-->
+<!--        android:icon="@drawable/ic_baseline_edit_24"-->
+<!--        android:title="@string/edit"-->
+<!--        tools:ignore="UnusedAttribute" />-->
+
+    <item android:id="@+id/popup_remove"
+        android:icon="@drawable/unassign_con"
+        android:title="@string/unassign"
+        tools:ignore="UnusedAttribute" />
+</menu>

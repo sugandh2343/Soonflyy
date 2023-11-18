@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quetion_cardview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/select_checkbox"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+               android:padding="@dimen/space_8dp"
+                />
+            <TextView
+                android:id="@+id/question_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+                android:textSize="@dimen/space_13sp"
+                android:padding="@dimen/space_8dp"
+                android:fontFamily="@font/lexend"
+                android:textColor="@color/black"
+                android:text="Who is the Pm of India ?"
+                android:layout_weight="1"/>
+           <ImageView
+               android:layout_width="@dimen/space_25dp"
+               android:layout_height="@dimen/space_25dp"
+               android:src="@drawable/exo_ic_chevron_right"
+               android:layout_gravity="center_vertical"
+               android:layout_marginEnd="@dimen/space_6dp"
+               app:tint="@color/primary_color" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

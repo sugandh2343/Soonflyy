@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="@dimen/space_6dp"
+        android:paddingBottom="@dimen/space_6dp"
+        android:paddingStart="@dimen/space_10dp"
+        android:paddingEnd="@dimen/space_10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        android:visibility="visible">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile" />
+        <TextView
+            android:id="@+id/assign_tv_name"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_14sp"
+            android:fontFamily="@font/sfuitext_semibold"
+            android:textColor="@color/black"
+            android:text="Sunil"
+            android:paddingStart="@dimen/space_10dp"
+            android:gravity="center_vertical"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/policy_swich"
+            android:layout_width="wrap_content"
+            android:thumb="@drawable/switch_trac"
+            android:layout_height="wrap_content"
+            android:trackTint="@color/light_gray"
+            android:fontFamily="@font/sfuitext_semibold"
+            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+        </androidx.appcompat.widget.SwitchCompat>
+
+    </LinearLayout>
+</RelativeLayout>

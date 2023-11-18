@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".YourSchooolPannel.SchoolRegisterFragment">
+    <!-- <ScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent">-->
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lnr_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/lin_indp_tutor"
+                layout="@layout/layout_indepent_tutor"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layout_school_header"
+                layout="@layout/layout_school_coaching" />
+
+        </LinearLayout>
+
+<!--        <androidx.core.widget.NestedScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/lnr_top"-->
+<!--            >-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lnr_top"
+            android:layout_margin="@dimen/space_10dp">
+
+            <include layout="@layout/layout_school_signup" />
+
+
+        </RelativeLayout>
+<!--        </androidx.core.widget.NestedScrollView>-->
+
+
+    </RelativeLayout>
+    <!--  </ScrollView>-->
+
+
+</ScrollView>

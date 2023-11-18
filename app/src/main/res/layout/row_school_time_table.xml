@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:fillViewport="true"-->
+<!--            android:layout_height="wrap_content"-->
+<!--                >-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+                >
+        <LinearLayout
+            android:id="@+id/lin_t_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/space_1dp"
+
+            android:weightSum="6"
+            android:background="@color/timetble"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/tv_period"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="Period"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10sp" />
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Class"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10sp"
+
+                    />
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/tv_section"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="Section"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10sp" />
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/tv_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="Subject"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10sp"
+
+                    />
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="Time"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10sp" />
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tv_tutor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="Tutor"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10sp" />
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_st_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+                android:layout_marginTop="@dimen/space_1dp"
+                android:gravity="center_vertical"
+                android:background="@color/timetble"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/tv_st_period"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+
+                    android:text="Period"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:textSize="@dimen/space_10sp" />
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/tv_st_class"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/sfuitext_medium"
+
+                    android:text="Class"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10sp"
+
+                    />
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/tv_st_section"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center"
+
+                    android:text="Section"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10sp" />
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/tv_st_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:gravity="center"
+
+                    android:text="Subject"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10sp"
+
+                    />
+                <View
+                    android:background="@color/white"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tv_st_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:fontFamily="@font/sfuitext_medium"
+                    android:text="Time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space_10sp" />
+                   </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_s_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="4"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/space_1dp"
+                    android:background="@color/timetble"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                        <TextView
+                            android:visibility="visible"
+                            android:id="@+id/tv_s_period"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:fontFamily="@font/sfuitext_medium"
+                            android:text="Period"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10sp" />
+                        <View
+                            android:background="@color/white"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"/>
+<!--                       <View-->
+<!--                            android:background="@color/white"-->
+<!--                            android:layout_width="2dp"-->
+<!--                            android:layout_height="match_parent"/>-->
+                        <TextView
+                            android:id="@+id/tv_s_subject"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfuitext_medium"
+
+                            android:gravity="center"
+                            android:text="Subject"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10sp"
+
+                            />
+                        <View
+                            android:background="@color/white"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:id="@+id/tv_s_tutor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:fontFamily="@font/sfuitext_medium"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10sp" />
+                        <View
+                            android:background="@color/white"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:id="@+id/tv_s_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:fontFamily="@font/sfuitext_medium"
+                            android:text="10:am to `12:00 pm"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space_10sp" />
+                </LinearLayout>
+        </LinearLayout>
+<!--        </HorizontalScrollView>-->
+</RelativeLayout>

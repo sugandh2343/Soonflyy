@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student_Pannel.MyPerformance_Fragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               android:textColor="@color/black"
+               android:text="Overall Performance (Attendance)"
+               android:textSize="@dimen/space_14sp"
+             android:fontFamily="@font/sfuitext_semibold"
+               android:gravity="center"/>
+           <com.github.mikephil.charting.charts.PieChart
+               android:id="@+id/attendance_chart"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:visibility="gone"
+               android:layout_gravity="center_horizontal"/>
+
+           <LinearLayout
+               android:visibility="gone"
+               android:id="@+id/lin_chart"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="@dimen/space_8dp"
+               android:orientation="horizontal">
+               <ImageView
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:layout_gravity="center_vertical"
+                   android:src="@drawable/circle_blck"
+                   app:tint="@color/green" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/black"
+                  android:text="Present"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginStart="@dimen/space_8dp"
+                   android:textSize="@dimen/space_12sp" />
+               <ImageView
+                   android:layout_marginStart="@dimen/space_10dp"
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:layout_gravity="center_vertical"
+                   android:src="@drawable/circle_blck"
+                   app:tint="@color/red" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/black"
+                   android:text="Absent"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginStart="@dimen/space_8dp"
+                   android:textSize="@dimen/space_12sp" />
+           </LinearLayout>
+
+<!--           <RelativeLayout-->
+<!--               android:id="@+id/rel_spinner"-->
+<!--               android:layout_width="match_parent"-->
+<!--               android:layout_height="wrap_content"-->
+<!--               android:layout_margin="25dp">-->
+
+
+               <LinearLayout
+                   android:id="@+id/rel_spinner"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="25dp"
+                   android:orientation="horizontal">
+
+                   <FrameLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="0.6"
+                       android:elevation="1dp">
+
+
+                       <Spinner
+                           android:id="@+id/spinner"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:autofillHints="Select Course"
+                           android:overlapAnchor="false">
+
+                       </Spinner>
+
+                       <TextView
+                           android:id="@+id/tv_course"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/drawable_edit_text_shadow_bg"
+                           android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_black_24dp"
+                           android:hint="Choose Course"
+                           android:inputType="text"
+                           android:padding="13dp"
+                           android:textColor="@color/black"
+                           android:textSize="14sp"
+                           android:fontFamily="@font/sfuitext_medium"
+                           tools:ignore="TextViewEdits" />
+
+                   </FrameLayout>
+
+               </LinearLayout>
+
+
+<!--           </RelativeLayout>-->
+
+           //calender
+
+<!--           <CalendarView-->
+<!--               android:id="@+id/calender"-->
+
+<!--               android:layout_width="383dp"-->
+<!--               android:layout_height="464dp"-->
+<!--               android:layout_margin="12dp">-->
+
+<!--           </CalendarView>-->
+
+<org.naishadhparmar.zcustomcalendar.CustomCalendar
+    android:id="@+id/calender"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:day_of_week_length="2"
+    app:month_year_format="full_month__with_year"
+    android:theme="@style/CvCustom"
+    app:left_button_src="@drawable/ic_keyboard_arrow_left_black_24dp"
+    app:right_button_src="@drawable/ic_keyboard_arrow_right_black_24dp"
+    app:day_of_week_start_from="sunday"
+    android:background="@drawable/drawable_edit_text_shadow_bg"
+    android:backgroundTint="@color/light_grey"
+    android:layout_margin="12dp"/>
+
+<!--</org.naishadhparmar.zcustomcalendar.CustomCalendar>-->
+
+
+           <LinearLayout
+               android:visibility="gone"
+               android:id="@+id/lin_days"
+               android:weightSum="3"
+               android:layout_gravity="center"
+               android:layout_margin="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:id="@+id/tv_total"
+                   android:gravity="center"
+                   android:background="@drawable/bg_button"
+                   android:padding="3dp"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:text="Total:00 days"
+                   android:textSize="@dimen/space_12sp"
+                  android:fontFamily="@font/sfuitext_medium"
+                   android:textAllCaps="false"
+                   android:textColor="@color/white" />
+               <TextView
+                   android:id="@+id/tv_present"
+                   android:gravity="center"
+                   android:backgroundTint="@color/green"
+                   android:background="@drawable/bg_button"
+                   android:padding="3dp"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:layout_marginLeft="-13dp"
+                   android:text="Present:00 days"
+                   android:fontFamily="@font/sfuitext_medium"
+                   android:textSize="@dimen/space_12sp"
+                   android:textStyle="bold"
+                   android:textAllCaps="false"
+                   android:textColor="@color/white" />
+               <TextView
+                   android:id="@+id/tv_absent"
+                   android:gravity="center"
+                   android:padding="3dp"
+                   android:backgroundTint="@color/red"
+                   android:background="@drawable/bg_button"
+                   android:layout_marginLeft="-13dp"
+                   android:fontFamily="@font/sfuitext_medium"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:text="Absent :00 days"
+                   android:textSize="@dimen/space_12sp"
+                   android:textStyle="bold"
+                   android:textAllCaps="false"
+                   android:textColor="@color/white" />
+           </LinearLayout>
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

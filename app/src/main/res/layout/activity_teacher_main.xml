@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Teacher_Pannel.TeacherMainActivity">
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_above="@id/bottomNavigationView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+        <include
+                layout="@layout/custom_tool_bar"
+            />
+        <!--                    <androidx.appcompat.widget.Toolbar-->
+        <!--            android:id="@+id/toolbar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fitsSystemWindows="true"-->
+        <!--         android:background="@color/primary_color"-->
+        <!--            app:titleTextColor="@color/white"-->
+        <!--                app:popupTheme="@style/AppTheme.PopupOverlay"/>-->
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/light_gray"
+
+                android:visibility="gone" />
+        <!--         <include-->
+        <!--            layout="@layout/custom_tool_bar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content" />-->
+
+<!--        <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:visibility="gone">-->
+
+<!--            <ImageView-->
+<!--                    android:id="@+id/menuImageView"-->
+<!--                    android:layout_width="@dimen/space_30dp"-->
+<!--                    android:layout_height="@dimen/space_30dp"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:srcCompat="@drawable/ic_baseline_menu_black_24dp" />-->
+
+
+<!--            <ImageView-->
+<!--                    android:id="@+id/userTextview"-->
+<!--                    android:layout_width="@dimen/space_30dp"-->
+<!--                    android:layout_height="@dimen/space_30dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    android:visibility="gone"-->
+
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/menuImageView"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/menuImageView"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/menuImageView"-->
+<!--                    app:srcCompat="@drawable/logoo" />-->
+
+<!--            <EditText-->
+<!--                    android:id="@+id/et_search"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:background="@drawable/drawable_stroke_gray_bg"-->
+<!--                    android:drawableEnd="@drawable/ic_baseline_search_gray_24dp"-->
+<!--                    android:drawablePadding="5dp"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Search courses"-->
+<!--                    android:inputType="text"-->
+<!--                    android:paddingHorizontal="10dp"-->
+<!--                    android:paddingVertical="10dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textColorHint="@color/light_gray"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/menuImageView"-->
+<!--                    app:layout_constraintEnd_toStartOf="@id/iv_filterTextView"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/userTextview"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/menuImageView" />-->
+
+<!--            <TextView-->
+<!--                    android:id="@+id/filterTextView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginEnd="16dp"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:lineSpacingExtra="3sp"-->
+<!--                    android:text="Filter"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="13sp"-->
+<!--                    android:textStyle="normal"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/et_search" />-->
+
+<!--            <TextView-->
+<!--                    android:id="@+id/page_title"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_marginLeft="@dimen/space_20"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:lineSpacingExtra="3sp"-->
+<!--                    android:text="@string/app_name"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:textStyle="bold"-->
+
+<!--                    />-->
+
+<!--        </LinearLayout>-->
+
+
+        <!--  </androidx.appcompat.widget.Toolbar>-->
+        <!--  </com.google.android.material.appbar.AppBarLayout>-->
+        <!--   <View
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/space_1"
+               android:background="@color/grey"/>-->
+        <FrameLayout
+                android:id="@+id/container_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                >
+
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/top_corner_bg"
+        app:elevation="6dp"
+        app:itemIconTint="@color/white"
+        app:itemRippleColor="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_navi">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include layout="@layout/teacher_drawer" />
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

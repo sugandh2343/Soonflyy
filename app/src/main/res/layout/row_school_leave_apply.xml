@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <LinearLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white_smoke"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginEnd="@dimen/space_1dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/date_time"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfuitext_medium"
+            android:textSize="@dimen/space_12sp" />
+
+        <LinearLayout
+            android:id="@+id/tv_leave_reason"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:id="@+id/tv_leave_status"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/yellow"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="Pending"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sfuitext_medium"
+                android:textSize="@dimen/space_12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

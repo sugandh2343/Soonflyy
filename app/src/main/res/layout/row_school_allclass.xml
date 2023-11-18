@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/bg_class"
+        android:layout_margin="@dimen/space_5dp"
+        android:id="@+id/rel_main">
+        <ImageView
+                android:layout_width="@dimen/space_10dp"
+                android:layout_height="@dimen/space_10dp"
+                android:layout_marginStart="@dimen/space_10dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:src="@drawable/circle_blck"
+                app:tint="@color/white" />
+        <RelativeLayout
+                android:id="@+id/rel_edit"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                        android:id="@+id/img_edit"
+                        android:layout_width="@dimen/space_30dp"
+                        android:layout_height="@dimen/space_30dp"
+                        android:layout_alignParentEnd="true"
+                        android:padding="6dp"
+                        android:src="@drawable/menu_icon"
+                        app:tint="@color/white" />
+                <androidx.cardview.widget.CardView
+                        android:visibility="gone"
+                        android:id="@+id/cv_edi"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/img_edit"
+                        android:layout_marginLeft="-81dp"
+                        android:padding="3dp">
+
+                        <LinearLayout
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:id="@+id/liner_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                        android:id="@+id/dailog_edit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:drawableStart="@drawable/ic_baseline_edit_24"
+                                        android:drawablePadding="@dimen/space_3"
+                                        android:text="Edit"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="normal"
+                                        app:drawableTint="@color/red"
+                                        android:padding="@dimen/space_3"
+                                        tools:ignore="ObsoleteLayoutParam" />
+
+                                <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="1dp"
+                                        android:background="@color/gray" />
+                                <TextView
+                                        android:drawableTint="@color/red"
+                                        android:id="@+id/dailog_delete"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/dailog_edit"
+                                        android:drawableStart="@drawable/ic_baseline_delete_24"
+                                        android:text="Delete"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/red"
+                                        android:textSize="14sp"
+                                        android:textStyle="normal"
+                                        app:drawableTint="@color/red"
+                                        tools:ignore="ObsoleteLayoutParam" />
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:id="@+id/lin_manage"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+                                <TextView
+                                        android:id="@+id/tv_class_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:gravity="center"
+                                        android:textSize="@dimen/space_14sp"
+                                    android:fontFamily="@font/sfuitext_medium"
+                                        android:textColor="@color/white"/>
+                                <TextView
+
+                                        android:id="@+id/tv_chapter_title"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        android:gravity="center"
+                                        android:textSize="@dimen/space_16sp"
+                                    android:padding="@dimen/space_5dp"
+                                       android:fontFamily="@font/sfuitext_semibold"
+                                        android:textColor="@color/white"/>
+
+                        </LinearLayout>
+                </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/primary_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:elevation="@dimen/space_2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image_view"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/space_10dp"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_baseline_account_circle_primary_color_24dp"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/li_user_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/spartan"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_16sp" />
+
+            <TextView
+                android:id="@+id/user_tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend"
+                android:text="+911234567890"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_14dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/user_setting"
+            android:layout_width="@dimen/space_30dp"
+            android:layout_height="@dimen/space_30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_settings_white_24dp"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

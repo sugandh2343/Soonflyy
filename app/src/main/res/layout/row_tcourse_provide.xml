@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+<LinearLayout
+        android:layout_margin="3dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+                android:id="@+id/title"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="Live Classes"
+            android:paddingEnd="4dp"
+            android:fontFamily="@font/sfui_text_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+        </CheckBox>
+</LinearLayout>
+
+</RelativeLayout>

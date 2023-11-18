@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Teacher_Pannel.ScreenshotPolicyFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+         <LinearLayout
+             android:id="@+id/lin_choose_course"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             <TextView
+                 android:id="@+id/tv_choose_course_title"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="start"
+                 android:padding="12dp"
+                 android:text="Choose Course"
+                 android:textColor="@color/black"
+                 android:fontFamily="@font/sfuitext_semibold" />
+
+             <LinearLayout
+                 android:id="@+id/liner2"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="-8dp"
+                 android:layout_marginStart="10dp"
+                 android:layout_marginEnd="10dp"
+                 android:orientation="horizontal">
+
+                 <FrameLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="0.6"
+                     android:elevation="1dp">
+
+
+                     <Spinner
+                         android:id="@+id/course_spinner"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:autofillHints="Select your Company Name"
+                         android:overlapAnchor="false">
+
+                     </Spinner>
+
+                     <TextView
+                         android:id="@+id/tv_course_name"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/drawable_edit_text_shadow_bg"
+                         android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_black_24dp"
+                         android:hint="Choose Course"
+                         android:inputType="text"
+                         android:padding="13dp"
+                         android:textColor="@color/black"
+                         android:textSize="14sp"
+                         android:fontFamily="@font/sfuitext_medium"
+                         tools:ignore="TextViewEdits" />
+
+                 </FrameLayout>
+
+             </LinearLayout>
+         </LinearLayout>
+
+         <androidx.appcompat.widget.SwitchCompat
+             android:visibility="gone"
+             android:layout_gravity="end"
+             android:id="@+id/policy_all_swich"
+             android:layout_width="wrap_content"
+             android:thumb="@drawable/switch_trac"
+             android:layout_height="wrap_content"
+             android:trackTint="@color/light_gray"
+             android:text="All"
+             android:layout_marginEnd="@dimen/space_10dp"
+             android:textSize="14sp"
+             app:switchPadding="@dimen/space_8"
+             android:fontFamily="@font/sfuitext_semibold"
+             tools:ignore="UseSwitchCompatOrMaterialXml">
+
+         </androidx.appcompat.widget.SwitchCompat>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_screenshot"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+     </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:id="@+id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_marginEnd="@dimen/space_5"
+                android:layout_marginBottom="@dimen/space_5"
+                android:background="@drawable/drawable_edit_text_shadow_bg"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/space_10">
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                                android:layout_alignParentStart="true"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:text="Personal Details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        <ImageView
+                                android:src="@drawable/ic_baseline_close_24"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                </RelativeLayout>
+<LinearLayout
+ android:padding="6dp"
+ android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+  <EditText
+                                android:textSize="18dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/black"
+                                android:drawablePadding="6dp"
+                                android:hint="Name"
+          android:id="@+id/et_name"
+                                android:drawableTint="@color/black"
+                                android:drawableStart="@drawable/profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                        </EditText>
+  <EditText
+                                android:layout_marginTop="15dp"
+                                android:layout_margin="5dp"
+                                android:textSize="18dp"
+                                android:id="@+id/et_mobile_num"
+                                android:textColor="@color/black"
+                                android:drawablePadding="6dp"
+                                android:hint="Mobile Number"
+                                android:drawableTint="@color/black"
+                                android:drawableStart="@drawable/ic_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                        </EditText>
+  <EditText
+                                android:textSize="18dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/black"
+                                android:drawablePadding="6dp"
+                                android:id="@+id/et_email"
+                                android:hint="Email ID"
+                                android:drawableTint="@color/black"
+                                android:drawableStart="@drawable/ic_baseline_email_24"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                        </EditText>
+   <EditText
+                                android:textSize="18dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/black"
+                                android:drawablePadding="6dp"
+                                android:hint="City"
+           android:id="@+id/et_city"
+                                android:drawableTint="@color/black"
+                                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                        </EditText>
+<EditText
+                                android:layout_marginTop="15dp"
+                                android:layout_margin="5dp"
+                                android:textSize="18dp"
+                                android:textColor="@color/black"
+                                android:drawablePadding="6dp"
+                                android:hint="UP"
+                                  android:id="@+id/et_district"
+                                android:drawableTint="@color/black"
+                                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                        </EditText>
+<EditText
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:drawablePadding="6dp"
+        android:hint="State"
+        android:id="@+id/et_state"
+        android:layout_marginTop="15dp"
+        android:layout_margin="5dp"
+        android:drawableTint="@color/black"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+</EditText>
+<EditText
+                                android:textSize="18dp"
+                                android:textColor="@color/black"
+                                android:drawablePadding="6dp"
+                                android:hint="School"
+        android:id="@+id/et_school"
+                                android:layout_marginTop="15dp"
+                                android:layout_margin="5dp"
+                                android:drawableTint="@color/black"
+                                android:drawableStart="@drawable/ic_notice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                        </EditText>
+
+
+</LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Update"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+        </LinearLayout>
+</RelativeLayout>
